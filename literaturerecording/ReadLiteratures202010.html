@@ -144,7 +144,7 @@
                         <p> <span class="label label-default">extensive</span> This work ONLY used 2D conv and 3D conv to extract teporal and spatial features, respectively. And it can be further combined with LSTM-Conv with boosted performance.
                         
                         <!-- [comment] This can be on. -->
-                    <li><span class="label label-success">23 Oct, 2020</span> <a href="https://arxiv.org/pdf/2001.05566.pdf">"Image Segmentation Using Deep Learning: A Survey" </a> </li>
+                    <li><span class="label label-success">24-26 Oct, 2020</span> <a href="https://arxiv.org/pdf/2001.05566.pdf">"Image Segmentation Using Deep Learning: A Survey" </a> </li>
                         <p> <span class="label label-default">useful professional items</span> elementwise; receptive field;  pixel-wise predictions; Skip connections combine coarse, high-level defaultrmation and fine,
                         low-level information;
 
@@ -163,11 +163,89 @@
                             than other competing architectures.</p>
                             HRNet: maintains high-resolution representations through the encoding process by connecting the
                             high-to-low resolution convolution streams in parallel, and
-                            repeatedly exchanging the information across resolutions
+                            repeatedly exchanging the information across resolutions</p>
+                            U-net: Feature maps from the down-sampling part of the network are copied to the up-sampling part to avoid losing pattern
+                            information.</p>
+                            V-Net:  introduced a new objective function based on the Dice coefficient, enabling the model to deal with situations in
+                            which there is a strong imbalance between the number of voxels in the foreground and background.</p>
+
+                        <p> <span class="label label-default">Multi-Scale and Pyramid Network Based Models</span> </p>
+                        Multi-scale analysis, a rather old idea in image processing,
+                        has been deployed in various neural network architectures.
+                        One of the most prominent models of this sort is the Feature
+                        Pyramid Network (FPN) proposed by Lin.</p>
+                        The apparent spatial resolution of convolutional feature maps is low, the high-dimensional feature representation contains significant sub-pixel localization
+                        information.</p>
+
+                        <p> <span class="label label-default">R-CNN Based Models (for Instance Segmentation)</span> </p>
+                        Mask R-CNN: essentially a Faster RCNN with 3 output branches (Figure 19)—the first computes
+                        the bounding box coordinates, the second computes the
+                        associated classes, and the third computes the binary mask to segment the object.  </p>
+                        It is worth noting that there is
+                        another promising research direction that attempts to solve
+                        the instance segmentation problem by learning grouping
+                        cues for bottom-up segmentation. </p>
+
+                        <p> <span class="label label-default">Dilated Convolutional Models and DeepLab Family</span> </p>
+                        Dilated convolution: to address the decreasing resolution in the network (caused by max-pooling and striding).</p>
+                        Atrous Spatial Pyramid Pooling (ASPP): probes an incoming convolutional feature layer with filters at multiple
+                        sampling rates, thus capturing objects as well as image context at multiple scales to robustly segment objects at
+                        multiple scales.</p>
+                        Improved localization of object boundaries by combining methods from deep CNNs and probabilistic graphical models.</p>
+
+                        <p> <span class="label label-default">Recurrent Neural Network Based Models</span> </p>
+                        RNNs are useful in modeling the short/long term dependencies among pixels to
+                        (potentially) improve the estimation of the segmentation map.
+                        Using RNNs, pixels may be linked together and processed
+                        sequentially to model global contexts and improve semantic
+                        segmentation. One challenge, though, is the natural 2D
+                        structure of images.</p>
+                        Liang et al.: Instead of evenly dividing an image to pixels or patches
+                        in existing multi-dimensional LSTM structures (e.g., row,
+                        grid and diagonal LSTMs), they take each arbitrary-shaped
+                        superpixel as a semantically consistent node, and adaptively
+                        construct an undirected graph for the image, where the spatial relations of the superpixels are naturally used as edges.
+
+                        <p> <span class="label label-default">Attention-Based Models</span> </p>
+                        Attention mechanisms have been persistently explored in
+                        computer vision over the years, and it is therefore not
+                        surprising to find publications that apply such mechanisms
+                        to semantic segmentation.
+
+                        <p> <span class="label label-default">Generative Models and Adversarial Training</span> </p>
+                        Since their introduction, GANs have been applied to a wide
+                        range tasks in computer vision, and have been adopted for
+                        image segmentation too.
+
+                        <p> <span class="label label-default">CNN Models With Active Contour Models</span> </p>
+                        The exploration of synergies between FCNs and Active
+                        Contour Models (ACMs) [7] has recently attracted research
+                        interest.
+
+                        <span><img border="0" width="1200" src="seg_models.png"/></a></span>
+
+                        <p> <span class="label label-default">Callenges</span> 
+                        More Challenging Datasets; Interpretable Deep Models; Weakly-Supervised and Unsupervised Learning; Real-time Models for Various Applications;
+                        Memory Efficient Models; 
+
                         
-                        <p> <span class="label label-default">comment</span> .
-                    <li><span class="label label-success">23 Oct, 2020</span><a href="https://arxiv.org/pdf/1903.05631.pdf">" " </a> </li>
-                        <p> <span class="label label-default">extensive/intensive</span> This work is 
+                        <p> <span class="label label-default">comment</span> 
+                        It is worth mentioning that some of these works, use data
+                        augmentation to increase the number of labeled samples,
+                        specially the ones which deal with small datasets (such
+                        as in medical domain).</p>
+                        Some typical transformations
+                        include translation, reflection, rotation, warping, scaling,
+                        color space shifting, cropping, and projections onto principal
+                        components.</p>
+                        For some small datasets, data augmentation has been shown
+                        to boost model performance more than 20%.</p>
+                        Collecting labeled samples for segmentation
+                        problem is problematic in many application domains, particularly so in medical image analysis. </p>
+
+
+                    <li><span class="label label-success">xx Oct, 2020</span><a href="xx">" " </a> </li>
+                        <p> <span class="label label-default">extensive/intensive</span> This work is xx.
                         
                         <p> <span class="label label-default">comment</span> .                                                
 
