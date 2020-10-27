@@ -136,119 +136,165 @@
                     
                     <li> <span class="label label-success">23 Oct, 2020</span> <a href="https://arxiv.org/pdf/1903.05631.pdf">"ST-UNet: A Spatio-Temporal U-Network for
                         Graph-structured Time Series Modeling" </a> </li>
-                        <p> <span class="label label-default">extensive</span> This work is for spatio-temporal graph data, and this U-shaped network used a paired sampling operation in spacetime domain
+                        <p style=text-align:justify> <span class="label label-default">extensive</span> This work is for spatio-temporal graph data, and this U-shaped network used a paired sampling operation in spacetime domain
                         accordingly.</p>
 
                         <p><span class="label label-default">comment</span> This can be used for segmentation.</p>
                     <li><span class="label label-success">23 Oct, 2020</span> <a href="https://openaccess.thecvf.com/content_CVPRW_2019/papers/PBVS/Bhatt_Segmentation_of_Low-Level_Temporal_Plume_Patterns_From_IR_Video_CVPRW_2019_paper.pdf">"Segmentation of Low-Level Temporal Plume Patterns from IR Vide" </a> </li>
-                        <p> <span class="label label-default">extensive</span> This work ONLY used 2D conv and 3D conv to extract teporal and spatial features, respectively. And it can be further combined with LSTM-Conv with boosted performance.
+                        <p style=text-align:justify> <span class="label label-default">extensive</span> This work ONLY used 2D conv and 3D conv to extract teporal and spatial features, respectively. And it can be further combined with LSTM-Conv with boosted performance.
                         
                         <!-- [comment] This can be on. -->
                     <li><span class="label label-success">24-26 Oct, 2020</span> <a href="https://arxiv.org/pdf/2001.05566.pdf">"Image Segmentation Using Deep Learning: A Survey" </a> </li>
-                        <p> <span class="label label-default">useful professional items</span> elementwise; receptive field;  pixel-wise predictions; Skip connections combine coarse, high-level defaultrmation and fine,
+                        <p style=text-align:justify> <span class="label label-default">useful professional items</span> elementwise; receptive field;  pixel-wise predictions; Skip connections combine coarse, high-level defaultrmation and fine,
                         low-level information;
 
-                        <p> <span class="label label-default">Fully Convolutional Networks</span> first work; not fast enough for real-time inference, it does not take
+                        <p style=text-align:justify> <span class="label label-default">Fully Convolutional Networks</span> first work; not fast enough for real-time inference, it does not take
                         into account the global context information in an efficient way, and it is not easily transferable to 3D images
 
                         <p> <span class="label label-default">Convolutional Models With Graphical Models</span> integrate more context; </p>
-                            incorporate probabilistic graphical models, such as Conditional Random Fields (CRFs) and Markov Random Field (MRFs), into DL architectures; </p>
+                        <p style=text-align:justify>Incorporate probabilistic graphical models, such as Conditional Random Fields (CRFs) and Markov Random Field (MRFs), into DL architectures; </p>
                             poor localization property of deep CNNs (responses from the final layer of deep CNNs are not sufficiently localized for accurate
                             object segmentation (due to the invariance properties that make CNNs good for high level tasks such as classification))；</p>
 
                             <p> <span class="label label-default">Encoder-Decoder Based Models</span> </p>
-                            SegNet: The main novelty of SegNet is in the way the decoder upsamples its lower resolution input feature map. specifically, it
+                            <p style=text-align:justify>SegNet: The main novelty of SegNet is in the way the decoder upsamples its lower resolution input feature map. specifically, it
                             uses pooling indices computed in the max-pooling step of the corresponding encoder to perform non-linear upsampling. 
                             This eliminates the need for learning to up-sample. SegNet is also significantly smaller in the number of trainable parameters
                             than other competing architectures.</p>
-                            HRNet: maintains high-resolution representations through the encoding process by connecting the
+                            <p style=text-align:justify>HRNet: maintains high-resolution representations through the encoding process by connecting the
                             high-to-low resolution convolution streams in parallel, and
                             repeatedly exchanging the information across resolutions</p>
-                            U-net: Feature maps from the down-sampling part of the network are copied to the up-sampling part to avoid losing pattern
+                            <p style=text-align:justify>U-net: Feature maps from the down-sampling part of the network are copied to the up-sampling part to avoid losing pattern
                             information.</p>
-                            V-Net:  introduced a new objective function based on the Dice coefficient, enabling the model to deal with situations in
+                            <p style=text-align:justify>V-Net:  introduced a new objective function based on the Dice coefficient, enabling the model to deal with situations in
                             which there is a strong imbalance between the number of voxels in the foreground and background.</p>
 
                         <p> <span class="label label-default">Multi-Scale and Pyramid Network Based Models</span> </p>
-                        Multi-scale analysis, a rather old idea in image processing,
+                        <p style=text-align:justify>Multi-scale analysis, a rather old idea in image processing,
                         has been deployed in various neural network architectures.
                         One of the most prominent models of this sort is the Feature
                         Pyramid Network (FPN) proposed by Lin.</p>
-                        The apparent spatial resolution of convolutional feature maps is low, the high-dimensional feature representation contains significant sub-pixel localization
+                        <p style=text-align:justify>The apparent spatial resolution of convolutional feature maps is low, the high-dimensional feature representation contains significant sub-pixel localization
                         information.</p>
 
                         <p> <span class="label label-default">R-CNN Based Models (for Instance Segmentation)</span> </p>
-                        Mask R-CNN: essentially a Faster RCNN with 3 output branches (Figure 19)—the first computes
+                        <p style=text-align:justify>Mask R-CNN: essentially a Faster RCNN with 3 output branches (Figure 19)—the first computes
                         the bounding box coordinates, the second computes the
                         associated classes, and the third computes the binary mask to segment the object.  </p>
-                        It is worth noting that there is
+                        <p style=text-align:justify>It is worth noting that there is
                         another promising research direction that attempts to solve
                         the instance segmentation problem by learning grouping
                         cues for bottom-up segmentation. </p>
 
                         <p> <span class="label label-default">Dilated Convolutional Models and DeepLab Family</span> </p>
-                        Dilated convolution: to address the decreasing resolution in the network (caused by max-pooling and striding).</p>
+                        <p style=text-align:justify>Dilated convolution: to address the decreasing resolution in the network (caused by max-pooling and striding).</p>
                         Atrous Spatial Pyramid Pooling (ASPP): probes an incoming convolutional feature layer with filters at multiple
                         sampling rates, thus capturing objects as well as image context at multiple scales to robustly segment objects at
                         multiple scales.</p>
-                        Improved localization of object boundaries by combining methods from deep CNNs and probabilistic graphical models.</p>
+                        <p style=text-align:justify>Improved localization of object boundaries by combining methods from deep CNNs and probabilistic graphical models.</p>
 
                         <p> <span class="label label-default">Recurrent Neural Network Based Models</span> </p>
-                        RNNs are useful in modeling the short/long term dependencies among pixels to
+                        <p style=text-align:justify>RNNs are useful in modeling the short/long term dependencies among pixels to
                         (potentially) improve the estimation of the segmentation map.
                         Using RNNs, pixels may be linked together and processed
                         sequentially to model global contexts and improve semantic
                         segmentation. One challenge, though, is the natural 2D
                         structure of images.</p>
-                        Liang et al.: Instead of evenly dividing an image to pixels or patches
+                        <p style=text-align:justify>Liang et al.: Instead of evenly dividing an image to pixels or patches
                         in existing multi-dimensional LSTM structures (e.g., row,
                         grid and diagonal LSTMs), they take each arbitrary-shaped
                         superpixel as a semantically consistent node, and adaptively
                         construct an undirected graph for the image, where the spatial relations of the superpixels are naturally used as edges.
 
                         <p> <span class="label label-default">Attention-Based Models</span> </p>
-                        Attention mechanisms have been persistently explored in
+                        <p style=text-align:justify>Attention mechanisms have been persistently explored in
                         computer vision over the years, and it is therefore not
                         surprising to find publications that apply such mechanisms
                         to semantic segmentation.
 
                         <p> <span class="label label-default">Generative Models and Adversarial Training</span> </p>
-                        Since their introduction, GANs have been applied to a wide
+                        <p style=text-align:justify>Since their introduction, GANs have been applied to a wide
                         range tasks in computer vision, and have been adopted for
                         image segmentation too.
 
                         <p> <span class="label label-default">CNN Models With Active Contour Models</span> </p>
-                        The exploration of synergies between FCNs and Active
+                        <p style=text-align:justify>The exploration of synergies between FCNs and Active
                         Contour Models (ACMs) [7] has recently attracted research
                         interest.
 
                         <span><img border="0" width="1200" src="seg_models.png"/></a></span>
 
                         <p> <span class="label label-default">Callenges</span> 
-                        More Challenging Datasets; Interpretable Deep Models; Weakly-Supervised and Unsupervised Learning; Real-time Models for Various Applications;
+                        <p style=text-align:justify><p style=text-align:justify>More Challenging Datasets; Interpretable Deep Models; Weakly-Supervised and Unsupervised Learning; Real-time Models for Various Applications;
                         Memory Efficient Models; 
 
                         
                         <p> <span class="label label-default">comment</span> 
-                        It is worth mentioning that some of these works, use data
+                        <p style=text-align:justify>It is worth mentioning that some of these works, use data
                         augmentation to increase the number of labeled samples,
                         specially the ones which deal with small datasets (such
                         as in medical domain).</p>
-                        Some typical transformations
+                        <p style=text-align:justify>Some typical transformations
                         include translation, reflection, rotation, warping, scaling,
                         color space shifting, cropping, and projections onto principal
                         components.</p>
-                        For some small datasets, data augmentation has been shown
+                        <p style=text-align:justify>For some small datasets, data augmentation has been shown
                         to boost model performance more than 20%.</p>
                         Collecting labeled samples for segmentation
                         problem is problematic in many application domains, particularly so in medical image analysis. </p>
 
+                        
 
+                    <li><span class="label label-success">27 Oct, 2020</span><a href="https://arxiv.org/pdf/1804.02967.pdf">"HyperDense-Net: A hyper-densely connected
+                        CNN for multi-modal image segmentation" </a> </li>
+                        <p style=text-align:justify> <span class="label label-default">extensive</span> 
+                            Dense connections have attracted substantial attention in computer vision because they facilitate gradient flow
+                            and implicit deep supervision during training.</p>
+                            <p style=text-align:justify><b>Why DenseNet is powerful?</b> DenseNets are built on the idea that adding direct
+                            connections from any layer to all the subsequent layers
+                            in a feed-forward manner makes training easier and more
+                            accurate. This is motivated by three observations. First,
+                            there is an implicit deep supervision thanks to the short
+                            paths to all feature maps in the architecture. Second, direct
+                            connections between all layers help improving the flow of
+                            information and gradients throughout the entire network.
+                            Third, dense connections have a regularizing effect, which
+                            reduces the risk of over-fitting on tasks with smaller training
+                            sets.</p>
+                            <p style=text-align:justify>Advances in multi-modal imaging, however, come at the
+                            price of an inherently large amount of data, imposing a
+                            burden on disease assessments. Visual inspections of such
+                            an enormous amount of medical images are prohibitively
+                            time-consuming, prone to errors and unsuitable for largescale studies.</p>
+                            Fusion of multi-modal CNN feature representations: early-fusion methods (simply merged at the input of the network,  assume
+                            that the relationship between different modalities are simple(e.g., linear), 
+                            difficult to discover highly non-linear relationships between the low-level features of different modalities), 
+                            late fusion methods (independent convolutional network for each modality, and
+                            fused the outputs of the different networks in higher-level layers).</p>
+
+                            <p style=text-align:justify><b>Shuffling and interleaving feature map elements</b> in a
+                            CNN was recently found to enhance the efficiency and
+                            performance, while serving as a strong regularizer [44]–
+                            [46]. This is motivated by the fact that intermediate CNN
+                            layers perform deterministic transformations to improve the
+                            performance, however, relevant information might be lost
+                            during these operations [47]. To overcome this issue, it is
+                            therefore beneficial for intermediate layers to offer a variety
+                            of information exchange while preserving the aforementioned deterministic functions.</p>
+                        
+                        <p> <span class="label label-default">comment</span> 
+                            <p style=text-align:justify>Each imaging modality has a path, and dense connections occur not only
+                            between the pairs of layers within the same path, but also
+                            between those across different paths.</p>
+                            <p style=text-align:justify>This work is a very good and representative work to follow on both ideas, experiments and writting. 
+                            Actually the idea of this work is not very creative (relatively easy to get the idea), but the overall experiment and discussion show deep understanding of the area, and solid results.
+                            
+                            
                     <li><span class="label label-success">xx Oct, 2020</span><a href="xx">" " </a> </li>
                         <p> <span class="label label-default">extensive/intensive</span> This work is xx.
-                        
-                        <p> <span class="label label-default">comment</span> .                                                
 
+                        
+                        <p> <span class="label label-default">comment</span> .  
                 </div>
                 </div>
             </section>
