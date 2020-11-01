@@ -136,22 +136,22 @@
                     
                     <li> <span class="label label-success">23 Oct, 2020</span> <a href="https://arxiv.org/pdf/1903.05631.pdf">"ST-UNet: A Spatio-Temporal U-Network for
                         Graph-structured Time Series Modeling" </a> </li>
-                        <p style=text-align:justify> <span class="label label-default">extensive</span> This work is for spatio-temporal graph data, and this U-shaped network used a paired sampling operation in spacetime domain
+                        <p style=text-align:justify> <span class="label label-default">extensive</span> </p> This work is for spatio-temporal graph data, and this U-shaped network used a paired sampling operation in spacetime domain
                         accordingly.</p>
 
-                        <p><span class="label label-default">comment</span> This can be used for segmentation.</p>
+                        <p><span class="label label-default">comment</span> </p> This can be used for segmentation.</p>
                     <li><span class="label label-success">23 Oct, 2020</span> <a href="https://openaccess.thecvf.com/content_CVPRW_2019/papers/PBVS/Bhatt_Segmentation_of_Low-Level_Temporal_Plume_Patterns_From_IR_Video_CVPRW_2019_paper.pdf">"Segmentation of Low-Level Temporal Plume Patterns from IR Vide" </a> </li>
-                        <p style=text-align:justify> <span class="label label-default">extensive</span> This work ONLY used 2D conv and 3D conv to extract teporal and spatial features, respectively. And it can be further combined with LSTM-Conv with boosted performance.
+                        <p style=text-align:justify> <span class="label label-default">extensive</span> </p> This work ONLY used 2D conv and 3D conv to extract teporal and spatial features, respectively. And it can be further combined with LSTM-Conv with boosted performance.
                         
                         <!-- [comment] This can be on. -->
                     <li><span class="label label-success">24-26 Oct, 2020</span> <a href="https://arxiv.org/pdf/2001.05566.pdf">"Image Segmentation Using Deep Learning: A Survey" </a> </li>
-                        <p style=text-align:justify> <span class="label label-default">useful professional items</span> elementwise; receptive field;  pixel-wise predictions; Skip connections combine coarse, high-level defaultrmation and fine,
+                        <p style=text-align:justify> <span class="label label-default">Useful professional items</span> </p> elementwise; receptive field;  pixel-wise predictions; Skip connections combine coarse, high-level defaultrmation and fine,
                         low-level information;
 
-                        <p style=text-align:justify> <span class="label label-default">Fully Convolutional Networks</span> first work; not fast enough for real-time inference, it does not take
+                        <p style=text-align:justify> <span class="label label-default">Fully Convolutional Networks</span> </p> first work; not fast enough for real-time inference, it does not take
                         into account the global context information in an efficient way, and it is not easily transferable to 3D images
 
-                        <p> <span class="label label-default">Convolutional Models With Graphical Models</span> integrate more context; </p>
+                        <p> <span class="label label-default">Convolutional Models With Graphical Models</span> </p> Integrate more context; </p>
                         <p style=text-align:justify>Incorporate probabilistic graphical models, such as Conditional Random Fields (CRFs) and Markov Random Field (MRFs), into DL architectures; </p>
                             poor localization property of deep CNNs (responses from the final layer of deep CNNs are not sufficiently localized for accurate
                             object segmentation (due to the invariance properties that make CNNs good for high level tasks such as classification))；</p>
@@ -247,7 +247,7 @@
 
                     <li><span class="label label-success">27 Oct, 2020</span><a href="https://arxiv.org/pdf/1804.02967.pdf">"HyperDense-Net: A hyper-densely connected
                         CNN for multi-modal image segmentation" </a> </li>
-                        <p style=text-align:justify> <span class="label label-default">extensive</span> 
+                        <p style=text-align:justify> <span class="label label-default">extensive</span>  </p>
                             Dense connections have attracted substantial attention in computer vision because they facilitate gradient flow
                             and implicit deep supervision during training.</p>
                             <p style=text-align:justify><b>Why DenseNet is powerful?</b> DenseNets are built on the idea that adding direct
@@ -290,11 +290,82 @@
                             Actually the idea of this work is not very creative (relatively easy to get the idea), but the overall experiment and discussion show deep understanding of the area, and solid results.
                             
                             
-                    <li><span class="label label-success">xx Oct, 2020</span><a href="xx">" " </a> </li>
-                        <p> <span class="label label-default">extensive/intensive</span> This work is xx.
+                    <li><span class="label label-success">28 Oct, 2020</span><a href="https://arxiv.org/pdf/1709.07330.pdf">"H-DenseUNet: Hybrid Densely Connected UNet for
+                        Liver and Tumor Segmentation from CT Volumes" </a> </li>
+                        <p> <span class="label label-default">extensive/intensive</span>  </p>
+                            2D convolutions can not fully
+                                leverage the spatial information along the third dimension while
+                                3D convolutions suffer from high computational cost and GPU
+                                memory consumption.</p>
+                            Compared to
+                                2D FCNs, 3D FCNs suffer from high computational cost and
+                                GPU memory consumption. The high memory consumption
+                                limits the depth of the network as well as the filter’s field-of-view, which are the two key factors for performance gains [22].</p>
+                            Hybrid densely connected UNet (H-DenseUNet), which
+                                consists of a 2D DenseUNet for efficiently extracting intra-slice
+                                features and a 3D counterpart for hierarchically aggregating
+                                volumetric contexts under the spirit of the auto-context algorithm.            
+
+                        <p> <span class="label label-default">comment</span>  </p>
+                        We can show the performance gain using the training loss, which is a good way for presentation.  </p>
+                            Indepth analysis of the proposed  method such as the improvement on dataset with different size of tumors is an good example of a solid work.
+
+                            
+                    <li><span class="label label-success">29 Oct, 2020</span><a href="https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks.pdf">"How transferable are features in deep neural networks?" </a> </li>
+                        <p> <span class="label label-default">extensive</span> 
+                            Many deep neural networks trained on natural images exhibit a curious phenomenon in common: on the first layer they learn features similar to Gabor filters
+                                and color blobs. Such first-layer features appear not to be specific to a particular
+                                dataset or task, but general in that they are applicable to many datasets and tasks.</p>
+                                The usual transfer learning approach is to train a base network and then copy its first n layers to
+                                the first n layers of a target network. The remaining layers of the target network are then randomly
+                                initialized and trained toward the target task. One can choose to backpropagate the errors from
+                                the new task into the base (copied) features to fine-tune them to the new task, or the transferred
+                                feature layers can be left frozen, meaning that they do not change during training on the new task.
+                                The choice of whether or not to fine-tune the first n layers of the target network depends on the
+                                size of the target dataset and the number of parameters in the first n layers. If the target dataset is
+                                small and the number of parameters is large, fine-tuning may result in overfitting, so the features
+                                are often left frozen. On the other hand, if the target dataset is large or the number of parameters is
+                                small, so that overfitting is not a problem, then the base features can be fine-tuned to the new task
+                                to improve performance. Of course, if the target dataset is very large, there would be little need to
+                                transfer because the lower level filters could just be learned from scratch on the target dataset.</p>
+                                Transferability is negatively affected by two distinct issues: (1) the specialization of
+                                higher layer neurons to their original task at the expense of performance on the
+                                target task, which was expected, and (2) optimization difficulties related to splitting networks between co-adapted neurons, which was not expected. </p>
+                            The original network contained <b>fragile co-adapted features</b> on successive layers, that is, features
+                                that interact with each other in a complex or fragile way such that this co-adaptation could not be
+                                relearned by the upper layers alone. Gradient descent was able to find a good solution the first
+                                time, but this was only possible because the layers were jointly trained.</p>
+                            Transferring features will boost generalization performance even if the target dataset is large.</p>
 
                         
-                        <p> <span class="label label-default">comment</span> .  
+                        <p> <span class="label label-default">comment</span> This paper gives some understandings of transfer learning.
+
+                    <li><span class="label label-success">30 Oct, 2020</span><a href="https://arxiv.org/pdf/2004.03466.pdf">"U-Net Using Stacked Dilated Convolutions for Medical
+                        Image Segmentation" </a> </li>
+                        <p> <span class="label label-default">extensive</span> </p>
+                            Unlike vanilla U-Net which incorporates two standard convolutions
+                                in each encoder/decoder operation, SDU-Net uses one standard convolution followed by multiple dilated convolutions and concatenates all dilated convolution
+                                outputs as input to the next operation. </p>
+                            U-Net convolutions have a very limited receptive field and encoder
+                                downsampling may degrade correlation between the pixels. To obtain larger receptive
+                                fields, Devalla et al. [12] introduced dilated convolutions into U- Net, where the dilation rate was increased while the resolution was downsampled.</p>
+                            However, Hamaguchi et al. [13] pointed out that aggressively increasing dilation rates might fail to aggregate local features due to sparsity of 
+                                the kernel and potentially be detrimental to small objects. </p>
+
+                        <p> <span class="label label-default">comment</span> There exists multiple receptive fields within the same resolution which is the reason why it can process both large and small objects.  
+
+                    <li><span class="label label-success">31 Oct, 2020</span><a href="https://www.groundai.com/project/a-joint-3d-unet-graph-neural-network-based-method-for-airway-segmentation-from-chest-cts/1">"A joint 3D UNet-Graph Neural Network-based method for Airway Segmentation from chest CTs" </a> </li>
+                        <p> <span class="label label-default">extensive/intensive</span> </p>
+                            3D UNet architecture with a graph neural network (GNN) model. In this approach, the convolutional layers at the deepest level of the UNet are replaced by a GNN-based module with a series of graph convolutions. 
+                            The dense feature maps at this level are transformed into a graph input to the GNN module.</p>
+                            The incorporation of graph convolutions in the UNet provides nodes in the graph with information that is based on node connectivity, in addition to the local features learnt through the downsampled paths. 
+                            This information can help improve segmentation decisions.</p>
+                            Existing works: 3D UNet cannot capture various small terminal branches. Also, the GNNs have been applied to airway extraction as a graph refinement approach in [8]. However, this method was not end-to-end optimised and relied on handcrafted features as input to the graph.</p>
+
+
+                        <p> <span class="label label-default">comment</span> The idea is good but the performance improvement is not significant, which needs more investigations..  
+
+
                 </div>
                 </div>
             </section>
