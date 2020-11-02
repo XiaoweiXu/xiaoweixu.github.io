@@ -148,7 +148,54 @@
                                     detection task.    </p>
                         <p> <span class="label label-default">comment</span> The main novelty lies on applying methdos in another domain to preblems in current domain.  
 
+                    <li><span class="label label-success">2 Nov, 2020</span><a href="https://arxiv.org/pdf/1707.04912.pdf">"Improving Deep Pancreas Segmentation in CT
+                        and MRI Images via Recurrent Neural
+                        Contextual Learning and Direct Loss Function" </a> </li>
+                        <p> <span class="label label-default">extensive</span> 
+                            </p>The overall structure is FCN+LSTM, and the two modules are combined sequencially.
 
+                            </p> LSTM is mainly for <b>contextual regularization</b>: segmentation results from successive slices need to be constrained for
+                            shape consistence.
+                            </p> Jaccard index loss: Segmentation-direct loss function can
+                                avoid the data balancing issue during CNN training between the positive pancreas and negative background regions.
+                        <p> <span class="label label-default">comment</span> Citation = 76, very initial work of combining FCn and LSTM.  
+
+                    <li><span class="label label-success">2 Nov, 2020</span><a href="https://arxiv.org/pdf/1803.09860.pdf">"Three Birds One Stone: A General Architecture for
+                        Salient Object Segmentation, Edge Detection and
+                        Skeleton Extraction" </a> </li>
+                        <p> <span class="label label-default">extensive/intensive</span> 
+                            </p>In this paper, we aim at solving pixel-wise binary
+                            problems, including salient object segmentation, skeleton extraction, and edge detection, by introducing a general architecture.
+
+                            </p>In particular, we introduce a horizontal
+                            cascade of encoders so as to gradually advance the feature
+                            representations from the original CNN trunks. To better fuse
+                            feature at different levels, the inputs of each encoder in our
+                            architecture is densely connected to the outputs of its previous
+                            encoder.
+                            </p>Stringing these encoders together allows us to effectively
+                            exploit features across different levels hierarchically to effectively
+                            address multiple pixel-wise binary regression tasks. 
+                            </p>Existing works: What they have in common is that each layer in the decoder (the
+                            right part of each diagram in Fig. 2) can only receive features
+                            from the backbone or its upper layers in the decoder. These
+                            types of designs may work well for salient object detection
+                            but may fail when applied to edge detection and skeleton
+                            extraction (and vice versa). The fundamental reason behind
+                            this is the fact that the feature representations formed in the
+                            decoders are not powerful enough to deal with all of these
+                            tasks.
+                            </p>
+                        <p> <span class="label label-default">comment</span> </p>
+                        This is NOT a multi-task framework, but one which can be used for only one of these tasks.
+                        </p> Good writing. Nice related work, and detailed motivation.
+
+                        <li><span class="label label-success">2 Nov, 2020</span><a href="pdf">"" </a> </li>
+                            <p> <span class="label label-default">extensive/intensive</span> 
+                                </p>
+    
+                                </p>
+                            <p> <span class="label label-default">comment</span> .                             
                 </div>
                 </div>
             </section>
