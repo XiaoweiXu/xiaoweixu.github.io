@@ -246,37 +246,108 @@
                                 
                             <p> <span class="label label-default">comment</span> This idea may be also helpful for circle-like 2d-object segmentation. 
                                 </p> Another thing is there are several threshold that are not explictly described in the paper. 
-                        <li><span class="label label-success">2 Nov, 2020</span><a href="pdf">"" </a> </li>
+                        <li><span class="label label-success">5 Nov, 2020</span><a href="https://openaccess.thecvf.com/content_CVPRW_2019/papers/PBVS/Bhatt_Segmentation_of_Low-Level_Temporal_Plume_Patterns_From_IR_Video_CVPRW_2019_paper.pdf">"Segmentation of Low-Level Temporal Plume Patterns from IR Video " </a> </li>
                                 <p> <span class="label label-default">extensive/intensive</span> 
-                                    </p>
+                                    </p>An alternative network architecture is to restrict the
+                                    decoder and encoder to spatial domain while capturing a
+                                    temporal signature in the encoding space, see Figure 2. Such
+                                    an architecture can be accomplished as a combination of
+                                    standard LSTM cells with spatial encoders and decoders
+                                    which are commonly employed in semantic segmentation
+                                    tasks such as DeConvNet [5] and SegNet [6]. With this
+                                    architecture, temporal relations in the final high-level
+                                    encoding space are captured by the recurrent structure.
+                                    Such a network would cover use cases where the nature of
+                                    temporal phenomena builds upon high abstractive concepts. 
         
-                                    </p>
-                                <p> <span class="label label-default">comment</span> .                     
-                        <li><span class="label label-success">2 Nov, 2020</span><a href="pdf">"" </a> </li>
+                                    </p>However, in our use case, the shape of the plume is not
+                                    semantically meaningful, has low abstraction, high texture
+                                    and changes from frame to frame with no consistency across
+                                    different exemplar plumes. This phenomenon suggests
+                                    using a spatio-temporal encoder-decoder scheme as
+                                    proposed in this paper which can capture and isolate
+                                    lower-level patterns. 
+
+                                    </p> For low levels. Recurrent NN is specially good at extracting high-level features.
+
+                                    <span><img border="0" width="800" src="lowlevel-unet.png"/></a></span>
+
+                                <p> <span class="label label-default">comment</span> Design a special kind of 3D Unet that good at low-level features.                     
+                        <li><span class="label label-success">6 Nov, 2020</span><a href="https://arxiv.org/pdf/1803.11303v1.pdf">"Pancreas Segmentation in CT and MRI Images via
+                            Domain Specific Network Designing and Recurrent
+                            Neural Contextual Learning" </a> </li>
+                            <p> <span class="label label-default">extensive</span> 
+                                </p>However, the CNN-based method often suffers from segmentation
+                                discontinuity for reasons such as noisy image quality and blurry
+                                pancreatic boundary. 
+    
+                                </p>To inference initial segmentation, we
+                                first train a 2D CNN sub-network, then the successive CNN outputs are processed
+                                by another RNN sub-network,the successive CNN outputs are processed
+                                by another RNN sub-network.
+                            <p> <span class="label label-default">comment</span> </p>Initial work of combination of Unet and RNN.                     
+                        <li><span class="label label-success">7 Nov, 2020</span><a href="https://arxiv.org/pdf/1907.11587.pdf">"Self-Adaptive 2D-3D Ensemble of Fully Convolutional Networks for
+                            Medical Image Segmentation " </a> </li>
+                            <p> <span class="label label-default">extensive</span> 
+                                </p>Most approaches either only focus on 2D FCN or 3D FCN. 
+                                </p>A 2D FCN includes inplane information, and a 3D FCN exploits volumetric information.
+    
+                                </p>This paper performs NAS on an ensemble of a 2D FCN and a 3D FCN.
+                            <p> <span class="label label-default">comment</span> </p> Searching space is enlarged.    
+
+                        <li><span class="label label-success">8 Nov, 2020</span><a href="https://openaccess.thecvf.com/content_WACV_2020/papers/Xia_3D_semi-supervised_learning_with_uncertainty-aware_multi-view_co-training_WACV_2020_paper.pdf">
+                            "3D Semi-Supervised Learning with Uncertainty-Aware Multi-View Co-Training", 2020, WACV</a> </li>
+                            <p> <span class="label label-default">extensive</span> 
+                                </p>In our work, co-training is achieved
+                                by exploiting multi-viewpoint consistency of 3D data.
+    
+                                </p>We
+                                generate different views by rotating or permuting the 3D
+                                data and utilize asymmetrical 3D kernels to encourage diversified features in different sub-networks. In addition, we
+                                propose an uncertainty-weighted label fusion mechanism
+                                to estimate the reliability of each view’s prediction with
+                                Bayesian deep learning. As one view requires the supervision from other views in co-training, our self-adaptive approach computes a confidence score for the prediction of
+                                each unlabeled sample in order to assign a reliable pseudo
+                                label.
+                                </p>Inspired by the success of co-training [5] and its extension
+                                into single 2D images [30], we further extend this idea
+                                into 3D.
+                                </p>Typical co-training requires at least two views (i.e.
+                                sources) of data, either of which should be sufficient to train
+                                a classifier on. Co-training minimizes the disagreements by
+                                assigning pseudo labels between each other view on unlabeled data.
+                                </p>For unlabeled data, we construct a co-training assumption under a semi-supervised setting. The co-training strategy assumes the prediction on each view should reach a
+                                consensus. So the prediction of each model can act as a
+                                pseudo label to supervise other views in order to learn from
+                                unlabeled data.
+                                </p>Successful co-training: 1. Since most computer vision tasks have only one source of data, encouraging view differences is a crucial point for successful cotraining. 2. Another aspect of
+                                co-training to emphasize is view confidence estimation. In
+                                multi-view settings, given sufficient variance of each view,
+                                the quality of each prediction is not guaranteed and bad
+                                pseudo labels can be harmful if used in the training process.
+                                </p>We further introduce the <b>model-level view differences</b>
+                                by adopting 2D pre-trained models to asymmetric kernels
+                                in 3D networks, such as 3 × 3 × 1 kernels. 
+                                </p>Another key component is the view confidence estimation. We propose to estimate the uncertainty of each view’s
+                                prediction with <b>Bayesian deep networks</b> by adding dropout into the architectures [13].
+                                </p>Asymmetric 3D kernels and 2D initialization. The cotraining assumption encourages models to make similar predictions on both S and U, which potentially can lead to collapsed neural networks mentioned in [30]. To address this
+                                problem, we further encourage view difference at feature
+                                level by designing a task-specific model. We propose to
+                                use asymmetric 3D models initialized with 2D pre-trained
+                                weights as the backbone network of each view to encourage diverse features for each view learning.
+
+                                <span><img border="0" width="1200" src="xia2020wacv.png"/></a></span>
+
+                            <p> <span class="label label-default">comment</span> Related work and experiment details are presented well.                     
+                        <li><span class="label label-success">2 Nov, 2020</span><a href="pdf">
+                            "" </a> </li>
                             <p> <span class="label label-default">extensive/intensive</span> 
                                 </p>
     
                                 </p>
                             <p> <span class="label label-default">comment</span> .                     
-                        <li><span class="label label-success">2 Nov, 2020</span><a href="pdf">"" </a> </li>
-                            <p> <span class="label label-default">extensive/intensive</span> 
-                                </p>
-    
-                                </p>
-                            <p> <span class="label label-default">comment</span> .                     
-                        <li><span class="label label-success">2 Nov, 2020</span><a href="pdf">"" </a> </li>
-                            <p> <span class="label label-default">extensive/intensive</span> 
-                                </p>
-    
-                                </p>
-                            <p> <span class="label label-default">comment</span> .                     
-                        <li><span class="label label-success">2 Nov, 2020</span><a href="pdf">"" </a> </li>
-                            <p> <span class="label label-default">extensive/intensive</span> 
-                                </p>
-    
-                                </p>
-                            <p> <span class="label label-default">comment</span> .                     
-                        <li><span class="label label-success">2 Nov, 2020</span><a href="pdf">"" </a> </li>
+                        <li><span class="label label-success">2 Nov, 2020</span><a href="pdf">
+                            "" </a> </li>
                             <p> <span class="label label-default">extensive/intensive</span> 
                                 </p>
     
