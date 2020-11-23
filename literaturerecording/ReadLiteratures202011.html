@@ -338,22 +338,279 @@
 
                                 <span><img border="0" width="1200" src="xia2020wacv.png"/></a></span>
 
-                            <p> <span class="label label-default">comment</span> Related work and experiment details are presented well.                     
-                        <li><span class="label label-success">2 Nov, 2020</span><a href="pdf">
-                            "" </a> </li>
+                            <p> <span class="label label-default">comment</span> Related work and experiment details are presented well. 
+
+                        <li><span class="label label-success">9 Nov, 2020</span><a href="https://arxiv.org/pdf/2011.07025v1.pdf">
+                            "Automatic segmentation with detection of local
+                            segmentation failures in cardiac MRI" code is publicly available.</a> </li>
                             <p> <span class="label label-default">extensive/intensive</span> 
-                                </p>
+                                </p> This method is to
+                                increase robustness and performance of segmentation methods.
     
-                                </p>
-                            <p> <span class="label label-default">comment</span> .                     
-                        <li><span class="label label-success">2 Nov, 2020</span><a href="pdf">
-                            "" </a> </li>
+                                </p>This study combines automatic segmentation and assessment
+                                of segmentation uncertainty in CMRI to detect image regions
+                                containing local segmentation failures.
+                                </p>Three state-of-the-art convolutional neural networks (CNN) were trained to automatically
+                                segment cardiac anatomical structures and obtain two measures
+                                of predictive uncertainty: entropy and a measure derived by
+                                MC-dropout. Thereafter, using the uncertainties another CNN
+                                was trained to detect local segmentation failures that potentially
+                                need correction by an expert.
+
+                                
+                            <p> <span class="label label-default">comment</span> The quality of the paper is good and it needs more time to read the details.    
+
+                        <li><span class="label label-success">10 Nov, 2020</span><a href="https://arxiv.org/pdf/2011.00325v2.pdf">
+                            "Self-paced and self-consistent co-training for
+                            semi-supervised image segmentation" </a> </li>
+                            <p> <span class="label label-default">extensive</span> 
+                                </p>Deep co-training has recently been proposed as an
+                                effective approach for image segmentation when annotated data
+                                is scarce.
+    
+                                </p>In this paper, we improve existing approaches for semisupervised segmentation with a self-paced and self-consistent cotraining method. 
+                                </p>To help distillate information from unlabeled
+                                images, we first design a self-paced learning strategy for cotraining that lets jointly-trained neural networks focus on easierto-segment regions first, and then gradually consider harder ones.
+                                This is achieved via an end-to-end differentiable loss in the form
+                                of a generalized Jensen Shannon Divergence (JSD).
+                                </p>Moreover,
+                                to encourage predictions from different networks to be both
+                                consistent and confident, we enhance this generalized JSD loss
+                                with an uncertainty regularizer based on entropy. The robustness
+                                of individual models is further improved using a self-ensembling
+                                loss that enforces their prediction to be consistent across different
+                                training iterations.
+                                </p>Existing methods do not employ a self-paced learning strategy and
+                                therefore are susceptible to incorrect predictions in initial
+                                stages of training.
+                                </p>Existing methods do not exploit self-consistency
+                                within the model. While co-training promotes consistency across different
+                                models, it has also been shown that imposing consistency
+                                between the predictions of a single model at different training
+                                iterations can also improve its robustness in a semi-supervised
+                                setting [27]. Based on this idea, we propose to incorporate
+                                a self-ensembling strategy in our co-training method, where
+                                we replace each segmentation model f
+                                k by two models: a
+                                Teacher f1 and a Student model f2
+                                . The two models share
+                                the same architecture, however the Teacher’s parameters are a
+                                temporal ensembling of the student’s across different training
+                                
+                            <p> <span class="label label-default">comment</span> .    
+
+                        <li><span class="label label-success">11-14 Nov, 2020</span><a href="https://arxiv.org/pdf/2007.06823.pdf">
+                            "Hands-on Bayesian Neural Networks - a Tutorial for Deep
+                            Learning Users" </a> </li>
                             <p> <span class="label label-default">extensive/intensive</span> 
-                                </p>
+                                </p>Bayesian statistics
+                                offer a formalism to understand and quantify the uncertainty associated with deep neural networks predictions.
     
+                                </p>The point estimate approach is relatively easy (with modern algorithms and software packages),
+                                but tends to lack explainability and might generalize in unforeseen and overconfident ways on
+                                out-of-training-distribution data points [27, 63]. This property, and inability of ANNs to answer
+                                “I don’t know" is problematic in fields where their predictions have critical implications, such
+                                as trading, autonomous driving or medical applications. 
+                                </p>Stochastic neural networks are a type of ANNs built by introducing stochastic components
+                                into the network (by giving the network stochastic activation: Fig. 3b or stochastic weights: Fig. 3c)
+                                to simulate multiple possible models θ with their associated probability distribution p(θ). They can,
+                                therefore, be considered as a special case of ensemble learning [99], where instead of training
+                                one single model, a set of models is trained and their predictions are aggregated.
                                 </p>
+                                </p>
+                                </p>
+                                </p>
+
+                            <p> <span class="label label-default">comment</span> .   
+ 
+                        <li><span class="label label-success">15 Nov, 2020</span><a href="https://medium.com/ai-in-plain-english/graph-convolutional-networks-gcn-baf337d5cb6b">
+                            "Graph Convolutional Networks (GCN)" </a> </li>
+                            <p> <span class="label label-default">extensive/intensive</span> 
+                                </p>Tasks on Graphs:
+                                Node classification: Predict a type of a given node; 
+                                Link prediction: Predict whether two nodes are linked; 
+                                Community detection: Identify densely linked clusters of nodes; 
+                                Network similarity: How similar are two (sub)networks.
+
+                                <span><img border="0" width="800" src="gcn_example.png"/></a></span>
+    
+                                </p>The general idea of GCN: For each node, we get the feature information from all its neighbors and of course, 
+                                the feature of itself. Assume we use the average() function. We will do the same for all the nodes. Finally, 
+                                we feed these average values into a neural network.
+                                </p>Instead of the sum() function, we need to take the average, or even better, the weighted average of neighbors’ feature vectors. 
+                                <b>Why don’t we use the sum() function?</b> The reason is that when using the sum() function, high-degree nodes are likely to have huge v vectors, 
+                                while low-degree nodes tend to get small aggregate vectors, which may later cause exploding or vanishing gradients (e.g., when using sigmoid). 
+                                Besides, Neural networks seem to be sensitive to the scale of input data. Thus, we need to normalize these vectors to get rid of the potential issues.
+                                </p>For <b>matrix scaling</b>, we usually multiply the matrix by a diagonal matrix. In this case, we want to take the average of the sum feature, 
+                                or mathematically, to scale the sum vector matrix ÃX according to the node degrees. The gut feeling tells us that our diagonal matrix used to scale
+                                here is something related to the Degree matrix 
+                                </p>The number of layers is the farthest distance that node features can travel. For example, with 1 layer GCN, each node can only get the information
+                                from its neighbors. The gathering information process takes place independently, at the same time for all the nodes.
+                                </p>We can stack more layers to make GCNs deeper. Consider residual connections for deep GCNs. Normally, we go for 2 or 3-layer GCN.
+                                </p>GCNs are used for semi-supervised learning on the graph.
+                                </p>GCNs use both node features and the structure for the training. 
+                                </p>The main idea of the GCN is to take the weighted average of all neighbors’ node features (including itself): Lower-degree nodes get larger weights. Then, we pass the resulting feature vectors through a neural network for training.
+                                </p>Maths Note: When seeing a diagonal matrix, think of matrix scaling.       
+
+                            <p> <span class="label label-default">comment</span> GCN should have more applications.   
+                                 
+                        <li><span class="label label-success">16 Nov, 2020</span><a href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Wang_Non-Local_Neural_Networks_CVPR_2018_paper.pdf">
+                            "Non-local Neural Networks" </a> </li>
+                            <p> <span class="label label-default">extensive/intensive</span> 
+                                </p>Both convolutional and recurrent operations are building
+                                blocks that process one local neighborhood at a time.
+    
+                                </p>In this paper, we present non-local operations as a generic
+                                family of building blocks for capturing long-range dependencies.
+                                </p>Inspired by the classical non-local means method
+                                [4] in computer vision, our non-local operation computes
+                                the response at a position as a weighted sum of the features
+                                at all positions. This building block can be plugged into
+                                many computer vision architectures.</p>
+
+                                <span><img border="0" width="800" src="nlnn_illustration.png"/></a></span>
+                            <p> <span class="label label-default">comment</span> 
+                                 
+                        <li><span class="label label-success">17-19 Nov, 2020</span><a href="https://arxiv.org/pdf/2002.07703.pdf">
+                            "Deep Learning in Medical Ultrasound Image Segmentation: a Review" </a> </li>
+                            <p> <span class="label label-default">extensive</span> 
+                                </p>Medical ultrasound imaging provides the inside structure of
+                                the human body with high-frequency sound waves which is
+                                safe, painless, noninvasive, non-ionized and real-time. Ultrasound imaging as compared to other imaging tools, such as
+                                Computed Tomography (CT) and Magnetic Resonance Imaging (MRI), is cheaper, portable and more prevalent. 
+    
+                                </p>Several drawbacks
+                                such as <b>the necessity of a skilled operator</b>, <b>the difficulty of
+                                distinguishing imaging structures between tissue and gas</b>, and
+                                <b>the limitation of the field of view</b> bring more challenges on
+                                image processing algorithms study。
+                                </p>Deep-learning-based medical ultrasound image segmentation
+                                technology plays an essential and fundamental role in the
+                                analysis of biomedical images and significantly contributes
+                                to classification, recognition, visualization, 3D reconstruction
+                                and image-guided intervention, which can provide reliable
+                                guidance for doctors in clinical diagnosis. 
+                                </p>Potential Directions
+                                </p>These approaches request high
+                                cost in labeling data.
+                                </p>A lot of portable ultrasound hardware, thus lightweight.
+                                </p>The <b>heterogeneous appearance of the organ is one of the
+                                biggest challenges in ultrasound image segmentation</b>. The
+                                pattern of ultrasound images can be different varies between
+                                the organ location, depth, neighboring tissues, hardness even
+                                the operators. Several non-machine learning approaches such
+                                as deformable models, watershed, region grow and graphbased methods are essential for general ultrasound image segmentation tasks. 
+                                <b>The study of deep learning can be potentially
+                                inspired by traditional methods</b>, and the evaluation should be
+                                proved in general segmentation tasks.
+                                </p>In clinical medical imaging, there are a number of multiple
+                                modalities methods such as MRI, X-ray, PET and CT. The
+                                medical imaging methods for diagnostic are adopted depending on different cases. Ultrasound image is regarded as the
+                                first-line method because of its low cost and non-radiation.
+                                MRI or CT is time consuming, costly but rich in texture. <b>To solve the processing work for multi resources, cross-modal
+                                transfer learning can be a potential research direction</b>.
+                                </p>On the other hand, some small organ structures may be obscured by large human organs, so <b>restoring
+                                obstructed lesions to reduce missed diagnosis is a challenge</b>.
+                                </p><b>Early prediction of diseases is the potential research direction in the future. The survival rate of patients
+                                will be greatly improved, if the diseases can be detected earlier, but all of these deep-learning-based models are trained
+                                on the datasets labeled by doctors, the features failed to be
+                                labeled by doctors can not be learned by the training models.
+                                To this end, training models with the labeled data and then
+                                expanding knowledge to make advance diagnosis prediction
+                                is of great significance in the future</b>.
+                            <p> <span class="label label-default">comment</span> .   
+                                                                         
+                        <li><span class="label label-success">20 Nov, 2020</span><a href="https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/readings/MIT18_05S14_Reading20.pdf">
+                            "Comparison of frequentist and Bayesian inference" </a> </li>
+                            <p> <span class="label label-default">extensive</span> 
+                                </p>In most experiments, the prior probabilities on hypotheses are not known. In this case, our
+                                recourse is the art of statistical inference: we either make up a prior (Bayesian) or do our
+                                best using only the likelihood (frequentist).
+    
+                                </p>The Bayesian school models uncertainty by a probability distribution over hypotheses.
+                                One’s ability to make inferences depends on one’s degree of confidence in the chosen prior,
+                                and the robustness of the findings to alternate prior distributions may be relevant and
+                                important.
+                                </p>The frequentist school only uses conditional distributions of data given specific hypotheses.
+                                The presumption is that some hypothesis (parameter specifying the conditional distribution
+                                of the data) is true and that the observed data is sampled from that distribution. In
+                                particular, the frequentist approach does not depend on a subjective prior that may vary
+                                from one investigator to another.
+                                </p>Frequentist measures like p-values and confidence intervals continue to dominate research,
+                                especially in the life sciences. However, in the current era of powerful computers and
+                                big data, Bayesian methods have undergone an enormous renaissance in fields like machine learning and genetics. There are now a number of large, ongoing clinical trials using
+                                Bayesian protocols, something that would have been hard to imagine a generation ago.
+                                While professional divisions remain, the consensus forming among top statisticians is that
+                                the most effective approaches to complex problems often draw on the best insights from
+                                both schools working in concert.
+                                
                             <p> <span class="label label-default">comment</span> .                                                 
-                    
+                        <li><span class="label label-success">21 Nov, 2020</span><a href="https://arxiv.org/pdf/1712.05319.pdf">
+                            “Deep CNN ensembles and suggestive annotations for infant brain MRI
+                            segmentation" </a> </li>
+                            <p> <span class="label label-default">extensive</span> 
+                                </p>We demonstrate
+                                that the ensemble agreement is highly correlated with the segmentation errors.
+
+                                </p>The proposed network addresses the problem of low contrast by using multiple image modalities as inputs.
+                                </p>We propose a novel architecture called SemiDenseNet, which connects all convolutional layers directly to the end of the network. This semidense architecture allows the efficient propagation of gradients during training, while limiting
+                                the number of trainable parameters. Our network requires one order of magnitude less parameters than popular medical image segmentation networks such as 3D U-Net.
+                                </p>The resolution
+                                    of the input image is recovered by adding deconvolution (or transpose convolution) layers at the end of
+                                    the network. Unfortunately, this technique may still give coarse-looking segmentations. For instance,
+                                    thin structures can disappear after pooling, and may not be recovered in the up-sampling path. To
+                                    avoid this effect, the proposed FCNN architecture <b>preserves resolution by avoiding down-sampling
+                                    operations entirely</b>.
+                                </p>To evaluate the relationship between ensemble confidence and error,
+                                we separated confidence values in two groups using an agreement threshold of 60%: low confidence, where agreement among the ensemble’s CNNs equal to or less than 60% (no more than 6 CNNs agree),
+                                and high confidence, represented by agreement values greater than 60% (at least 7 CNNs agree).</p>
+
+                        <p> <span class="label label-default">comment</span> NA.                           
+                        <li><span class="label label-success">22 Nov, 2020</span><a href="https://www.sciencedirect.com/science/article/pii/S2590005619300049">
+                            ”A review: Deep learning for medical image segmentation using multi-modality fusion" </a> </li>
+                            <p> <span class="label label-default">extensive</span> 
+                                </p>Functional images, such as PET, lack anatomical characterization, while can provide quantitative metabolic and functional information about diseases. 
+                                </p>MRI modality can provide complementary information due to its dependence on variable acquisition parameters, such as T1-weighted (T1), contrast-enhanced T1-weighted (T1c), T2-weighted (T2) and Fluid attenuation inversion recovery (Flair) images. 
+                                T2 and Flair are suitable to detect the tumor with peritumoral edema, while T1 and T1c to detect the tumor core without peritumoral edema. 
+
+                                </p>Applying multi-modal images can reduce the information uncertainty and improve clinical diagnosis and segmentation accuracy.
+                                </p>The earlier fusion is simple and most works use the fusion strategy to do the segmentation, it focuses on the subsequent complex segmentation
+                                 network architecture designs, but it doesn’t consider the relationship between different modalities and doesn’t analyze how to fuse the different 
+                                 feature information to improve the segmentation performance. However, the later fusion pays more attention on the fusion problem, because each 
+                                 modality is employed as an input of one network which can learn complex and complementary feature information of each modality. 
+                                 
+                                </p>In general, compared to the earlier fusion, the later fusion can achieve better segmentation performance if the fusion method is ffective enough. And the selection of fusion method depends on the specific problem.
+                                </p>The isolated segmentation labels with small size are prone to artefacts and the largest volume are usually kept in the final segmentation. 
+                                </p> <b>Input-level fusion network</b>: By using the input-level fusion strategy, the rich feature information from different modalities can be fully exploited in all layers, from the first layer to the last one. 
+                                This kind of fusion uses usually four techniques, multi-task segmentation, multi-view segmentation, multi-scale segmentation and GAN-based segmentation.
+                                
+                                </p>Based on curriculum learning [58], which means gradually increasing the difficulty of training tasks, they applied an effective strategy to improve the convergence quality of the model by training the first task only
+                                 until the loss curve tends to flatten, then the first data and the second data are concatenated along the batch dimension as the input for the second task. The operation of the third task is like the second
+                                  one. In this way, not only the model parameters but also the training data are transferred from an easier task to a more difficult task. 
+                                </p>Qin et al. [43] proposed the autofocus convolutional layer to enhance the abilities of neural networks by using multi-scale processing. 
+                                  After integrating the multi-modal images in the input space, they applied an autofocus
+                                   convolutional layer by using multiple convolutional layers with different dilation rates to change the size of the receptive field. Autofocus convolutional layer can indicate the importance of each scale when processing different locations of an image. 
+                                </p> <b>Layer-level fusion</b>: single or two modal images are used as the single input to train individual segmentation network, and then these learned individual 
+                                feature representations will be fused in the layers of the network, finally the fused result will be fed to the decision layer to obtain the final segmentation result. 
+                                in the layer-level fusion segmentation network, <b>DenseNets are the commonly used networks which bring the three following benefits</b>. First, direct connections between all 
+                                layers help to improve the flow of information and gradients through the entire network, alleviating the problem of vanishing gradient. Second, short paths to all the feature 
+                                maps in the architecture introduce implicit deep supervision. Third, dense connections have a regularizing effect, which reduces the risk of over-fitting 
+                                on tasks with smaller training sets. Therefore, DenseNets allow to improved effectiveness and efficiency in the layer-level fusion segmentation network.
+                                </p>The later fusion can achieve better performance, because each modality is employed as input of one network which can learn complex and complementary feature information compared to input-level fusion network.
+
+
+
+
+                        <p> <span class="label label-default">comment</span> .                                  
+                        
+                        <li><span class="label label-success">1 Nov, 2020</span><a href="">
+                            " </a> </li>
+                            <p> <span class="label label-default">extensive</span> 
+                                </p>
+
+                                </p>
+                        <p> <span class="label label-default">comment</span> .    
+
                     </div>
                 </div>
             </section>
