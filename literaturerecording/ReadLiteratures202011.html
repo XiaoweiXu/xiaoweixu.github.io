@@ -614,15 +614,203 @@
 
                         <p> <span class="label label-default">comment</span> .                                  
                         
-                        <li><span class="label label-success">1 Nov, 2020</span><a href="">
-                            " </a> </li>
+                        <li><span class="label label-success">23 Nov, 2020</span><a href="https://arxiv.org/pdf/2011.09364v1.pdf">
+                            "Self-Gradient Networks" </a> </li>
                             <p> <span class="label label-default">extensive</span> 
-                                </p>
+                                </p>In this study,
+                                we hypothesize that part of the reason for the incredible effectiveness of adversarial attacks is their ability to implicitly tap
+                                into and exploit the gradient flow of a deep neural network.
+                                This innate ability to exploit gradient flow makes defending
+                                against such attacks quite challenging.
 
+                                </p>Motivated by this hypothesis we argue that if a deep neural network architecture
+                                can explicitly tap into its own gradient flow during the training, it can boost its defense capability significantly. Inspired
+                                by this fact, we introduce the concept of self-gradient networks, a novel deep neural network architecture designed to
+                                be more robust against adversarial perturbations. Gradient
+                                flow information is leveraged within self-gradient networks
+                                to achieve greater perturbation stability beyond what can be
+                                achieved in the standard training process.
+                        <p> <span class="label label-default">comment</span> .    
+
+                        <li><span class="label label-success">23 Nov, 2020</span><a href="https://arxiv.org/pdf/2011.09608v1.pdf">
+                            "Bidirectional RNN-based Few Shot Learning for 3D Medical Image Segmentation" </a> </li>
+                            <p> <span class="label label-default">extensive</span> 
+                                </p>Few shot learning: to learn generalizable knowledge across
+                                several related tasks that can be used to predict the label of a
+                                query sample with support data and labels.
+                                </p>Zero-Shot Learning: the target is to classify unseen classes without a single training example. Can you classify an 
+                                object without ever seeing it? Yes, you can if you have adequate information about its appearance, properties, and functionality. 
+                                Think back to how you came to understand the world as a kid. You could spot Mars in the night sky after reading about its color and where it would be that night
+                                </p>One-shot learning: we only have a single example of each class.
+
+                                <span><img border="0" width="800" src="fewshot_2020.png"/></a></span>
+
+                                </p>However, most few shot methods that focus
+                                on natural 2D images are not directly applicable for 3D image based analysis since such models are prone to overfitting
+                                when trained with few observations.
+                                </p>In this paper, we propose a novel few shot segmentation
+                                framework that models the relation between support and
+                                query data from other few shot tasks alongside 3D structural
+                                information between adjacent slices. We integrate a bidirectional gated recurrent unit (GRU) between the encoder and
+                                decoder of a 2D few shot segmentation model for efficient
+                                representation learning. In this way, encoded features of both
+                                the support set and adjacent slices capture key characteristics to predict the segmentation of a query image in the
+                                decoding layers
+                         
+                        <p> <span class="label label-default">comment</span> .    
+
+                        <li><span class="label label-success">24 Nov, 2020</span><a href="https://arxiv.org/pdf/1709.03410.pdf">
+                            "One-Shot Learning for Semantic
+                            Segmentation“ </a> </li>
+                            <p> <span class="label label-default">extensive</span> 
+                                </p>We train a network that, given a small set of annotated images, produces parameters
+                                for a Fully Convolutional Network (FCN). We use this FCN to perform dense pixel-level
+                                prediction on a test image for the new semantic class.
+
+                                <span><img border="0" width="800" src="oneshot_2017.png"/></a></span>
+
+                                </p>We take inspiration from few-shot learning and propose a novel two-branched approach
+                                to one-shot semantic image segmentation. The first branch takes the labeled image as input
+                                and produces a vector of parameters as output. The second branch takes these parameters as
+                                well as a new image as input and produces a segmentation mask of the image for the new
+                                class as output. This is illustrated in Figure 1. Unlike the fine tuning approach to one-shot
+                                learning, which may require many iterations of SGD to learn parameters for the segmentation
+                                network, the first branch of our network computes parameters in a single forward pass. This
+                                has several advantages: the single forward pass makes our method fast; our approach for
+                                one-shot learning is fully differentiable, allowing the branch to be jointly trained with the
+                                segmentation branch of our network; finally, the number of parameters θ is independent of
+                                the size of the image, so our method does not have problems in scaling.
+                        <p> <span class="label label-default">comment</span> .   
+
+                        <li><span class="label label-success">25 Nov, 2020</span><a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_PANet_Few-Shot_Image_Semantic_Segmentation_With_Prototype_Alignment_ICCV_2019_paper.pdf">
+                            "PANet: Few-Shot Image Semantic Segmentation with Prototype Alignment” </a> </li>
+                            <p> <span class="label label-default">extensive</span> 
+                                </p>rning perspective and present PANet,
+                                a novel prototype alignment network to better utilize the
+                                information of the support set. Our PANet learns classspecific prototype representations from a few support images within an embedding space and then performs segmentation over the query images through matching each pixel to
+                                the learned prototypes. 
                                 </p>
                         <p> <span class="label label-default">comment</span> .    
 
-                    </div>
+                        <li><span class="label label-success">26 Nov, 2020</span><a href="https://arxiv.org/pdf/2011.09796v1.pdf">
+                            "Unifying Instance and Panoptic Segmentation with
+                            Dynamic Rank-1 Convolutions” </a> </li>
+                            <p> <span class="label label-default">extensive</span> 
+                                </p>In this paper, we
+                                demonstrate that adding a single classification layer for semantic segmentation, fully-convolutional instance segmentation networks can achieve state-of-the-art panoptic segmentation quality. This is made possible by our novel
+                                dynamic rank-1 convolution (DR1Conv), a novel dynamic
+                                module that can efficiently merge high-level context information with low-level detailed features which is beneficial
+                                for both semantic and instance segmentation.
+                            </p>Fully-convolutional instance segmentation models can
+                                predict high-resolution masks efficiently because the features are shared across all predictions。
+                            </p>Similarly in semantic segmentation, researchers have
+                            found that incorporating higher level context information
+                            is crucial for the performance. 
+                            </p>These closely related structures indicate that there is a
+                            possibility to unify the context module for semantic and
+                            instance segmentation. </p>
+                                <span><img border="0" width="800" src="Dynamic Rank-1 Convolutions.png"/></a></span>
+
+                        <p> <span class ="label label-default">comment</span> .    
+
+                        <li><span class="label label-success">27 Nov, 2020</span><a href="https://arxiv.org/pdf/2011.09763v1.pdf">
+                            "Attention-Based Transformers for Instance
+                            Segmentation of Cells in Microstructures” </a> </li>
+                            <p> <span class="label label-default">extensive</span> 
+                                </p>Attention-based
+                                transformers are state-of-the-art in a range of deep learning
+                                fields. They have recently been proposed for segmentation tasks
+                                where they are beginning to outperforming other methods.
+                                We present a novel attention-based cell detection transformer
+                                (Cell-DETR) for direct end-to-end instance segmentation. While
+                                the segmentation performance is on par with a state-of-the-art
+                                instance segmentation method, Cell-DETR is simpler and faster. 
+                                
+                                </p>The transformer encoder determines the attention between
+                                image features. The transformer decoder predicts the attention
+                                regions for each of the N = 20 object queries. They are
+                                based on the DETR architecture [8].
+
+                                
+                                </p><span><img border="0" width="1200" src="attention-detection_segmentation.png"/></a></span>
+                        <p> <span class="label label-default">comment</span> .    
+                
+                        <li><span class="label label-success">28 Nov, 2020</span><a href="http://gr.xjtu.edu.cn/c/document_library/get_file?folderId=1401787&name=DLFE-81206.pdf">
+                            "Deep Fusion Net for Multi-Atlas Segmentation:
+                            Application to Cardiac MR Images” </a> </li>
+                            <p> <span class="label label-default">extensive</span> 
+                                </p>Atlas selection and label fusion are two major challenges in
+                                multi-atlas segmentation. In this paper, we propose a novel deep fusion
+                                net for better solving these challenges. Deep fusion net is a deep architecture by concatenating a feature extraction subnet and a non-local patchbased label fusion (NL-PLF) subnet in a single network. This network
+                                is trained end-to-end for automatically learning deep features achieving
+                                optimal performance in a NL-PLF framework.
+
+                                </p>Atlas selection and label fusion are two major steps in multi-atlas segmentation. Atlas selection is to select a few most relevant atlases for a target image, so
+                                as to raise computational efficiency or improve final segmentation accuracy. It
+                                relies on a ranking of atlases, and several similarity measures between atlas and
+                                target image have been proposed [4], [9]. Label fusion is to predict the target label
+                                by fusing the warped atlas labels, and a key problem is the accurate computation
+                                of fusion weights for atlas pixels or patches. Non-local patch-based label fusion
+                                (NL-PLF) approach [1, 2] has been the state of the art in MAS, which uses all
+                                the patches in a search region around a pixel of interest for label fusion.
+                                </p>the idea of non-local patch-based label fusion scheme. For
+                                each pixel p in a target image T, all the atlas labels in non-local search window
+                                around p in the warped atlases {Xi}Ki=1 are fused to estimate the target pixel
+                                label. In deep fusion net, fusion weights are computed using the deep features
+                                extracted by the feature extraction subnet.
+                                </p>Directly computing fusion weights using Eqn.(1) is fairly complex in gradient
+                                computation, because it is highly non-linear and depends on the pairwise feature
+                                distances in search windows. Hence, we decompose this complex operation into
+                                successive simple operations modeled as shift layer, distance layer and weight
+                                layer. Each operation and the gradient of its output w.r.t input can be efficiently
+                                computed using GPU in network training.
+                        <p> <span class="label label-default">comment</span> .         
+
+                        <li><span class="label label-success">29 Nov, 2020</span><a href="https://hal.inria.fr/hal-01557417/document">
+                            "SVF-Net: Learning Deformable Image
+                            Registration Using Shape Matching” </a> </li>
+                            <p> <span class="label label-default">extensive</span> 
+                                </p>In this paper, we propose an innovative approach for registration based on the deterministic prediction of the parameters from both
+                                images instead of the optimization of a energy criteria. The method relies
+                                on a fully convolutional network whose architecture consists of contracting layers to detect relevant features and a symmetric expanding path
+                                that matches them together and outputs the transformation parametrization
+                                </p>From a database of N images In where the region of interests have been
+                                segmented, we consider the segmentations as surfaces Sn and we register these
+                                surfaces to a common template T (chosen as one of the segmented shape of
+                                our dataset) giving us a deformation ϕn mapping the template to each of the
+                                segmented shape. To do so, the framework of currents [5] provides an elegant
+                                mathematical method in order to treat the problem as true surface matching
+                                without the point correspondence issue. Each point pk of the template T can
+                                then be though as a landmark which is mapped with the deformation ϕn(pk)
+                                into each of the surface meshes Sn of our database. Then, for all pair of images
+                                (Ii, Ij) the pair (ϕi(pk), ϕj (pk)) defines a point correspondence.
+                                </p></p></p>
+                            </p><span><img border="0" width="1200" src="atlas_unet.png"/></a></span>
+
+                        <p> <span class="label label-default">comment</span> .                          
+                            
+                        <li><span class="label label-success">30 Nov, 2020</span><a href="https://www.researchgate.net/publication/335578068_A_Survey_of_Deep-Learning_Applications_in_Ultrasound_Artificial_Intelligence-Powered_Ultrasound_for_Improving_Clinical_Workflow">
+                            "A Survey of Deep-Learning Applications in
+                            Ultrasound: Artificial Intelligence–Powered
+                            Ultrasound for Improving Clinical Workflow” </a> </li>
+                            <p> <span class="label label-default">extensive</span> 
+                                </p>Ultrasound is the most commonly used imaging modality in clinical practice because
+                                 it is a nonionizing, low-cost, and portable point-of- care imaging tool that provides real-time images. 
+                                </p>AI-Powered Detection, Segmentation, and Diagnosis in Ultrasound.
+                                </p>Main application: Thyroid Nodule Detection and Classification, Thyroid nodules are extremely common lesions and are found in 50% of the adult population on the basis of autopsy studies
+                                </p>Main application: Breast Lesion Detection and Classification, Breast cancer is the most frequent cancer among women and also the leading cause of cancer-related deaths among women.
+                                </p>Main application: Liver Lesion Classification, Ultrasound is the preferred imaging modality to evaluate liver diseases because it provides information about the appearance of the liver and portal venous blood flow.
+                                </p>Other applications: fetal ultrasound plane classification, stomach bubble and umbilical vein evalation, 
+                                atherosclerotic plaque components (including lipid core, fibrous tissue, and calcified tissue) classification, spine-level vertebra identification, anatomic location and plane of abdominal ultrasound image classification。
+                                </p>Discussion and Outlook：AI-powered ultrasound is still far behind the progress in AI-powered CT and MRI because of high intra- and inter-reader variability in ultrasound image acquisition and interpretation.
+                                </p>Discussion and Outlook：Most of the DL applications in ultrasound were trained and evaluated on limited, single data sets obtained 
+                                from a single medical center and a single ultrasound device. 
+                                </p>To build trust in an AI system designed for disease prediction from medical images, we must build trans- parent models that explain how and what they predict.
+                                </p>AI-powered ultrasound systems that evaluate multimodal data, guide sonographers, and pro- vide objective qualifications (eg, 
+                                standard view of an or- gan and acceptable image quality), measurements, and diagnosis will not only assist with decision making but also improve ultrasound clinical workflow and reduce health care costs.
+                        <p> <span class="label label-default">comment</span> .  
+
+                        </div>
                 </div>
             </section>
 
