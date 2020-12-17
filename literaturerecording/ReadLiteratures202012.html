@@ -220,8 +220,119 @@
                         <p> <span class="label label-default">comment</span>  
 
                             
+                        <li><span class="label label-success">8 Dec, 2020</span><a href="https://link.springer.com/chapter/10.1007/978-3-030-59710-8_1">"Attention, Suggestion and Annotation: A Deep Active Learning Framework for Biomedical Image Segmentation " </a> </li>
+                            <p> <span class="label label-default">extensive</span> 
+                                </p>We propose a deep active learning framework that combines the attention gated fully convolutional network (ag-FCN) and the distribution discrepancy based active learning algorithm (dd-AL) to significantly reduce the annota- tion effort by iteratively annotating the most informative samples to train the ag-FCN for the better segmentation performance.
+                                </p>In addition to outperforming the current best annotation suggestion algorithm [10] on biomedical image segmentation in terms of accuracy (Table 1), our framework is more efficient
+                                                            </p>
+                            <p> <span class="label label-default">comment</span> Actually I think this paper has not too much improvement compared with the paper by Yang Lin.
 
+                        <li><span class="label label-success">9 Dec, 2020</span><a href="https://link.springer.com/chapter/10.1007/978-3-030-59710-8_12">"Feature Preserving Smoothing Provides Simple and Effective Data Augmentation for Medical Image Segmentation" </a> </li>
+                        <p> <span class="label label-default">extensive</span> 
+                            </p>Recent work suggests that CNNs for image classification suffer from a bias towards texture, and that reducing it can increase the network’s accuracy.
+                            </p>We hypothesize that CNNs for medical image segmentation might suffer from a similar bias.
+                            
+                            </p>We propose to reduce it by augmenting the training data with feature preserving smoothing, which reduces noise and high-frequency textural features, while preserving semantically meaningful boundaries.
+                            </p>We mainly focus on Total Variation based denoising [20], which we consider to be a natural match for augmentation in image segmentation problems due to its piecewise constant, segmentation-like output. 
+                        <p> <span class="label label-default">comment</span>  
 
+                                    
+                        <li><span class="label label-success">10 Dec, 2020</span><a href="https://link.springer.com/chapter/10.1007/978-3-030-59710-8_18">"Learning to Segment When Experts Disagree " </a> </li>
+                        <p> <span class="label label-default">extensive</span> 
+                            </p>The predictive performance of these algorithms depend on the quality of labels, especially in med- ical image domain, where both the annotation cost and inter-observer variability are high.
+                            </p>In a typical annotation collection process, differ- ent clinical experts provide their estimates of the “true” segmentation labels under the influence of their levels of expertise and biases. Treating these noisy labels blindly as the ground truth can adversely affect the performance of supervised segmentation models.
+                            
+                            </p>In this work, we present a neural network architecture for jointly learning, from noisy observations alone, both the reliability of individual annotators and the true segmentation label distributions. The separation of the annotators’ characteristics and true segmentation label is achieved by encouraging the estimated annotators to be maximally unreliable while achieving high fidelity with the training data.
+                        </p>https://github.com/UCLBrain/MSLS.
+                        <p> <span class="label label-default">comment</span>  Interesting work for multiple annotations for each sample.
+
+                                    
+                        <li><span class="label label-success">11 Dec, 2020</span><a href="https://arxiv.org/abs/1911.08777">"High-Order Attention Networks for Medical Image Segmentation" </a> </li>
+                        <p> <span class="label label-default">extensive</span> 
+                            </p>In order to capture global context information, we propose High-order Attention (HA), a novel attention module with adaptive receptive fields and dynamic weights.
+                            </p>It is ideal that the inner-class similarity S(a0, a1) is large and the inter-class sim- ilarity S(a, b) closes to zero. But there are many factors confuse CNNs to
+                             extract low-quality features, such as the similarity between the organ and background and the cross-domain input. Consequently, the inter-class similarity S(a,b)
+                              will be relatively large and cause that each pixel aggregates many context information from other classes. Thus we propose an attention propagation block to
+                               reduce the inter-class similarity S(a, b) and enlarge the inner-class similarity S(a0, a1).
+                            
+                            </p>Notably, the adaptive receptive filed and dynamic weights are beneficial to the medical objects with variant appearance, and capturing contexts at high-order is robust to the low-quality features.
+                        </p>
+                        <p> <span class="label label-default">comment</span>  
+
+                                    
+                        <li><span class="label label-success">12 Dec, 2020</span><a href="pdf">"Automatic Data Augmentation for 3D Medical Image Segmentation" </a> </li>
+                        <p> <span class="label label-default">extensive</span> 
+                            </p>Dataaugmentationisaneffectiveanduniversaltechniquefor improving generalization performance of deep neural networks.
+                            </p>It could enrich diversity of training samples that is essential in medical image segmentation tasks because 1) the scale of medical image dataset is typi- cally smaller, which may increase the risk of overfitting; 2) the shape and modality of different objects such as organs or tumors are unique, thus requiring customized data augmentation policy. 
+                            
+                            </p>However, most data aug- mentation implementations are hand-crafted and suboptimal in medical image processing. To fully exploit the potential of data augmentation, we propose an efficient algorithm to automatically search for the optimal augmentation strategies. 
+                        </p>We formulate the coupled optimization w.r.t. network weights and augmentation parameters into a differentiable form by means of stochastic relaxation. This formulation allows us to apply alternative gradient-based methods to solve it, i.e. stochastic natural gradient method with adaptive step-size. 
+                        <p> <span class="label label-default">comment</span>  
+
+                                    
+                        <li><span class="label label-success">13 Dec, 2020</span><a href="pdf">"Dual-Teacher: Integrating Intra-domain and Inter-domain Teachers
+                            for Annotation-Efficient Cardiac Segmentation" </a> </li>
+                        <p> <span class="label label-default">extensive</span> 
+                            </p>Medical image annotations are prohibitively time-consuming and expensive to obtain. To alleviate annotation scarcity, many approaches have been developed to efficiently utilize extra information, e.g., semi-supervised learning further exploring plentiful unlabeled data, domain adaptation including multi-modality learning and unsupervised domain adaptation resorting to the prior knowledge from additional modality. 
+                            </p>In this paper, we aim to investigate the feasibility of simulta- neously leveraging abundant unlabeled data and well-established cross- modality data for annotation-efficient medical image segmentation. To this end, we propose a novel semi-supervised domain adaptation app- roach, namely Dual-Teacher, where the student model not only learns from labeled target data (e.g., CT), but also explores unlabeled target data and labeled source data (e.g., MR) by two teacher models. 
+                            
+                            </p>Specif- ically, the student model learns the knowledge of unlabeled target data from intra-domain teacher by encouraging prediction consistency, as well as the shape priors embedded in labeled source data from inter-domain teacher via knowledge distillation.
+                        </p>
+                        <p> <span class="label label-default">comment</span>  
+
+                                    
+                        <li><span class="label label-success">14 Dec, 2020</span><a href="pdf">"Memory-Efficient Automatic Kidney and Tumor Segmentation Based
+                            on Non-local Context Guided 3D U-Net" </a> </li>
+                        <p> <span class="label label-default">extensive</span> 
+                            </p>Different from the traditional 3D U-Net, we implement a lightweight 3D U-Net with depthwise separable convolution (DSC), which can not only avoid over fitting but also improve the generalization ability.
+                            </p>By encoding long range pixel- wise dependencies in features and recalibrating the weight of channels, we also develop a non-local context guided mechanism to capture global context and fully utilize the long range dependencies during the fea- ture selection. 
+                            
+                        <p> <span class="label label-default">comment</span>  
+
+                                        
+                        <li><span class="label label-success">15 Dec, 2020</span><a href="https://link.springer.com/chapter/10.1007/978-3-030-59719-1_32">"Deep Active Contour Network for Medical Image Segmentation" </a> </li>
+                        <p> <span class="label label-default">extensive</span> 
+                            </p>Recently, convolutional neural networks (CNNs) have achieved tremendous success in this task, however, it performs poorly at recognizing precise object boundary due to the information loss in the successive downsampling layers.
+                            </p>To overcome this problem, we integrate an active contour model (convexified Chan-Vese model) into the CNN structure (DenseUNet), forming a new framework called deep active contour network (DACN). Instead of manual setting, DACN applies a CNN backbone to learn the initialization and parameters of active con- tour model (ACM) automatically.
+                            
+                            </p>
+                        <p> <span class="label label-default">comment</span>  
+
+                        <li><span class="label label-success">15 Dec, 2020</span><a href="https://link.springer.com/chapter/10.1007/978-3-030-59719-1_59">"Graph Reasoning and Shape Constraints for Cardiac Segmentation in Congenital Heart Defect" </a> </li>
+                            <p> <span class="label label-default">extensive</span> 
+                                </p>We propose a CHD segmentation method based on graph reasoning and shape constraints in the study. Graph reasoning is used to capture global relations, through projecting a set of features into the interaction space and then makes relational reasoning. After reasoning, relation-aware fea- tures are mapped back to the original feature map. 
+                                </p><b>Code: https://github.com/liut969/CHD-Seg.</b>
+                                
+                            </p><span><img border="0" width="1200" src="dataset_chd_seg.png"/></a></span>
+
+                            <p> <span class="label label-default">comment</span>  The paper used our code. The improvement is good, but still low compared with clinical usage.
+                            
+                        <li><span class="label label-success">16 Dec, 2020</span><a href="https://arxiv.org/abs/2001.07645">"SAUNet: Shape Attentive U-Net for Interpretable Medical Image Segmentation" </a> </li>
+                        <p> <span class="label label-default">extensive</span> 
+                            </p><b>Code:  https://github.com/sunjesse/shape-attentive-unet</b>
+                            </p>More recently, there has been a shift to utilizing deep learning and fully convolutional neural networks (CNNs) to perform image seg- mentation that has yielded state-of-the-art results in many public bench- mark datasets.
+                            
+                            </p>Despite the progress of deep learning in medical image segmentation, standard CNNs are still not fully adopted in clinical set- tings as they lack robustness and interpretability. Shapes are generally more meaningful features than solely textures of images, which are fea- tures regular CNNs learn, causing a lack of robustness.
+                            </p>Thus, we present a new architecture called Shape Attentive U-Net (SAUNet) which focuses on model interpretability and robustness. The proposed architecture attempts to address these limitations by the use of a secondary shape stream that captures rich shape-dependent information in parallel with the regular texture stream. Furthermore, we suggest multi-resolution saliency maps can be learned using our dual-attention decoder module which allows for multi-level interpretability and mitigates the need for additional computations post hoc.
+                            <p> <span class="label label-default">comment</span>  Good work.
+
+                        <li><span class="label label-success">15 Dec, 2020</span><a href="pdf">"M" </a> </li>
+                        <p> <span class="label label-default">extensive</span> 
+                            </p>
+                            </p>
+                            
+                            </p>
+                        <p> <span class="label label-default">comment</span>  
+
+                        <li><span class="label label-success">15 Dec, 2020</span><a href="pdf">"M" </a> </li>
+                        <p> <span class="label label-default">extensive</span> 
+                            </p>
+                            </p>
+                            
+                            </p>
+                        <p> <span class="label label-default">comment</span>  
+                                        
+                         
                         </div>
                 </div>
             </section>
