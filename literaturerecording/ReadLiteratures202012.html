@@ -316,13 +316,122 @@
                             </p>Thus, we present a new architecture called Shape Attentive U-Net (SAUNet) which focuses on model interpretability and robustness. The proposed architecture attempts to address these limitations by the use of a secondary shape stream that captures rich shape-dependent information in parallel with the regular texture stream. Furthermore, we suggest multi-resolution saliency maps can be learned using our dual-attention decoder module which allows for multi-level interpretability and mitigates the need for additional computations post hoc.
                             <p> <span class="label label-default">comment</span>  Good work.
 
-                        <li><span class="label label-success">15 Dec, 2020</span><a href="pdf">"M" </a> </li>
+                        <li><span class="label label-success">17 Dec, 2020</span><a href="https://arxiv.org/pdf/2012.13364.pdf">"Spatio-temporal Multi-task Learning for Cardiac
+                            MRI Left Ventricle Quantification" </a> </li>
                         <p> <span class="label label-default">extensive</span> 
-                            </p>
-                            </p>
+                            </p>In this paper,
+                            we propose a spatio-temporal multi-task learning approach to
+                            obtain a complete set of measurements quantifying cardiac LV
+                            morphology, regional-wall thickness (RWT), and additionally
+                            detecting the cardiac phase cycle (systole and diastole) for a
+                            given 3D Cine-magnetic resonance (MR) image sequence.
+                            </p>We
+                            first segment cardiac LVs using an encoder-decoder network
+                            and then introduce a multitask framework to regress 11 LV
+                            indices and classify the cardiac phase, as parallel tasks during
+                            model optimization. The proposed deep learning model is based
+                            on the 3D spatio-temporal convolutions, which extract spatial
+                            and temporal features from MR images.
+                            </p>All cardiac images were preprocessed by the challenge
+                            organizer, including landmark labeling to find the ROI, rotation
+                            to align the volumes, ROI cropping, and resizing. The resulting
+                            images are 80 × 80 in size. The LVQuan 2018 dataset
+                            images vary a lot in terms of contrast and brightness.
                             
-                            </p>
+                        </p><span><img border="0" width="1200" src="cardiac_mri.png"/></a></span>
+                            </p>The code and
+                            model are available at: https://github.com/sulaimanvesal/
+                            CardiacQuanNet.
                         <p> <span class="label label-default">comment</span>  
+
+                        <li><span class="label label-success">18 Dec, 2020</span><a href="https://arxiv.org/pdf/2003.04052.pdf">"On the Texture Bias for
+                            Few-Shot CNN Segmentation" </a> </li>
+                        <p> <span class="label label-default">extensive</span> 
+                            </p>Despite the initial belief that Convolutional Neural Networks
+                            (CNNs) are driven by shapes to perform visual recognition tasks, recent
+                            evidence suggests that texture bias in CNNs provides higher performing
+                            models when learning on large labeled training datasets. This contrasts
+                            with the perceptual bias in the human visual cortex, which has a stronger
+                            preference towards shape components.
+                            </p>Perceptual differences may explain why CNNs achieve human-level performance when large labeled
+                            datasets are available, but their performance significantly degrades in
+                            low-labeled data scenarios, such as few-shot semantic segmentation.
+                            
+                        </p><span><img border="0" width="1200" src="texture_segmentation.png"/></a></span>
+
+                            </p>To
+                            remove the texture bias in the context of few-shot learning, we propose a
+                            novel architecture that integrates a set of Difference of Gaussians (DoG)
+                            to attenuate high-frequency local components in the feature space. This
+                            produces a set of modified feature maps, whose high-frequency components are diminished at different standard deviation values of the Gaussian distribution in the spatial domain.
+                        <p> <span class="label label-default">comment</span>  
+                                    
+                            
+                        <li><span class="label label-success">19 Dec, 2020</span><a href="pdf">"EPSNet: Efficient Panoptic Segmentation
+                            Network with Cross-layer Attention Fusion" </a> </li>
+                        <p> <span class="label label-default">extensive</span> 
+                            </p>Panoptic segmentation is a scene parsing task which unifies
+                            semantic segmentation and instance segmentation into one single task.
+                            However, the current state-of-the-art studies did not take too much concern on inference time.
+                            </p>In this work, we propose an Efficient Panoptic Segmentation Network (EPSNet) to tackle the panoptic segmentation tasks with fast inference speed. Basically, EPSNet generates masks
+                            based on simple linear combination of prototype masks and mask coefficients. 
+                        </p><span><img border="0" width="1200" src="fast_segmentation.png"/></a></span>
+                            
+                            </p>The light-weight network branches for instance segmentation
+                            and semantic segmentation only need to predict mask coefficients and
+                            produce masks with the shared prototypes predicted by prototype network branch. Furthermore, to enhance the quality of shared prototypes,
+                            we adopt a module called ”cross-layer attention fusion module”, which
+                            aggregates the multi-scale features with attention mechanism helping
+                            them capture the long-range dependencies between each other. 
+                        <p> <span class="label label-default">comment</span>  Code
+                            is available at: github.com/neo85824/epsnet.
+
+                            
+
+                        <li><span class="label label-success">20 Dec, 2020</span><a href="https://arxiv.org/pdf/2012.12425.pdf">"RAP-Net: Coarse-to-Fine Multi-Organ Segmentation with Single Random Anatomical Prior
+                            " </a> </li>
+                        <p> <span class="label label-default">extensive</span> 
+                            </p>Performing coarse-to-fine abdominal multi-organ
+                            segmentation facilitates to extract high-resolution
+                            segmentation minimizing the lost of spatial contextual
+                            information. However, current coarse-to-refine approaches
+                            require a significant number of models to perform single
+                            organ refine segmentation corresponding to the extracted
+                            organ region of interest (ROI). 
+                            </p>We propose a coarse-to-fine
+                            pipeline, which starts from the extraction of the global prior
+                            context of multiple organs from 3D volumes using a lowresolution coarse network, followed by a fine phase that uses
+                            a single refined model to segment all abdominal organs
+                            instead of multiple organ corresponding models.
+                        </p><span><img border="0" width="1200" src="high_resolution_seg.png"/></a></span>
+                            
+                        <p> <span class="label label-default">comment</span>  The proposed code is available at
+                            https://github.com/MASILab/coarse_to_fine_prior_seg.
+
+
+                        <li><span class="label label-success">21 Dec, 2020</span><a href="https://arxiv.org/pdf/2002.05773.pdf">"ACEnet: Anatomical Context-Encoding Network for Neuroanatomy Segmentation" </a> </li>
+                        <p> <span class="label label-default">extensive</span> 
+                            </p>Since 3D deep learning models suffer from high computational cost, 2D deep
+                            learning methods are favored for their computational efficiency. However, existing 2D deep learning methods are
+                            not equipped to effectively capture 3D spatial contextual information that is needed to achieve accurate brain
+                            structure segmentation. 
+                            </p>However, the existing 2D segmentation methods ignore intrinsic 3D
+                            contextual information of 3D brain MR images, which could potentially improve the segmentation performance if
+                            properly utilized. 
+                        </p><span><img border="0" width="1200" src="acenet.png"/></a></span>
+                            
+                            </p>The network backbone is an U-Net (Ronneberger et al., 2015) with 4 densely connected blocks for both the encoder
+                            and the decoder. To fuse both spatial-wise and channel-wise information within local receptive fields, spatial and channel Squeeze-and-Excitation (sc-SE) (Roy et al., 2018) is applied to each encoder, bottleneck, and
+                            decoder dense blocks.
+                            </p>Spatial Context Encoding Module: The consecutive image slices are regarded
+                            as a stack of 2D images with dimensions of 𝐻 × 𝑊 × 𝐶, where 𝐻 and 𝑊 are spatial dimensions of the 2D image
+                            slices and 𝐶 is the number of 2D image slices, rather than as a 3D volume with dimensions of 𝐻 × 𝑊 × 𝐶 × 1.
+                            Therefore, the input to the spatial context encoding module is of the same dimensions as the 2D input.
+                            </p>Anatomical Context Encoding Module: Particularly, the detection of the
+                            presence of specific brain structures is formulated as a classification problem with an anatomical context encoding
+                            loss (ACE-loss) to optimize the network under a direct supervision.
+                        <p> <span class="label label-default">comment</span>  https://github.com/ymli39/ACEnet-for-Neuroanatomy-Segmentation.
+
 
                         <li><span class="label label-success">15 Dec, 2020</span><a href="pdf">"M" </a> </li>
                         <p> <span class="label label-default">extensive</span> 
@@ -331,8 +440,43 @@
                             
                             </p>
                         <p> <span class="label label-default">comment</span>  
-                                        
                          
+                        <li><span class="label label-success">15 Dec, 2020</span><a href="pdf">"M" </a> </li>
+                        <p> <span class="label label-default">extensive</span> 
+                            </p>
+                            </p>
+                            
+                            </p>
+                        <p> <span class="label label-default">comment</span>  
+                        
+                        
+                        <li><span class="label label-success">15 Dec, 2020</span><a href="pdf">"M" </a> </li>
+                        <p> <span class="label label-default">extensive</span> 
+                            </p>
+                            </p>
+                            
+                            </p>
+                        <p> <span class="label label-default">comment</span>  
+                    
+                    
+                    
+                        <li><span class="label label-success">15 Dec, 2020</span><a href="pdf">"M" </a> </li>
+                        <p> <span class="label label-default">extensive</span> 
+                            </p>
+                            </p>
+                            
+                            </p>
+                        <p> <span class="label label-default">comment</span>  
+                    
+                    
+                    
+                        <li><span class="label label-success">15 Dec, 2020</span><a href="pdf">"M" </a> </li>
+                        <p> <span class="label label-default">extensive</span> 
+                            </p>
+                            </p>
+                            
+                            </p>
+                        <p> <span class="label label-default">comment</span>  
                         </div>
                 </div>
             </section>
