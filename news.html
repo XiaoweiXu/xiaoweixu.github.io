@@ -1,131 +1,151 @@
 <!DOCTYPE html>
 <html>
+    
     <head>
         <meta charset="utf-8"/>
-        <title>[ Xiaowei Xu | News ]</title>
+        <title>[ Xiaowei Xu @ GDPH ]</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+        
         <!-- Font Awesome Icons -->
         <link rel="stylesheet" href="css/font-awesome.min.css"/>
-
+        
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet"/>
         <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-
+        
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
          <script src="js/html5shiv.js"></script>
          <script src="js/respond.min.js"></script>
          <![endif]-->
-
-
+        
+        
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
         <script src="js/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/menucollapse.js"></script>
         <script type="text/javascript" src="js/arrow78.js"></script>
         <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    
+    <body id="page-top" class="index">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span><a href="http://www.gdghospital.org.cn/ziwang/index.php/"><img border="0" width="200" src="images/gdsxxgbyjs_xxw.png"/></a></span>
+                    <span><a href="http://english.hust.edu.cn/"><img border="0" width="40" src="images/Hustseals.png"/></a></span>
+                    <span><a href="https://www.ualberta.ca/index.html"><img border="0" width="40" src="images/ua.png"/></a></span>
+                    <span><a href="http://www.buffalo.edu/"><img border="0" width="40" src="images/SUNY-Buffalo.png"/></a></span>
+                    <span><a href="https://www.zju.edu.cn/english/"><img border="0" width="40" src="images/zju.png"/></a></span>
+                    <span><a href="https://www.nd.edu/"><img border="0" width="40" src="images/nd3.png"/></a></span>
 
-        <body id="page-top" class="index">
-
-            <!-- Navigation -->
-            <nav class="navbar navbar-default navbar-fixed-top">
-                <div class="container-fluid">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="glyphicon glyphicon-search"></span>
-                        </button>
-                        <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <span><a href="http://www.gdghospital.org.cn/ziwang/index.php/"><img border="0" width="200" src="images/gdsxxgbyjs_xxw.png"/></a></span>
-                        <span><a href="http://english.hust.edu.cn/"><img border="0" width="40" src="images/Hustseals.png"/></a></span>
-                        <span><a href="https://www.ualberta.ca/index.html"><img border="0" width="40" src="images/ua.png"/></a></span>
-                        <span><a href="http://www.buffalo.edu/"><img border="0" width="40" src="images/SUNY-Buffalo.png"/></a></span>
-                        <span><a href="https://www.zju.edu.cn/english/"><img border="0" width="40" src="images/zju.png"/></a></span>
-                        <span><a href="https://www.nd.edu/"><img border="0" width="40" src="images/nd3.png"/></a></span>
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                    Home<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="index.html#intro">Introduction</a></li>
-                                    <!-- <li><a href="bio.html">Biography</a></li> -->
-                                    <li><a href="cv.html">CV (Web)</a></li>
-                                    <li><a target="_blank" href="cv_xiaoweixu.pdf">CV (PDF)</a></li>
-                                </ul>
-                            </li>
-                            <li class="page-scroll">
-                                <a href="index.html#news">News</a>
-                            </li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                    Publications<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a onclick="javascript:reset_menus();$('#tab-3-content').show();" href="index.html#publications">Selected</a></li>
-                                    <li><a href="publications/">All</a></li>
-                                </ul>
-                            </li>
-                            <!-- <li class="page-scroll">
-                                <a href="talks/">Talks</a>
-                            </li>
-                            <li class="page-scroll">
-                                <a href="index.html#courses">Courses</a>
-                            </li>
-                            <li class="page-scroll">
-                                <a href="index.html#awards">Awards</a>
-                            </li> -->
-                            <li class="page-scroll">
-                                <a href="index.html#service">Service</a>
-                            </li>
-                            <li class="page-scroll">
-                                <a href="index.html#resources">Resources</a>
-                            </li>
-                            <!-- <li class="page-scroll">
-                                <a target="_blank" href="http://dmsl.cs.ucy.ac.cy/projects.php">Grants</a>
-                            </li> -->
-
-                            <li class="page-scroll">
-                                <a href="index.html#contact">Contact</a>
-                            </li>
-                            <li class="page-scroll">
-                                <a onclick="$('#bs-example-navbar-collapse-2').toggle();">
-                                    <span class="glyphicon glyphicon-search"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-
-                    <!-- search box submenu -->
-                    <div class="collapse" id="bs-example-navbar-collapse-2">
-                        <gcse:search></gcse:search>
-                    </div>
-
-                </div><!-- /.container-fluid -->
-            </nav>
-
-            <section>
-                <!-- Place this tag where you want the search results to render -->
-                <gcse:searchresults-only></gcse:searchresults-only>
-            </section>
-
-            <section id="tree" style="margin-top:50px">
-                <div class="container">
-                    <a href="index.html">Xiaowei Xu</a> > News
+                    <!-- <a class="navbar-brand" href="http://english.hust.edu.cn/">
+                        <img src="img/Hustseals.png" width="40" height="30" alt="GAC">
+                    </a>
+                    <a class="navbar-brand" href="https://www.ualberta.ca/index.html">
+                        <img src="img/ua.png" width="40" height="30" alt="GAC">
+                    </a>
+                    <a class="navbar-brand" href="http://www.buffalo.edu/">
+                        <img src="img/SUNY-Buffalo.png" width="40" height="30" alt="GAC">
+                    </a>
+                    <a class="navbar-brand" href="">
+                        <img src="img/zju.png" width="40" height="30" alt="GAC">
+                    </a>
+                    <a class="navbar-brand" href="">
+                        <img src="img/nd3.png" width="40" height="30" alt="GAC">
+                    </a> -->
                 </div>
-            </section>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            </li>
+                            <li class="page-scroll">
+                                <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#intro">Home</a>
+                            </li>
+                            <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#intro"> -->
+                                <!-- Home<span class="caret"></span></a> -->
+                            <!-- <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Introduction</a></li>
+                                 <li><a href="bio.html">Biography</a></li> 
+                                <li><a href="cv.html">CV (Web)</a></li>
+                                <li><a target="_blank" href="cv_xiaoweixu.pdf">CV (PDF)</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Publications<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#publications">Selected</a></li>
+                                <li><a href="publications/">All</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-awards-content').show();" href="#awards">Awards</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="talks/">Talks</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-courses-content').show();" href="#courses">Courses</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-systems-content').show();" href="#systems">Systems</a>
+                        </li> -->
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-service-content').show();" href="#service">Service</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-resources-content').show();" href="#resources">Resources</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-contact-content').show();" href="cv_xiaoweixu.pdf">CV</a>
+                        </li>                        
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-contact-content').show();" href="#contact">Contact</a>
+                        </li>
+
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                
+                <!-- search box submenu -->
+                <div class="collapse" id="bs-example-navbar-collapse-2">
+                    <gcse:search></gcse:search>
+                        </div>
+                
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <section>
+            <!-- Place this tag where you want the search results to render -->
+            <gcse:searchresults-only></gcse:searchresults-only>
+                </section>
 
 
             <!-- Home Section -->
