@@ -132,33 +132,32 @@
             <section id="home">
                 <div class="container lead">
 
-                    <h3> Commonly Used Linux Commands </h3>
+                    <h3>安装GPU驱动，CUDA和cuDNN</h3>
 
-                    <li> The info is from this <a href="https://www.tutorialworks.com/linux-commands/">website</a>. </li>
-                    <p><span><img border="0" width="1200" src="imgs/linux_command_1.png"/></a></span></p>
-                    <p><span><img border="0" width="1200" src="imgs/linux_command_2.png"/></a></span></p>
-                    <p><span><img border="0" width="1200" src="imgs/linux_command_3.png"/></a></span></p>
-                    <p><span><img border="0" width="1200" src="imgs/linux_command_4.png"/></a></span></p>
-                    <p><span><img border="0" width="1200" src="imgs/linux_command_5.png"/></a></span></p>
-                    <p><span><img border="0" width="1200" src="imgs/linux_command_6.png"/></a></span></p>
-                    <p>Before training a deep learning
-                        model, it is vital to understand your
-                        data. Is it sufficiently variable to cover
-                        the application being developed?
-                        There are so many factors that come
-                        into play here, including the quality of
-                        the ultrasound, and characteristics of
-                        the patient, such as age, gender, and BMI, which can all effect the size of the
-                        organ being imaged. Once the data is
-                        ready, you need to work with your echo
-                        specialist or radiologist on the best
-                        labeling and annotation procedure. It
-                        is an iterative process which is partly
-                        about the algorithms and partly about
-                        the data. Try one approach, train a
-                        model, and then give the data back to
-                        the echo specialist who will look again
-                        and may make further suggestions.</p>
+                    <h3>0. 删除卸载用命令</h3>
+                    <p> # sudo rm /etc/apt/sources.list.d/cuda*</p>
+                    <p>    # sudo apt-get --purge remove "*cublas*" "cuda*" "nsight*" </p>
+                    <p>    # sudo apt-get --purge remove "*nvidia*"</p>
+                    <p>    # sudo apt-get autoremove</p>
+                    <p>    # sudo apt-get autoclean</p>
+                    <p>    # sudo rm -rf /usr/local/cuda* </p>
+
+                    <h3>1. 安装NVIDIA显卡驱动</h3>
+                    <p>确定PU型号：ubuntu-drivers devices
+                　  <p>官网查询适合你的GPU的最新驱动版本: www.nvidia.com/Download/index.aspx</p>
+                    <p>下载GPU驱动，并安装: sh cuda_****.run    </p>
+                    <p>重启: sudo reboot</p>
+                    <p>查看GPU信息: nvidia-smi  </p>
+                    <p>每隔0.5秒执行一次nvidia-smi: watch -n 0.5 nvidia-smi </p>
+
+                    <h3>2. 安装CUDA</h3>
+                    <p>确认可以安装的CUDA版本: https://docs.nvidia.com/deploy/cuda-compatibility/index.html#binary-compatibility__table-toolkit-driver</p>
+                    <p>确认PyTorch官网下有CUDA版本适配的信息：https:pytorch.org/</p>
+                    <p>安装CUDA： </p>
+                    <p></p>
+                    <p></p>
+
+                    <p></p>
                         
 
                 </div>
