@@ -10655,3 +10655,217 @@ trailer
 startxref
 1589801
 %%EOF
+1 0 obj
+<< /CreationDate (D:20230213130115Z00'00') /Creator (Springer) /Title (MDU-Net: multi-scale densely connected U-Net for biomedical image segmentation)
+/CrossmarkMajorVersionDate (2010-04-23) /Trapped /False /CrossmarkDomainExclusive
+(true) /doi (10.1007/s13755-022-00204-9) /Subject (Health Information Science and Systems, https://doi.org/10.1007/s13755-022-00204-9)
+/Keywords (Deep learning; Medical image analysis; Image segmentation; Multi-scale feature)
+/CrossMarkDomains#5b1#5d (springer.com) /robots (noindex) /ModDate (D:20241019023016Z00'00')
+/Author (Jiawei Zhang ) /Producer (macOS Version 14.6.1 \(Build 23G93\) Quartz PDFContext, AppendMode 1.1)
+/CrossMarkDomains#5b2#5d (springerlink.com) >>
+endobj
+3 0 obj
+<< /Annots 7 0 R /Type /Page /Thumb 5 0 R /MediaBox [ 0 0 595.276 790.866
+] /Resources 6 0 R /CropBox [ 0 0 595.276 790.866 ] /PieceInfo << /InDesign
+<< /OriginalDocumentID (adobe:docid:indd:ebfdfdf8-f22e-11db-8fec-eec230f20731)
+/DocumentID (xmp.did:a67319f7-a066-0d4e-87f9-f67d2b51beb9) /PageUIDList <<
+/0 2563 >> /NumberofPages 1 /LastModified (D:20230213130037Z) /PageWidthList
+<< /0 595.276 >> >> >> /Parent 8 0 R /Contents 4 0 R /Rotate 0 >>
+endobj
+60 0 obj
+<< /Annots 64 0 R /Type /Page /Thumb 62 0 R /MediaBox [ 0 0 595.276 790.866
+] /Resources 63 0 R /CropBox [ 0 0 595.276 790.866 ] /PieceInfo << /InDesign
+<< /OriginalDocumentID (adobe:docid:indd:ebfdfdf8-f22e-11db-8fec-eec230f20731)
+/DocumentID (xmp.did:a67319f7-a066-0d4e-87f9-f67d2b51beb9) /PageUIDList <<
+/0 2564 >> /NumberofPages 1 /LastModified (D:20230213130037Z) /PageWidthList
+<< /0 595.276 >> >> >> /Parent 8 0 R /Contents 61 0 R /Rotate 0 >>
+endobj
+116 0 obj
+<< /Annots 120 0 R /Type /Page /Thumb 118 0 R /MediaBox [ 0 0 595.276 790.866
+] /Resources 119 0 R /CropBox [ 0 0 595.276 790.866 ] /PieceInfo << /InDesign
+<< /OriginalDocumentID (adobe:docid:indd:ebfdfdf8-f22e-11db-8fec-eec230f20731)
+/DocumentID (xmp.did:a67319f7-a066-0d4e-87f9-f67d2b51beb9) /PageUIDList <<
+/0 3361 >> /NumberofPages 1 /LastModified (D:20230213130037Z) /PageWidthList
+<< /0 595.276 >> >> >> /Parent 8 0 R /Contents 117 0 R /Rotate 0 >>
+endobj
+241 0 obj
+<< /Annots 245 0 R /Type /Page /Thumb 243 0 R /MediaBox [ 0 0 595.276 790.866
+] /Resources 244 0 R /CropBox [ 0 0 595.276 790.866 ] /PieceInfo << /InDesign
+<< /OriginalDocumentID (adobe:docid:indd:ebfdfdf8-f22e-11db-8fec-eec230f20731)
+/DocumentID (xmp.did:a67319f7-a066-0d4e-87f9-f67d2b51beb9) /PageUIDList <<
+/0 3362 >> /NumberofPages 1 /LastModified (D:20230213130039Z) /PageWidthList
+<< /0 595.276 >> >> >> /Parent 8 0 R /Contents 242 0 R /Rotate 0 >>
+endobj
+454 0 obj
+<< /Annots 458 0 R /Type /Page /Thumb 456 0 R /MediaBox [ 0 0 595.276 790.866
+] /Resources 457 0 R /CropBox [ 0 0 595.276 790.866 ] /PieceInfo << /InDesign
+<< /OriginalDocumentID (adobe:docid:indd:ebfdfdf8-f22e-11db-8fec-eec230f20731)
+/DocumentID (xmp.did:a67319f7-a066-0d4e-87f9-f67d2b51beb9) /PageUIDList <<
+/0 3374 >> /NumberofPages 1 /LastModified (D:20230213130040Z) /PageWidthList
+<< /0 595.276 >> >> >> /Parent 8 0 R /Contents 455 0 R /Rotate 0 >>
+endobj
+598 0 obj
+<< /Type /Page /Thumb 600 0 R /MediaBox [ 0 0 595.276 790.866 ] /Resources
+601 0 R /CropBox [ 0 0 595.276 790.866 ] /PieceInfo << /InDesign << /OriginalDocumentID
+(adobe:docid:indd:ebfdfdf8-f22e-11db-8fec-eec230f20731) /DocumentID (xmp.did:a67319f7-a066-0d4e-87f9-f67d2b51beb9)
+/PageUIDList << /0 3375 >> /NumberofPages 1 /LastModified (D:20230213130040Z)
+/PageWidthList << /0 595.276 >> >> >> /Parent 8 0 R /Contents 599 0 R /Rotate
+0 >>
+endobj
+605 0 obj
+<< /Annots 609 0 R /Type /Page /Thumb 607 0 R /MediaBox [ 0 0 595.276 790.866
+] /Resources 608 0 R /CropBox [ 0 0 595.276 790.866 ] /PieceInfo << /InDesign
+<< /OriginalDocumentID (adobe:docid:indd:ebfdfdf8-f22e-11db-8fec-eec230f20731)
+/DocumentID (xmp.did:a67319f7-a066-0d4e-87f9-f67d2b51beb9) /PageUIDList <<
+/0 3387 >> /NumberofPages 1 /LastModified (D:20230213130042Z) /PageWidthList
+<< /0 595.276 >> >> >> /Parent 8 0 R /Contents 606 0 R /Rotate 0 >>
+endobj
+648 0 obj
+<< /Annots 652 0 R /Type /Page /Thumb 650 0 R /MediaBox [ 0 0 595.276 790.866
+] /Resources 651 0 R /CropBox [ 0 0 595.276 790.866 ] /PieceInfo << /InDesign
+<< /OriginalDocumentID (adobe:docid:indd:ebfdfdf8-f22e-11db-8fec-eec230f20731)
+/DocumentID (xmp.did:a67319f7-a066-0d4e-87f9-f67d2b51beb9) /PageUIDList <<
+/0 3388 >> /NumberofPages 1 /LastModified (D:20230213130042Z) /PageWidthList
+<< /0 595.276 >> >> >> /Parent 8 0 R /Contents 649 0 R /Rotate 0 >>
+endobj
+673 0 obj
+<< /Annots 677 0 R /Type /Page /Thumb 675 0 R /MediaBox [ 0 0 595.276 790.866
+] /Resources 676 0 R /CropBox [ 0 0 595.276 790.866 ] /PieceInfo << /InDesign
+<< /OriginalDocumentID (adobe:docid:indd:ebfdfdf8-f22e-11db-8fec-eec230f20731)
+/DocumentID (xmp.did:a67319f7-a066-0d4e-87f9-f67d2b51beb9) /PageUIDList <<
+/0 3880 >> /NumberofPages 1 /LastModified (D:20230213130042Z) /PageWidthList
+<< /0 595.276 >> >> >> /Parent 8 0 R /Contents 674 0 R /Rotate 0 >>
+endobj
+836 0 obj
+<< /Annots 852 0 R /Type /Page /Thumb 831 0 R /MediaBox [ 0 0 595.276 790.866
+] /Resources 851 0 R /CropBox [ 0 0 595.276 790.866 ] /PieceInfo << /InDesign
+<< /OriginalDocumentID (adobe:docid:indd:ebfdfdf8-f22e-11db-8fec-eec230f20731)
+/DocumentID (xmp.did:a67319f7-a066-0d4e-87f9-f67d2b51beb9) /PageUIDList <<
+/0 2382 >> /NumberofPages 1 /LastModified (D:20230213130037Z) /PageWidthList
+<< /0 595.276 >> >> >> /Parent 8 0 R /Contents [ 843 0 R 844 0 R 845 0 R 846 0 R
+847 0 R 848 0 R 849 0 R 850 0 R ] /Rotate 0 >>
+endobj
+852 0 obj
+[ 853 0 R 854 0 R 855 0 R 856 0 R 857 0 R 858 0 R 947 0 R 946 0 R ]
+endobj
+946 0 obj
+<< /T (şÿ_\\\017~ô) /AP << /N 948 0 R >> /Rect [ 350.4299 599.6184 399.2251
+613.5675 ] /M (D:20241019023015Z00'00') /C [ 0.980392 0.803922 0.352941 ]
+/DA (//Helvetica 12 Tf 0 g) /F 4 /Type /Annot /Border [ 0 0 0 ] /QuadPoints
+[ 350.4299 613.5674 399.2251 613.5674 350.4299 599.6184 399.2251 599.6184
+] /Subtype /Highlight >>
+endobj
+947 0 obj
+<< /T (şÿ_\\\017~ô) /AP << /N 953 0 R >> /Rect [ 56.622 739.5314 239.8116
+749.1554 ] /M (D:20241019023010Z00'00') /C [ 0.980392 0.803922 0.352941 ]
+/DA (//Helvetica 12 Tf 0 g) /F 4 /Type /Annot /Border [ 0 0 0 ] /QuadPoints
+[ 56.622 749.1554 239.8116 749.1554 56.622 739.5314 239.8116 739.5314 ] /Subtype
+/Highlight >>
+endobj
+948 0 obj
+<< /Type /XObject /Length 174 /FormType 1 /Resources 949 0 R /Subtype /Form
+/Filter /FlateDecode /BBox [ 0 0 48.79518 13.94906 ] >> stream
+xM;!D{N1'ğbl>®S¤Ş*@IšM¤„ûK!ÈŠ3˜ñXñ€ïKe‹\ÀB¦ægœpÇrhŒÚàÉŠ½øìïBb0e´ŠåØØ]{YÖ(·~0ÊIELòuå@1*'ÊÅ
+¦R¡‰¼’İÔ6h&õ>t°ñr¢N÷©ÌáİëÈ)qÑÌ¶s0cŞ¯î¸F×6¯İŒÑ?lØî"W\°¾ èDù
+endstream
+endobj
+949 0 obj
+<< /ColorSpace << /Cs1 950 0 R >> /ExtGState << /Gs1 952 0 R >> /ProcSet [
+/PDF ] >>
+endobj
+950 0 obj
+[ /ICCBased 951 0 R ]
+endobj
+951 0 obj
+<< /Alternate /DeviceRGB /N 3 /Length 2612 /Filter /FlateDecode >> stream
+x–wTSÙ‡Ï½7½Ğ" %ôz	 Ò;HQ‰I€P†„&vDF)VdTÀG‡"cEƒ‚b×	òPÆÁQDEåİŒk	ï­5óŞšıÇYßÙç·×Ùgï}×º Pü‚ÂtX€4¡XîëÁ\ËÄ÷XÀáffGøDÔü½=™™¨HÆ³öî.€d»Û,¿P&sÖÿ‘"7C$ 
+EÕ6<~&å”S³Å2ÿÊô•)2†12¡	¢¬"ãÄ¯lö§æ+»É˜—&ä¡YÎ¼4Œ»PŞš%á£Œ¡\˜%àg£|e½TIš å÷(ÓÓøœL 0™_Ìç&¡l‰2Eî‰ò ”Ä9¼r‹ù9h x¦gäŠ‰Ib¦×˜iåèÈfúñ³Sùb1+”ÃMáˆxLÏô´0€¯o–E%Ym™h‘í­ííYÖæhù¿Ùß~Sı=ÈzûUñ&ìÏAŒYßlì¬/½ ö$Z›³¾•U ´m@åá¬Oï  ò ´Şœó†l^’Äâ'‹ììlsŸk.+è7ûŸ‚oÊ¿†9÷™ËîûV;¦?#I3eEå¦§¦KDÌÌ—Ïdı÷ÿãÀ9iÍÉÃ,œŸÀñ…èUQè”	„‰h»…<X.d
+„Õá6'~khu_ }…9P¸IÈo= C#$n?z}ë[1
+È¾¼h­‘¯s2zşçú\ŠnáLA"Sæödr%¢,£ß„lÁt 
+4.0,`€3pŞ  „€H–.Hi@²A>Ø 
+A1Øvƒjp ÔzĞN‚6p\WÀp€G@
+†ÁK0Şi‚ğ¢Aª¤™BÖZyCAP8ÅC‰’@ùĞ&¨*ƒª¡CP=ô#tº]ƒú Ğ 4ı}„˜ÓaØ ¶€Ù°;GÂËàDxœÀÛáJ¸>·Âáğ ,…_Â“@ÈÑFXñDBX$!k‘"¤©Eš¤¹H‘qä‡¡a˜Æã‡YŒábVaÖbJ0Õ˜c˜VLæ6f3ù‚¥bÕ±¦X'¬?v	6›-ÄV``[°—±Øaì;ÇÀâp~¸\2n5®·×Œ»€ëÃá&ñx¼*Şï‚Ásğb|!¾
+ßÆ¿'	Zk‚!– $l$Tçı„Â4Q¨Ot"†yÄ\b)±ØA¼I&N“I†$R$)™´TIj"]&=&½!“É:dGrY@^O®$Ÿ _%’?P”(&OJEBÙN9J¹@y@yC¥R¨nÔXª˜ºZO½D}J}/G“3—ó—ãÉ­“«‘k•ë—{%O”×—w—_.Ÿ'_!Jş¦ü¸QÁ@ÁS£°V¡Fá´Â=…IEš¢•bˆbšb‰bƒâ5ÅQ%¼’’·O©@é°Ò%¥!BÓ¥yÒ¸´M´:ÚeÚ0G7¤ûÓ“éÅôè½ô	e%e[å(ååå³ÊRÂ0`ø3R¥Œ“Œ»Œó4æ¹ÏãÏÛ6¯i^ÿ¼)•ù*n*|•"•f••ªLUoÕÕªmªOÔ0j&jajÙjûÕ.«Ï§ÏwÏ_4ÿäü‡ê°º‰z¸újõÃê=ê“š¾U—4Æ5šnšÉšåšç4Ç´hZµZåZçµ^0•™îÌTf%³‹9¡­®í§-Ñ>¤İ«=­c¨³Xg£N³Î]’.[7A·\·SwBOK/X/_¯Qï¡>QŸ­Ÿ¤¿G¿[ÊÀĞ Ú`‹A›Á¨¡Š¡¿aa£ác#ª‘«Ñ*£Z£;Æ8c¶qŠñ>ã[&°‰I’IÉMSØÔŞT`ºÏ´Ïkæh&4«5»Ç¢°ÜYY¬FÖ 9Ã<È|£y›ù+=‹X‹İ_,í,S-ë,Y)YXm´ê°úÃÚÄšk]c}Ç†jãc³Î¦İæµ­©-ßv¿í};š]°İ»N»Ïöö"û&û1=‡x‡½÷Øtv(»„}Õëèá¸ÎñŒã'{'±ÓI§ßYÎ)ÎÎ£ğÔ-rÑqá¸r‘.d.Œ_xp¡ÔUÛ•ãZëúÌM×çvÄmÄİØ=Ùı¸û+K‘G‹Ç”§“çÏ^ˆ—¯W‘W¯·’÷bïjï§>:>‰>>¾v¾«}/øaııvúİó×ğçú×ûO8¬	è
+¤FV>2	uÃÁÁ»‚/Ò_$\ÔBüCv…<	5]ús.,4¬&ìy¸Ux~xw-bEDCÄ»HÈÒÈG‹KwFÉGÅEÕGME{E—EK—X,Y³äFŒZŒ ¦={$vr©÷ÒİK‡ãìâ
+ãî.3\–³ìÚrµå©ËÏ®_ÁYq*ßÿ‰Â©åL®ô_¹wå×“»‡û’çÆ+çñ]øeü‘—„²„ÑD—Ä]‰cI®IIãOAµàu²_òä©””£)3©Ñ©Íi„´ø´ÓB%aŠ°+]3='½/Ã4£0CºÊiÕîU¢@Ñ‘L(sYf»˜şLõHŒ$›%ƒY³j²ŞgGeŸÊQÌæôäšänËÉóÉû~5f5wug¾vş†üÁ5îk­…Ö®\Û¹Nw]Áºáõ¾ëm mHÙğËFËeßnŠŞÔQ Q°¾`h³ïæÆB¹BQá½-Î[lÅllíİf³­jÛ—"^ÑõbËâŠâO%Ü’ëßY}WùİÌö„í½¥ö¥ûwàvwÜİéºóX™bY^ÙĞ®à]­åÌò¢ò·»Wì¾Va[q`id´2¨²½J¯jGÕ§ê¤êšæ½ê{·íÚÇÛ×¿ßmÓÅ>¼È÷Pk­AmÅaÜá¬ÃÏë¢êº¿g_DíHñ‘ÏG…G¥ÇÂuÕ;Ô×7¨7”6Â’Æ±ãqÇoıàõC{«éP3£¹ø8!9ñâÇøï<ÙyŠ}ªé'ıŸö¶ĞZŠZ¡ÖÜÖ‰¶¤6i{L{ßé€ÓÎ-?›ÿ|ôŒö™š³ÊgKÏ‘Îœ›9Ÿw~òBÆ…ñ‹‰‡:Wt>º´äÒ®°®ŞË—¯^ñ¹r©Û½ûüU—«g®9];}}½í†ıÖ»–_ì~iéµïm½ép³ı–ã­¾}çú]û/Şöº}åÿ‹úî.¾{ÿ^Ü=é}ŞıÑ©^?Ìz8ıhıcìã¢'
+O*ª?­ıÕø×f©½ôì ×`Ï³ˆg†¸C/ÿ•ù¯OÃÏ©Ï+F´FêG­GÏŒùŒİz±ôÅğËŒ—Óã…¿)ş¶÷•Ñ«Ÿ~wû½gbÉÄğkÑë™?JŞ¨¾9úÖömçdèäÓwiï¦§ŠŞ«¾?öı¡ûcôÇ‘éìOøO•Ÿ?w|	üòx&mfæß÷„óû
+endstream
+endobj
+952 0 obj
+<< /BM /Multiply /Type /ExtGState >>
+endobj
+953 0 obj
+<< /Type /XObject /Length 158 /FormType 1 /Resources 954 0 R /Subtype /Form
+/Filter /FlateDecode /BBox [ 0 0 183.1896 9.624 ] >> stream
+xEO;Â0İ{Šw7v‚ëÌÌ8@,©äşM@òå÷ñ;‚?¶HlY‘I%á}Ã/ÌçÊ(²…˜ÅÁ÷o $'F-˜/•§‡o!‘±àéHi‰jMØìŒTYÁ”%Ù`ÅC™Dÿ“Í'B"‹LC1ju¿_Í#©YôŞBf‹üFòˆ˜zW%:ßÆbçİhSpÇú²-<
+endstream
+endobj
+954 0 obj
+<< /ColorSpace << /Cs1 955 0 R >> /ExtGState << /Gs1 957 0 R >> /ProcSet [
+/PDF ] >>
+endobj
+955 0 obj
+[ /ICCBased 956 0 R ]
+endobj
+956 0 obj
+<< /Alternate /DeviceRGB /N 3 /Length 2612 /Filter /FlateDecode >> stream
+x–wTSÙ‡Ï½7½Ğ" %ôz	 Ò;HQ‰I€P†„&vDF)VdTÀG‡"cEƒ‚b×	òPÆÁQDEåİŒk	ï­5óŞšıÇYßÙç·×Ùgï}×º Pü‚ÂtX€4¡XîëÁ\ËÄ÷XÀáffGøDÔü½=™™¨HÆ³öî.€d»Û,¿P&sÖÿ‘"7C$ 
+EÕ6<~&å”S³Å2ÿÊô•)2†12¡	¢¬"ãÄ¯lö§æ+»É˜—&ä¡YÎ¼4Œ»PŞš%á£Œ¡\˜%àg£|e½TIš å÷(ÓÓøœL 0™_Ìç&¡l‰2Eî‰ò ”Ä9¼r‹ù9h x¦gäŠ‰Ib¦×˜iåèÈfúñ³Sùb1+”ÃMáˆxLÏô´0€¯o–E%Ym™h‘í­ííYÖæhù¿Ùß~Sı=ÈzûUñ&ìÏAŒYßlì¬/½ ö$Z›³¾•U ´m@åá¬Oï  ò ´Şœó†l^’Äâ'‹ììlsŸk.+è7ûŸ‚oÊ¿†9÷™ËîûV;¦?#I3eEå¦§¦KDÌÌ—Ïdı÷ÿãÀ9iÍÉÃ,œŸÀñ…èUQè”	„‰h»…<X.d
+„Õá6'~khu_ }…9P¸IÈo= C#$n?z}ë[1
+È¾¼h­‘¯s2zşçú\ŠnáLA"Sæödr%¢,£ß„lÁt 
+4.0,`€3pŞ  „€H–.Hi@²A>Ø 
+A1Øvƒjp ÔzĞN‚6p\WÀp€G@
+†ÁK0Şi‚ğ¢Aª¤™BÖZyCAP8ÅC‰’@ùĞ&¨*ƒª¡CP=ô#tº]ƒú Ğ 4ı}„˜ÓaØ ¶€Ù°;GÂËàDxœÀÛáJ¸>·Âáğ ,…_Â“@ÈÑFXñDBX$!k‘"¤©Eš¤¹H‘qä‡¡a˜Æã‡YŒábVaÖbJ0Õ˜c˜VLæ6f3ù‚¥bÕ±¦X'¬?v	6›-ÄV``[°—±Øaì;ÇÀâp~¸\2n5®·×Œ»€ëÃá&ñx¼*Şï‚Ásğb|!¾
+ßÆ¿'	Zk‚!– $l$Tçı„Â4Q¨Ot"†yÄ\b)±ØA¼I&N“I†$R$)™´TIj"]&=&½!“É:dGrY@^O®$Ÿ _%’?P”(&OJEBÙN9J¹@y@yC¥R¨nÔXª˜ºZO½D}J}/G“3—ó—ãÉ­“«‘k•ë—{%O”×—w—_.Ÿ'_!Jş¦ü¸QÁ@ÁS£°V¡Fá´Â=…IEš¢•bˆbšb‰bƒâ5ÅQ%¼’’·O©@é°Ò%¥!BÓ¥yÒ¸´M´:ÚeÚ0G7¤ûÓ“éÅôè½ô	e%e[å(ååå³ÊRÂ0`ø3R¥Œ“Œ»Œó4æ¹ÏãÏÛ6¯i^ÿ¼)•ù*n*|•"•f••ªLUoÕÕªmªOÔ0j&jajÙjûÕ.«Ï§ÏwÏ_4ÿäü‡ê°º‰z¸újõÃê=ê“š¾U—4Æ5šnšÉšåšç4Ç´hZµZåZçµ^0•™îÌTf%³‹9¡­®í§-Ñ>¤İ«=­c¨³Xg£N³Î]’.[7A·\·SwBOK/X/_¯Qï¡>QŸ­Ÿ¤¿G¿[ÊÀĞ Ú`‹A›Á¨¡Š¡¿aa£ác#ª‘«Ñ*£Z£;Æ8c¶qŠñ>ã[&°‰I’IÉMSØÔŞT`ºÏ´Ïkæh&4«5»Ç¢°ÜYY¬FÖ 9Ã<È|£y›ù+=‹X‹İ_,í,S-ë,Y)YXm´ê°úÃÚÄšk]c}Ç†jãc³Î¦İæµ­©-ßv¿í};š]°İ»N»Ïöö"û&û1=‡x‡½÷Øtv(»„}Õëèá¸ÎñŒã'{'±ÓI§ßYÎ)ÎÎ£ğÔ-rÑqá¸r‘.d.Œ_xp¡ÔUÛ•ãZëúÌM×çvÄmÄİØ=Ùı¸û+K‘G‹Ç”§“çÏ^ˆ—¯W‘W¯·’÷bïjï§>:>‰>>¾v¾«}/øaııvúİó×ğçú×ûO8¬	è
+¤FV>2	uÃÁÁ»‚/Ò_$\ÔBüCv…<	5]ús.,4¬&ìy¸Ux~xw-bEDCÄ»HÈÒÈG‹KwFÉGÅEÕGME{E—EK—X,Y³äFŒZŒ ¦={$vr©÷ÒİK‡ãìâ
+ãî.3\–³ìÚrµå©ËÏ®_ÁYq*ßÿ‰Â©åL®ô_¹wå×“»‡û’çÆ+çñ]øeü‘—„²„ÑD—Ä]‰cI®IIãOAµàu²_òä©””£)3©Ñ©Íi„´ø´ÓB%aŠ°+]3='½/Ã4£0CºÊiÕîU¢@Ñ‘L(sYf»˜şLõHŒ$›%ƒY³j²ŞgGeŸÊQÌæôäšänËÉóÉû~5f5wug¾vş†üÁ5îk­…Ö®\Û¹Nw]Áºáõ¾ëm mHÙğËFËeßnŠŞÔQ Q°¾`h³ïæÆB¹BQá½-Î[lÅllíİf³­jÛ—"^ÑõbËâŠâO%Ü’ëßY}WùİÌö„í½¥ö¥ûwàvwÜİéºóX™bY^ÙĞ®à]­åÌò¢ò·»Wì¾Va[q`id´2¨²½J¯jGÕ§ê¤êšæ½ê{·íÚÇÛ×¿ßmÓÅ>¼È÷Pk­AmÅaÜá¬ÃÏë¢êº¿g_DíHñ‘ÏG…G¥ÇÂuÕ;Ô×7¨7”6Â’Æ±ãqÇoıàõC{«éP3£¹ø8!9ñâÇøï<ÙyŠ}ªé'ıŸö¶ĞZŠZ¡ÖÜÖ‰¶¤6i{L{ßé€ÓÎ-?›ÿ|ôŒö™š³ÊgKÏ‘Îœ›9Ÿw~òBÆ…ñ‹‰‡:Wt>º´äÒ®°®ŞË—¯^ñ¹r©Û½ûüU—«g®9];}}½í†ıÖ»–_ì~iéµïm½ép³ı–ã­¾}çú]û/Şöº}åÿ‹úî.¾{ÿ^Ü=é}ŞıÑ©^?Ìz8ıhıcìã¢'
+O*ª?­ıÕø×f©½ôì ×`Ï³ˆg†¸C/ÿ•ù¯OÃÏ©Ï+F´FêG­GÏŒùŒİz±ôÅğËŒ—Óã…¿)ş¶÷•Ñ«Ÿ~wû½gbÉÄğkÑë™?JŞ¨¾9úÖömçdèäÓwiï¦§ŠŞ«¾?öı¡ûcôÇ‘éìOøO•Ÿ?w|	üòx&mfæß÷„óû
+endstream
+endobj
+957 0 obj
+<< /BM /Multiply /Type /ExtGState >>
+endobj
+xref
+0 2
+0000000000 65535 f 
+0001608907 00000 n 
+3 1
+0001609628 00000 n 
+60 1
+0001610090 00000 n 
+116 1
+0001610557 00000 n 
+241 1
+0001611029 00000 n 
+454 1
+0001611501 00000 n 
+598 1
+0001611973 00000 n 
+605 1
+0001612429 00000 n 
+648 1
+0001612901 00000 n 
+673 1
+0001613373 00000 n 
+836 1
+0001613845 00000 n 
+852 1
+0001614377 00000 n 
+946 12
+0001614462 00000 n 
+0001614805 00000 n 
+0001615142 00000 n 
+0001615483 00000 n 
+0001615585 00000 n 
+0001615624 00000 n 
+0001618338 00000 n 
+0001618392 00000 n 
+0001618714 00000 n 
+0001618816 00000 n 
+0001618855 00000 n 
+0001621569 00000 n 
+trailer
+<< /ID [<09BEF43C099F8E186C2E66CBE47C59D7><FCFD2D65CBDF2408B41AFBBC42884143> ] /Root 840 0 R /Size 958 /Prev 1589801 /Info 1 0 R >> 
+startxref
+1621623
+%%EOF
