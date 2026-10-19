@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     
     <head>
         <meta charset="utf-8"/>
-        <title>[ Xiaowei Xu @ GDPH ]</title>
+        <title>Xiaowei Xu | ScaDS.AI, Leipzig University</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Xiaowei Xu leads a Junior Research Group at ScaDS.AI, Leipzig University, working on structure-aware machine learning, medical AI, and efficient learning. Two full-time PhD positions are open."/>
         
         <!-- Font Awesome Icons -->
         <link rel="stylesheet" href="css/font-awesome.min.css"/>
@@ -29,6 +30,52 @@
         <script src="js/menucollapse.js"></script>
         <script type="text/javascript" src="js/arrow78.js"></script>
         <script type="text/javascript" src="js/custom.js"></script>
+
+        <style>
+            html { scroll-behavior: smooth; }
+            #open-positions, #intro, #news, #contact { scroll-margin-top: 95px; }
+            .current-affiliation { color: #164c7e !important; font-weight: 800; letter-spacing: -.4px; }
+            .current-university { font-size: 16px; color: #333 !important; }
+            .profile-name { margin-bottom: 10px; }
+            .profile-role { color: #164c7e; font-weight: 600; }
+            .profile-research { font-size: 19px; line-height: 1.6; margin: 18px 0 12px; }
+            .profile-topics { color: #555; }
+            .hiring-nav { color: #a51f2b !important; font-weight: 700; }
+            #open-positions { padding: 22px 0 10px; clear: both; }
+            .hiring-card { background: #fff7ed; border: 1px solid #f0d5b4; border-left: 6px solid #b74616; border-radius: 8px; padding: 28px 32px; color: #252b35; box-shadow: 0 4px 16px rgba(23,43,65,.06); }
+            .hiring-tag { color: #9b3510; font-size: 12px; font-weight: 700; letter-spacing: 1.2px; }
+            .hiring-card h2 { margin: 10px 0; font-weight: 700; color: #71280f; }
+            .hiring-subtitle { font-size: 19px; line-height: 1.5; }
+            .hiring-card p { font-size: 16px; line-height: 1.7; }
+            .hiring-details { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+            .hiring-details span { background: #fff; border: 1px solid #ecd1ae; border-radius: 20px; padding: 5px 12px; font-size: 14px; font-weight: 600; }
+            .hiring-card a { color: #80300f; text-decoration: underline; overflow-wrap: anywhere; }
+            .hiring-card .hiring-button { display: inline-block; background: #a43c15; color: #fff; padding: 11px 20px; border-radius: 5px; text-decoration: none; font-weight: 700; margin: 5px 0 16px; }
+            .hiring-card .hiring-button:hover, .hiring-card .hiring-button:focus { background: #782b0e; }
+            .hiring-chinese { border-top: 1px solid #ecd1ae; padding-top: 15px; margin-bottom: 0; }
+            .hiring-news { background: #fff7ed; border-left: 3px solid #b74616; padding: 9px 12px; margin: 10px 0; }
+            @media (max-width: 767px) {
+                #home { margin-top: 75px !important; }
+                .hiring-card { padding: 22px 18px; }
+                .hiring-card h2 { font-size: 25px; }
+                .current-university { font-size: 13px; padding-left: 5px; padding-right: 5px; }
+            }
+        </style>
+    
+        <style id="body-text-alignment">
+            /* Justify prose and content lists, preserving headings and contact details. */
+            #intro p,
+            #open-positions p:not(.hiring-subtitle),
+            #news li,
+            #publications li,
+            #service li,
+            #resources li,
+            #datasets li {
+                text-align: justify;
+                text-align-last: left;
+                hyphens: auto;
+            }
+        </style>
     </head>
     
     <body id="page-top" class="index">
@@ -49,35 +96,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <span><a href="http://www.gdghospital.org.cn/ziwang/index.php/"><img border="0" width="200" src="images/gdsxxgbyjs_xxw.png"/></a></span>
-                    <span><a href="http://english.hust.edu.cn/"><img border="0" width="40" src="images/Hustseals.png"/></a></span>
-                    <span><a href="https://www.ualberta.ca/index.html"><img border="0" width="40" src="images/ua.png"/></a></span>
-                    <span><a href="http://www.buffalo.edu/"><img border="0" width="40" src="images/SUNY-Buffalo.png"/></a></span>
-                    <span><a href="https://www.zju.edu.cn/english/"><img border="0" width="40" src="images/zju.png"/></a></span>
-                    <span><a href="https://www.nd.edu/"><img border="0" width="40" src="images/nd3.png"/></a></span>
+                    <a class="navbar-brand current-affiliation" href="https://scads.ai/">ScaDS.AI</a>
+                    <a class="navbar-brand current-university" href="https://www.uni-leipzig.de/en">Leipzig University</a>
 
-                    <!-- <a class="navbar-brand" href="http://english.hust.edu.cn/">
-                        <img src="img/Hustseals.png" width="40" height="30" alt="GAC">
-                    </a>
-                    <a class="navbar-brand" href="https://www.ualberta.ca/index.html">
-                        <img src="img/ua.png" width="40" height="30" alt="GAC">
-                    </a>
-                    <a class="navbar-brand" href="http://www.buffalo.edu/">
-                        <img src="img/SUNY-Buffalo.png" width="40" height="30" alt="GAC">
-                    </a>
-                    <a class="navbar-brand" href="">
-                        <img src="img/zju.png" width="40" height="30" alt="GAC">
-                    </a>
-                    <a class="navbar-brand" href="">
-                        <img src="img/nd3.png" width="40" height="30" alt="GAC">
-                    </a> -->
                 </div>
                 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <!-- <li class="dropdown"> -->
-                            </li>
+
                             <li class="page-scroll">
                                 <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#intro">Home</a>
                             </li>
@@ -93,6 +120,7 @@
                         <li class="page-scroll">
                             <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a>
                         </li>
+                        <li class="page-scroll"><a class="hiring-nav" href="#open-positions">2 PhD openings</a></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                                 Publications<span class="caret"></span></a>
@@ -154,35 +182,25 @@
         <section  name="home" id="home" style="margin-top:40px">
             <div class="container">
                 <div align="center" class="col-md-4">
-                    <a target="_blank" href="images/xiaowei_Wechat.jpeg">
-                        <img id="mobile-img" src="images/xiaowei_Wechat.jpeg" width="250" border="0"  height="250" alt=""></a>
+                    <a target="_blank" href="images/xiaowei.png">
+                        <img id="mobile-img" src="images/xiaowei.png" width="250" border="0"  height="250" alt="Portrait of Xiaowei Xu"></a>
                         <h5><i>Try your best and keep trying.</i></h5>
                 </div>
                 <div align="left" class="col-md-8">
-                    <h2>Xiaowei Xu 
-                        <h5><i>PhD, Huazhong U. of Sci & Tech - Wuhan, China, 2016</i></h5>
-                        <h5><i>B.S., Huazhong U. of Sci & Tech - Wuhan, China, 2011</i></h5>
-                    </h2>
-                    
-                    <h4>Associate Professor<br>
-                        <a href="http://www.gdghospital.org.cn/">Laboratory of Artificial Intelligence and 3D Technologies for Cardiovascular Diseases</a><br>
-                        <a href="http://www.gdghospital.org.cn/"> Guangdong Provincial People's Hospital </a><br>
-                        <!--
-                         P.O. Box 20537<br>
-                         1678 Nicosia, CYPRUS<br>-->
-                        <!-- Tel/Fax: <a href="tel:08618995521442">+86-18995521442</a>  <br> -->
-                        Email: xiao.wei.xu [AT] foxmail.com 
-                        <script language="JavaScript">
-                            // <!-- test
-                            // document.write("&nbsp;");
-                            // spiderjam('xiao.wei.xu__','foxmail.com');
-                            // -->
-                            </script><br/>
-                        <!--Lab: <a target="_blank" href="https://dmsl.cs.ucy.ac.cy/">http://dmsl.cs.ucy.ac.cy/</a><br> -->
-                        Directions: <a target="_blank" href="https://goo.gl/maps/MZY9tK9bf7991tnW8">https://goo.gl/maps/MZY9tK9bf7991tnW8</a>
+                    <h1 class="profile-name">Xiaowei Xu</h1>
+                    <h4 class="profile-role">Junior Research Group Leader for Structure-Aware Machine Learning</h4>
+                    <h4>
+                        <a href="https://scads.ai/">ScaDS.AI &mdash; Center for Scalable Data Analytics and Artificial Intelligence</a><br>
+                        <a href="https://www.uni-leipzig.de/en">Leipzig University</a><br>
+                        Leipzig, Germany
                     </h4>
-                    <h4><i>Expertise: Machine Learning；Medical Image Processing；Medical Image Segmentation; Embedded Computing </i> <a href="#intro" onclick="javascript:reset_menus();$('#tab-intro-content').show();" class="btn-primary btn-xs">&raquo;</a><br></h4>
-                    
+                    <!-- <p class="profile-research"><strong>Structure-Aware Machine Learning</strong><br>
+                        Spatial, temporal, and distributional structures for scalable, robust, and interpretable AI.</p> -->
+                    <p><strong>Email:</strong> <a href="mailto:xiaowei.xu@uni-leipzig.de">xiaowei.xu@uni-leipzig.de</a><br>
+                        <strong>Office:</strong> D03.41 &middot; Uferstra&szlig;e 11, Leipzig, Germany</p>
+                    <!-- <p class="profile-topics">Medical AI &middot; Multimodal Learning &middot; Efficient Machine Learning</p> -->
+                    <p><a class="btn btn-primary" href="#open-positions">We are hiring: 2 PhD positions &raquo;</a></p>
+
                 </div>
 
                 <!-- <div align="left" class="col-md-4">
@@ -217,61 +235,64 @@
             </div>
         </section>
         
-        <!-- Home Section -->
-        <section name="intro" id="intro">
-            <div class="container lead">
-                <div style="text-align: left; margin-top:10px" class="col-md-12">
-                    <!--<h2>Welcome!</h2>-->
-                    
-                    <b class="noshow" style="display:none;" id="tab-1">
-                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
-                    </b>
-                    
-                    <div class="allshow" style="display:none;" id="tab-intro-content">
-                        <hr class="star-primary">
-                        
-                        <p class="lead">
-                            I am an associate professor at <a href="http://www.gdghospital.org.cn/ziwang/index.php"> Guangdong Cardiovascular institute</a>
-                            (<a href="http://www.fudanmed.com/institute/news2018-1.aspx">Top 3-4</a> in cardiovascular subject in China) of
-                             <a href="http://www.gdghospital.org.cn/"> Guangdong Provincial People's Hospital</a> (<a href="http://www.fudanmed.com/institute/news2018-2.aspx">Top 27</a> in China). 
-                            I work at the <a href="http://www.gdghospital.org.cn/office/OfficeHome.aspx?bid=193">Laboratory of Artificial 
-                            Intelligence and 3D Technologies for Cardiovascular Diseases </a> as a co-director. 
-                            The lab director is <a href=“http://www.gdghospital.org.cn/office/ExpertInfoID.aspx?sid=20&id=795”>Jian Zhuang</a>, 
-                            previous dean of Guangdong Provincial People's Hospital.
-                            <p>I was a post-doc researcher at the <a href="https://cse.nd.edu/">Department of Computer Science and Engineering</a> of University of Notre Dame with
-                            <a href="https://engineering.nd.edu/profiles/yshi">Prof. Yiyu Shi</a> from 2016 to 2019. 
-                            I received my Ph.D. degree and B.S. degree from the Department of Electronic Science and Technology at <a href="http://www.hust.edu.cn/">
-                                Huazhong University of Science and Technology</a> in 2016 and 2011 under supervision of Prof. Yu Hu and Prof. Xuecheng Zou, respectively. 
-                                I have been a visiting scholar to University of Alberta (Canada) for three months and to State University of New York at Buffalo for one year during my PhD studies. <br/></p>
-                    
-                            <p>My research interests <b>focus on AI for cardiovascular diseases</b> including deep learning, and medical image processing.
-                            I have several papers about hardware optimization and deep learning on top conferences including <b>CVPR, AAAI, MICCAI, MIDL, ISBI, DAC, ICCAD</b>,
-                            and top-journals including <b>TPAMI, MIA, TMI, TCAD, TBioCAS, Nature Electronics, and Nature Machine Intelligence</b>.<br/></p>
-                                
-                            <p>Our team focuses on applying deep learning to clinic applications of cardiovascular diseases. We are collecting a  <b>massive of medical data</b> from our hospital for research.
-                                Feel free to contact me if you are interested in this topic. 
 
-                            <p>Our team try our best to perform <b>open source</b> research, and published <b>more than 10+ datasets and codes in <a href="https://www.kaggle.com/xiaoweixumedicalai/datasets"> Kaggle</a>.
-
-                            <p><b>Our team is currently recruiting professors (assistant professor, associate professor and professor), post-doctoral fellows and research assistants for medical image analysis.
-                                Feel free to contact me if you are interested in working in a high-level hospital.
-                            </b>
-                            
-
-
-                            <!-- My wechat account is Tophust.<br/></p> -->
-                  
-                        </p>
-                        
-                        
-                        <!-- <p><a href="bio.html" class="btn-sm btn-primary">Biography &raquo;</a>
-                        <a href="cv.html" class="btn-sm btn-primary">CV (Web)&raquo;</a>
-                        <a href="zeinalipour.pdf" class="btn-sm btn-primary">CV (PDF)&raquo;</a> -->
-                    </div>
-                    
+        <!-- Always visible: independent of the legacy collapsible sections. -->
+        <section id="open-positions" aria-labelledby="open-positions-title">
+            <div class="container">
+                <div class="hiring-card">
+                    <span class="hiring-tag">JOIN OUR GROUP &middot; LEIPZIG, GERMANY</span>
+                    <h2 id="open-positions-title">Two PhD positions in Machine Learning</h2>
+                    <p class="hiring-subtitle">Structure-Aware Machine Learning &amp; Medical AI<br>
+                        ScaDS.AI &middot; Leipzig University</p>
+                    <div class="hiring-details"><span>2 openings</span><span>Full-time (100%)</span><span>Start as soon as possible</span></div>
+                    <p>We are looking for motivated doctoral researchers to develop machine learning methods that
+                        use spatial, temporal, and distributional structures. Topics include medical image analysis,
+                        multimodal learning, robustness under distribution shifts, and efficient learning.</p>
+                    <p>Applicants with a background in computer science, machine learning, electrical engineering,
+                        mathematics, or a related field are welcome. Experience in deep learning and programming is valuable;
+                        an interest in methodological research and real-world applications is essential.</p>
+                    <p><strong>How to apply:</strong> Please email your CV and a brief description of your research interests,
+                        together with relevant publications or project links, if available, to
+                        <a href="mailto:xiaowei.xu@uni-leipzig.de">xiaowei.xu@uni-leipzig.de</a>.
+                        Suggested subject: <strong>PhD Application &ndash; Your Name</strong>.</p>
+                    <a class="hiring-button" href="mailto:xiaowei.xu@uni-leipzig.de?subject=PhD%20Application">Apply by email &rarr;</a>
                 </div>
             </div>
         </section>
+
+        <!-- Home Section -->
+        <section name="intro" id="intro">
+            <div class="container lead">
+                <div class="col-md-12" style="text-align:left; margin-top:10px">
+                    <h2>About me</h2>
+                    <p>I lead a Junior Research Group for Machine Learning at <a href="https://scads.ai/">ScaDS.AI</a>,
+                        <a href="https://www.uni-leipzig.de/en">Leipzig University</a>.
+                        My research focuses on <strong>Structure-Aware Machine Learning</strong>: using spatial, temporal,
+                        and distributional structures as inductive biases to improve the scalability, robustness,
+                        and interpretability of learning systems.</p>
+                    <p>Our group studies how structure in objects, processes, populations, and learned representations
+                        can guide machine learning. We connect methodological research in segmentation, multimodal learning,
+                        learning under distribution shifts, and efficient AI with applications in medical imaging and healthcare.</p>
+                    <p>Previously, I was a <strong>Humboldt Research Fellow</strong> at the Leibniz-Institut f&uuml;r Analytische
+                        Wissenschaften &ndash; ISAS in Dortmund. At <strong>Guangdong Provincial People's Hospital</strong>,
+                        I worked as an Associate Professor and Principal Investigator, and co-directed the Laboratory of
+                        Artificial Intelligence and 3D Technologies for Cardiovascular Diseases. This experience shaped my
+                        research on AI for cardiovascular diagnosis, surgical planning, and clinical workflows.</p>
+                    <p>From 2016 to 2019, I was a postdoctoral researcher in the
+                        <a href="https://cse.nd.edu/">Department of Computer Science and Engineering at the University of Notre Dame</a>,
+                        working with <a href="https://engineering.nd.edu/profiles/yshi">Prof. Yiyu Shi</a> on medical AI
+                        and hardware-efficient machine learning. I received my Ph.D. (2016) and B.S. (2011) from
+                        <a href="https://english.hust.edu.cn/">Huazhong University of Science and Technology</a>.
+                        During my Ph.D. studies, I also visited the University of Alberta and the University at Buffalo.</p>
+                    <p>I value close collaboration between machine learning researchers and clinicians, as well as
+                        reproducible research. Our datasets and code are available through
+                        <a href="https://github.com/XiaoweiXu">GitHub</a> and
+                        <a href="https://www.kaggle.com/xiaoweixumedicalai/datasets">Kaggle</a>.
+                        Please get in touch if you are interested in collaborating or joining the group.</p>
+                </div>
+            </div>
+        </section>
+
         
 
         <!-- News Section -->
@@ -291,7 +312,13 @@
                         <p>
 
                         <ul>
-                            <li><span class="label label-success"><font color="white">Guangzhou'25</font></a></span> May, 2025:  one proposal (Guangzhou Science and Technology Project, 1M CNY) is approved</li> 
+                            <li class="new-appointment"><span class="label label-primary">ScaDS.AI</span> October 2026: I joined <a href="https://scads.ai/">ScaDS.AI, Leipzig University</a> as a Junior Research Group Leader for Machine Learning.</li>
+                            <li class="hiring-news"><span class="label label-danger">HIRING</span> <strong>Two full-time PhD positions are open in our group.</strong> <a href="#open-positions">Research topics and application details &raquo;</a></li>
+
+                            <li><span class="label label-success"><font color="white">NSFC'26</font></a></span> August, 2026:  one NSFC proposal (PI: Xiaowei Xu, 530K CNY) is approved</li> 
+                            <li><span class="label label-success"><font color="white">MICCAI'26</font></a></span> July, 2026:  one MICCAI paper is accepted (Oral!)</li> 
+                            <li><span class="label label-success"><font color="white">Guangzhou'26</font></a></span> June, 2026:  one ECCV paper is accepted</li> 
+                            <li><span class="label label-success"><font color="white">Guangzhou'25</font></a></span> May, 2025:  one proposal (Guangzhou Science and Technology Project, 1M CNY, PI: Xiaowei Xu) is approved</li> 
                             <li><span class="label label-warning"><font color="white">Visiting Journey</font></a></span> March, 2025: Start visiting at Leibniz Institute for Analytical Sciences as Humboldt research fellow</li>
                             <li><span class="label label-info"><font color="white">Editor'25</font></a></span> February, 2025:  Invited to be an accosiate editor in Pattern Recognition (If=7.5)</li> 
                             <li><span class="label label-info"><font color="white">Editor'25</font></a></span> Jan, 2025:  Invited to be an accosiate editor in international journal of cardiovascular imaging</li> 
@@ -310,8 +337,8 @@
                             <li><span class="label label-info"><font color="white">BIBM'23</font></a></span> Dec, 2022:  one papers is accepted by BIBM (CCF B)</li> 
                             <li><span class="label label-success"><font color="white">Nature Machine Intelligence'22</font></a></span> Oct, 2022:  one papers is accepted by Nature Machine Intelligence (IF=25.9)</li> 
                             <li><span class="label label-success"><font color="white">Guangdong'22</font></a></span> Sept, 2022:  one proposal (Guangdong Special Support Plan for High-Level
-                                Talents of Guangdong Province, 广东省特支计划青年拔尖人才) is approved.</li> 
-                            <li><span class="label label-success"><font color="white">NSF'22</font></a></span> Sept, 2022:  one proposal (NO.62276071) is approved by NSF</li> 
+                                Talents of Guangdong Province, 广东省特支计划青年拔尖人才, PI, Xiaowei Xu) is approved.</li> 
+                            <li><span class="label label-success"><font color="white">NSFC'22</font></a></span> Sept, 2022:  one proposal (NO.62276071, PI: Xiaowei Xu) is approved by NSF</li> 
                             <li><span class="label label-info"><font color="white">ASPDAC'22</font></a></span> Sept, 2022:  one papers is accepted by ASPDAC (CCF B)</li> 
                             <li><span class="label label-info"><font color="white">MICCAI'22</font></a></span> June, 2022:  two papers are accepted by MICCAI (Top medical image coference)</li> 
                             <li><span class="label label-success"><font color="white">CACM'21</font></a></span> Dec, 2021:  one papers is accepted by Communication of The ACM (IF=14)</li> 
@@ -324,7 +351,7 @@
                             <li><span class="label label-info"><font color="white">ISBI'21</font></a></span> Jan, 2021:  one paper is accepted by ISBI (Top medical image coference) </li>
                             <li><span class="label label-info"><font color="white">AAAI'20</font></a></span> Dec, 2020:  one paper is accepted by AAAI (CCF A) </li>
                             <li><span class="label label-info"><font color="white">BIBM'20</font></a></span> Nov, 2020:  two papers are accepted by BIBM (CCF B) </li>
-                            <li><span class="label label-success"><font color="white">NSF'20</font></a></span> Sep, 2020:  two proposals (No. 620060650, NO.8207020125) are approved by NSF </li>
+                            <li><span class="label label-success"><font color="white">NSFC'20</font></a></span> Sep, 2020:  two proposals (No. 620060650 (PI: Xiaowei Xu), NO.8207020125) are approved by NSF </li>
                             <li><span class="label label-info"><font color="white">ICCAD'20</font></a></span> July, 2020: one paper is accepted by ICCAD'20 </li>
                             <li><span class="label label-success"><font color="white">Nature Electronics'20</font></a></span> July, 2020: one paper is accepted by Nature Electronics (IF=33) </li>
                             <li><span class="label label-info"><font color="white">MICCAI'20</font></a></span> June, 2020: four paper is accepted by MICCAI'20 </li>
@@ -405,22 +432,24 @@
                             
                         </h4>
                         <ul>
-                            <li><span class="label label-success">MIA</span> Shanshan Song, Wen Xie, Hailong Qiu, Meiping Huang, Jian Zhuang, Qing Lu, Yiyu Shi, Xiaomeng Li, Guang Tong, Xiaowei Xu, ”Domain Knowledge based Comprehensive Segmentation of Type-A Aortic Dissection with Clinically-oriented Evaluation”, <b>Medical Image Analysis (MIA, IF=10.7)</b>, 2025. <font color="red">(accepted!)</font></li></li>
-                            <li><span class="label label-success">ESWA</span> Jiawei Zhang*, Xiaodong Wang*, Hailong Qiu*, Yanchun Zhang, Lanying Zhang, Wen Xie, Zeyang Yao, Tianchen Wang, Chu Han, Peijian Wei, Jian Liu, Yiyu Shi, Xiaomeng Li, Meiping Huang, Huiming Guo, Jian Zhuang, <b> Xiaowei Xu</b>, ”HCM-Net: Structure-aware Excised Myocardium Segmentation Network for the Surgical Planning of Hypertrophic Cardiomyopathy”, <b>Expert Systems With Applications  (ESWA, IF=7.5)</b> <font color="red">(Online!)</font></li></li>
-                            <li><span class="label label-success">PR</span> Jiawei Zhang, Yanchun Zhang*, Hailong Qiu, Tianchen Wang, Xiaomeng Li, Shanfeng Zhu, Meiping Huang*, Jian Zhuang*, Yiyu Shi,  <b> Xiaowei Xu</b>, Constrained Multi-scale Dense Connections for Biomedical Image Segmentation, <b>Pattern Recognition (PR, IF=7.5)</b> <font color="red">(Online!)</font></li></li>
-                            <li><span class="label label-success">ECCV</span> Dewen Zeng, Xinrong Hu, Yawen Wu, <b> Xiaowei Xu</b>,  Yiyu Shi, "Contrastive Learning with Synthetic Positives", <b>ECCV</b>, online, 2024. <font color="red">(accepted!)</font></li></li>
-                            <li><span class="label label-success">ECCV</span> Jiewen, Yang,<b> Xiaowei Xu*</b>,  Xiaomeng Li*, "CardiacNet: Learning to Reconstruct Abnormalities for Cardiac Disease Assessment from Echocardiogram Videos", <b>ECCV</b>, online, 2024. <font color="red">(accepted!)</font></li></li>
-                            <li><span class="label label-success">TNNLS</span> Shuhan Li, Xiaomeng Li*,<b> Xiaowei Xu*</b>,  Kwang-Ting Cheng, "Dynamic Subcluster-Aware Network for Few-Shot Skin Disease Classification", <b>IEEE Transactions on Neural Networks and Learning Systems (TNNLS, IF=10)</b>, online, 2023. <font color="red">(accepted!)</font></li></li>
-                            <li><span class="label label-success">MIA</span> <b> Xiaowei Xu</b>, Jia Q., Qiu H., Yuan H., Dong Y., Xie W., Yao Z., Zhang J., Nie Z., , Li X., Shi Y., Zou James*, Huang M.*, Zhuang J.*  "A Clinically Applicable AI System for Diagnosis of Congenital Heart Diseases based on Computed Tomography Images", <b>Medical Image Analysis (MIA, IF=14)</b>, 2023. <font color="red">(accepted!)</font></li></li>
+                            <li><span class="label label-success">MICCAI</span> Yinheng Zhu, Xiaowei Xu”Decoupled Single-Mask Annotation Noise Detection via Cross-Sectional Patch Self-Consistency”, <b>MICCAI</b>, 2026. <font color="red" >Oral presentation!</font></li></li>
+                            <li><span class="label label-success">ECCV</span> Jie Qiao, Jianxu Chen, Xiaowei Xu, ”MiNQVIS: Mitigating Noisy Queries for Robust Online Video Instance Segmentation”, <b>ECCV</b>, 2026. <font color="red"></font></li></li>
+                            <li><span class="label label-success">MIA</span> Shanshan Song, Wen Xie, Hailong Qiu, Meiping Huang, Jian Zhuang, Qing Lu, Yiyu Shi, Xiaomeng Li, Guang Tong, Xiaowei Xu, ”Domain Knowledge based Comprehensive Segmentation of Type-A Aortic Dissection with Clinically-oriented Evaluation”, <b>Medical Image Analysis (MIA, IF=10.7)</b>, 2025. <font color="red"></font></li></li>
+                            <li><span class="label label-success">ESWA</span> Jiawei Zhang*, Xiaodong Wang*, Hailong Qiu*, Yanchun Zhang, Lanying Zhang, Wen Xie, Zeyang Yao, Tianchen Wang, Chu Han, Peijian Wei, Jian Liu, Yiyu Shi, Xiaomeng Li, Meiping Huang, Huiming Guo, Jian Zhuang, <b> Xiaowei Xu</b>, ”HCM-Net: Structure-aware Excised Myocardium Segmentation Network for the Surgical Planning of Hypertrophic Cardiomyopathy”, <b>Expert Systems With Applications  (ESWA, IF=7.5)</b> <font color="red"></font></li></li>
+                            <li><span class="label label-success">PR</span> Jiawei Zhang, Yanchun Zhang*, Hailong Qiu, Tianchen Wang, Xiaomeng Li, Shanfeng Zhu, Meiping Huang*, Jian Zhuang*, Yiyu Shi,  <b> Xiaowei Xu</b>, Constrained Multi-scale Dense Connections for Biomedical Image Segmentation, <b>Pattern Recognition (PR, IF=7.5)</b> <font color="red"></font></li></li>
+                            <li><span class="label label-success">ECCV</span> Dewen Zeng, Xinrong Hu, Yawen Wu, <b> Xiaowei Xu</b>,  Yiyu Shi, "Contrastive Learning with Synthetic Positives", <b>ECCV</b>, online, 2024. <font color="red"></font></li></li>
+                            <li><span class="label label-success">ECCV</span> Jiewen, Yang,<b> Xiaowei Xu*</b>,  Xiaomeng Li*, "CardiacNet: Learning to Reconstruct Abnormalities for Cardiac Disease Assessment from Echocardiogram Videos", <b>ECCV</b>, online, 2024. <font color="red"></font></li></li>
+                            <li><span class="label label-success">TNNLS</span> Shuhan Li, Xiaomeng Li*,<b> Xiaowei Xu*</b>,  Kwang-Ting Cheng, "Dynamic Subcluster-Aware Network for Few-Shot Skin Disease Classification", <b>IEEE Transactions on Neural Networks and Learning Systems (TNNLS, IF=10)</b>, online, 2023. <font color="red"></font></li></li>
+                            <li><span class="label label-success">MIA</span> <b> Xiaowei Xu</b>, Jia Q., Qiu H., Yuan H., Dong Y., Xie W., Yao Z., Zhang J., Nie Z., , Li X., Shi Y., Zou James*, Huang M.*, Zhuang J.*  "A Clinically Applicable AI System for Diagnosis of Congenital Heart Diseases based on Computed Tomography Images", <b>Medical Image Analysis (MIA, IF=14)</b>, 2023. <font color="red"></font></li></li>
                             <li><span class="label label-success">CMIG</span> Zeng, A., Wu, C., Huang, M., Zhuang, J., Bi, S., Pan, D., ... & <b> Xiaowei Xu*</b>, "ImageCAS: A Large-Scale Dataset and Benchmark for Coronary Artery Segmentation based on Computed Tomography Angiography Images", <b>Computerized Medical Imaging and Graphics (CMIG, IF=7.4)</b>, 2023.
                             <li><span class="label label-success">BMVC'23</span>  Kaikai Liu, Yiyu Shi, Jian Zhuang, Meiping Huang, Hongwen Fei, Boyang Li, Jin Hong, Qing Lu, Erlei Zhang, <b> Xiaowei Xu</b>, "Enhance Regional Wall Segmentation by Style Transfer for Regional Wall Motion Assessment", <b>Proc. of British Machine Vision Conference (BMVC)</b>, 2023.
-                            <li><span class="label label-success">ICCV'23</span>  Jiewen Yang, Xinpeng Ding, Ziyang Zheng, <b> Xiaowei Xu*</b>, Xiaomeng Li*, "GraphEcho: Graph-Driven Unsupervised Domain Adaptation for Echocardiogram Video Segmentation", <b>International Conference on Computer Vision (ICCV)</b>, 2023, Oral presentation. <font color="red">(accepted!)</font></li></li>
-                            <li><span class="label label-success">NMI'23</span> Jia Zhenge, Jingtong Hu, <b> Xiaowei Xu#</b>, Yiyu Shi#. "The Importance of Resource Awareness in Artificial Intelligence for Healthcare", <b>Nature Machine Intelligence (NMI, IF=25.9)</b>, 2023. <font color="red">(accepted!)</font></li></li>
-                            <li><span class="label label-success">NMI'23</span> Jia Zhenge, Dawei Li, <b> Xiaowei Xu#</b>, Jingtong Hu, Yiyu Shi#. "Life-Threatening Ventricular Arrhythmia Detection Challenge in Implantable Cardioverter Defibrillators", <b>Nature Machine Intelligence (NMI, IF=25.9)</b>, 2023. <font color="red">(accepted!)</font></li></li>
+                            <li><span class="label label-success">ICCV'23</span>  Jiewen Yang, Xinpeng Ding, Ziyang Zheng, <b> Xiaowei Xu*</b>, Xiaomeng Li*, "GraphEcho: Graph-Driven Unsupervised Domain Adaptation for Echocardiogram Video Segmentation", <b>International Conference on Computer Vision (ICCV)</b>, 2023, Oral presentation. <font color="red"></font></li></li>
+                            <li><span class="label label-success">NMI'23</span> Jia Zhenge, Jingtong Hu, <b> Xiaowei Xu#</b>, Yiyu Shi#. "The Importance of Resource Awareness in Artificial Intelligence for Healthcare", <b>Nature Machine Intelligence (NMI, IF=25.9)</b>, 2023. <font color="red"></font></li></li>
+                            <li><span class="label label-success">NMI'23</span> Jia Zhenge, Dawei Li, <b> Xiaowei Xu#</b>, Jingtong Hu, Yiyu Shi#. "Life-Threatening Ventricular Arrhythmia Detection Challenge in Implantable Cardioverter Defibrillators", <b>Nature Machine Intelligence (NMI, IF=25.9)</b>, 2023. <font color="red"></font></li></li>
                             <li><span class="label label-success">TMI'23</span> Xinpeng Ding#, Xinjian Yan#, Zixun Wang, Wei Zhao, Jian Zhuang*, <b> Xiaowei Xu*</b>, and Xiaomeng Li*, "Less is More: Surgical Phase Recognition from Timestamp Supervision", <b>IEEE Transactions on Medical Imaging</b> (<b>TMI, IF=11</b>), 2023, accapted.
                             <li><span class="label label-success">BIBM'22</span> Zeng An, Chenxi Mi, Dan Pan, Qing Lu, <b> Xiaowei Xu*</b>. "ImageALCAPA: A 3D Computed Tomography Image Dataset for Automatic Segmentation of Anomalous Left Coronary Artery from Pulmonary Artery", <b>IEEE International Conference on Bioinformatics and Biomedicine</b> (<b>BIBM, CCF B</b>), pp. 1800-1803. IEEE, 2022
                             <li><span class="label label-success">ASPDAC'22</span> Lu Qing, Jiang Weiwen,<b> Xiaowei Xu</b>, Hu Jingtong, & Shi Yiyu . "Quantization Through Search: A Novel Scheme to Quantize Convolutional Neural Networks in Finite Weight Space", <b>Asia and South Pacific Design Automation Conference</b> (<b>ASP-DAC'23, CCF B</b>), pp. 1800-1803. IEEE, 2022
-                            <li><span class="label label-success">NMI'22</span> Jia, Zhenge, <b> Xiaowei Xu</b>, Jingtong Hu, and Yiyu Shi. "Low-power object-detection challenge on unmanned aerial vehicles", <b>Nature Machine Intelligence (NMI, IF=25.9)</b>, 2022. <font color="red">(accepted!)</font></li></li>
+                            <li><span class="label label-success">NMI'22</span> Jia, Zhenge, <b> Xiaowei Xu</b>, Jingtong Hu, and Yiyu Shi. "Low-power object-detection challenge on unmanned aerial vehicles", <b>Nature Machine Intelligence (NMI, IF=25.9)</b>, 2022. <font color="red"></font></li></li>
                             <li><span class="label label-success">TETCI‘22</span> Shuangchun Gui, Zhenkun Wang, Xinpeng Ding, Xiaowei Hu, <b> Xiaowei Xu*</b>, Xiaomeng Li*, "Spectrum and Style Transformation Framework for Omni-Domain COVID-19 Diagnosis", <b>IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI, IF=4.8)</b>, 2021.
                             <li><span class="label label-success">TC'22</span> Tianchen Wang, Jiawei Zhang, Jinjun Xiong, Song Bian, Zheyu Yan, Meiping Huang, Jian Zhuang, Takashi Sato, <b> Xiaowei Xu*</b>, Yiyu Shi, <a target="_blank" href="papers/tianchen2022tc.pdf">"VisualNet: An End-to-End Human Visual System Inspired Framework to Reduce Inference Latency of Deep Neural Networks"</a>, <b>IEEE Transactions on Computers</b> (<b>TC, CCF-A</b>) 71, no. 11 (2022): 2717-2727.
                             <li><span class="label label-success">JETC'22</span>Li, Dawei, Yang Zhou, Shaopin Chen, and Xiaowei Xu. <b> Xiaowei Xu*</b>, <a target="_blank" href="papers/dawei2022jetc.pdf"> "A Quasi-digital QPSK Modulator Design for Biomedical Devices."</a>, <b>ACM Journal on Emerging Technologies in Computing Systems</b> (<b>JETC, CCF C</b>) 18, no. 2 (2022): 1-16.
@@ -749,48 +778,16 @@
                         <hr class="star-primary">
                         <h2>Contact</h2>
                         <div class="container lead">
-                            <!-- <div align="left" class="col-md-5">
-                                <h4 class="myEN">
-                                    Postal address
-                                </h4>
-                                <p class="myEN">
-                                Xiaowei Xu<br>
-                                Guangdong provincial People's Hospital<br>
-                                106, Zhongshan 2nd RD 
-                                Guangzhou, China<br>
-                                </p>
-                                Email:
-                                <script language="JavaScript">
-                                     
-                                    document.write("&nbsp;");
-                                    spiderjam('xiao.wei.xu','foxmail.com');
-                                 </script><br>
-                                
-                            </div> -->
-                            
-                            
                             <div align="left" class="col-md-5">
                                 <h4>Office address</h4>
-                                <p>Laboratory of Artificial Intelligence and 3D Technologies for Cardiovascular Diseases,<br/>
-                                Guangdong provincial People's Hospital<br>
-                                106, Zhongshan 2nd RD, Guangzhou, China<br/>
-                                <b>Official Email</b>: xuxiaowei [AT] gdph.org.cn<br/>
-                                <!-- <script language="JavaScript"> -->
-                                     <!--
-                                    // document.write("&nbsp;");
-                                    // spiderjam('xuxiaowei_','gdph.org.cn');
-                                    // -->
-                                <!-- </script><br> -->
-                                <b>Commonly used Email</b>: xiao.wei.xu [AT] foxmail.com<br/>
-                                <!-- <script language="JavaScript">
-                                    document.write("&nbsp;");
-                                    spiderjam('xiao.wei.xu_1','foxmail.com');
-                                    -->
-                                <!-- </script><br> --> 
-                                <br/>
+                                <p><strong>Xiaowei Xu</strong><br>
+                                    Junior Research Group Leader for Structure-Aware Machine Learning<br>
+                                    D03.41, ScaDS.AI &middot; Leipzig University, Uferstra&szlig;e 11, Leipzig, Germany<br>
+                                    <strong>Email:</strong> <a href="mailto:xiaowei.xu@uni-leipzig.de">xiaowei.xu@uni-leipzig.de</a>
                                 </p>
+                                <p>For research collaboration and PhD applications, please use the email address above.</p>
                             </div>
-                            
+
                             <div align="left" class="col-md-2">
                                 <h4>Wechat account</h4>
                                 <p><a><img src="images/wechat_account.jpg" border="0"
