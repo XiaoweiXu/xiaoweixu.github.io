@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>[ Xiaowei Xu @ GDPH ]</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/menucollapse.js"></script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    
+    <body id="page-top" class="index">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span><a href="http://www.gdghospital.org.cn/ziwang/index.php/"><img border="0" width="200" src="images/gdsxxgbyjs_xxw.png"/></a></span>
+                    <span><a href="http://english.hust.edu.cn/"><img border="0" width="40" src="images/Hustseals.png"/></a></span>
+                    <span><a href="https://www.ualberta.ca/index.html"><img border="0" width="40" src="images/ua.png"/></a></span>
+                    <span><a href="http://www.buffalo.edu/"><img border="0" width="40" src="images/SUNY-Buffalo.png"/></a></span>
+                    <span><a href="https://www.zju.edu.cn/english/"><img border="0" width="40" src="images/zju.png"/></a></span>
+                    <span><a href="https://www.nd.edu/"><img border="0" width="40" src="images/nd3.png"/></a></span>
+
+                    <!-- <a class="navbar-brand" href="http://english.hust.edu.cn/">
+                        <img src="img/Hustseals.png" width="40" height="30" alt="GAC">
+                    </a>
+                    <a class="navbar-brand" href="https://www.ualberta.ca/index.html">
+                        <img src="img/ua.png" width="40" height="30" alt="GAC">
+                    </a>
+                    <a class="navbar-brand" href="http://www.buffalo.edu/">
+                        <img src="img/SUNY-Buffalo.png" width="40" height="30" alt="GAC">
+                    </a>
+                    <a class="navbar-brand" href="">
+                        <img src="img/zju.png" width="40" height="30" alt="GAC">
+                    </a>
+                    <a class="navbar-brand" href="">
+                        <img src="img/nd3.png" width="40" height="30" alt="GAC">
+                    </a> -->
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- <li class="dropdown"> -->
+                            </li>
+                            <li class="page-scroll">
+                                <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#intro">Home</a>
+                            </li>
+                            <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#intro"> -->
+                                <!-- Home<span class="caret"></span></a> -->
+                            <!-- <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Introduction</a></li>
+                                 <li><a href="bio.html">Biography</a></li> 
+                                <li><a href="cv.html">CV (Web)</a></li>
+                                <li><a target="_blank" href="cv_xiaoweixu.pdf">CV (PDF)</a></li>
+                            </ul> -->
+                        <!-- </li> -->
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Publications<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#publications">Selected</a></li>
+                                <li><a href="publications.html">All</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-awards-content').show();" href="#awards">Awards</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="talks/">Talks</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-courses-content').show();" href="#courses">Courses</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-systems-content').show();" href="#systems">Systems</a>
+                        </li> -->
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-service-content').show();" href="#service">Service</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-resources-content').show();" href="#resources">Resources</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-contact-content').show();" href="cv_xiaoweixu.pdf">CV</a>
+                        </li> 
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-contact-content').show();" href="#datasets">Datasets</a>
+                        </li>                        
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-contact-content').show();" href="#contact">Contact</a>
+                        </li>
+
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                
+                <!-- search box submenu -->
+                <div class="collapse" id="bs-example-navbar-collapse-2">
+                    <gcse:search></gcse:search>
+                        </div>
+                
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <section>
+            <!-- Place this tag where you want the search results to render -->
+            <gcse:searchresults-only></gcse:searchresults-only>
+                </section>
+        
+        <!-- Home Section -->
+        <section  name="home" id="home" style="margin-top:40px">
+            <div class="container">
+                <div align="center" class="col-md-4">
+                    <a target="_blank" href="images/xiaowei_Wechat.jpeg">
+                        <img id="mobile-img" src="images/xiaowei_Wechat.jpeg" width="250" border="0"  height="250" alt=""></a>
+                        <h5><i>Try your best and keep trying.</i></h5>
+                </div>
+                <div align="left" class="col-md-8">
+                    <h2>Xiaowei Xu 
+                        <h5><i>PhD, Huazhong U. of Sci & Tech - Wuhan, China, 2016</i></h5>
+                        <h5><i>B.S., Huazhong U. of Sci & Tech - Wuhan, China, 2011</i></h5>
+                    </h2>
+                    
+                    <h4>Associate Professor<br>
+                        <a href="http://www.gdghospital.org.cn/">Laboratory of Artificial Intelligence and 3D Technologies for Cardiovascular Diseases</a><br>
+                        <a href="http://www.gdghospital.org.cn/"> Guangdong Provincial People's Hospital </a><br>
+                        <!--
+                         P.O. Box 20537<br>
+                         1678 Nicosia, CYPRUS<br>-->
+                        <!-- Tel/Fax: <a href="tel:08618995521442">+86-18995521442</a>  <br> -->
+                        Email: xiao.wei.xu [AT] foxmail.com 
+                        <script language="JavaScript">
+                            // <!-- test
+                            // document.write("&nbsp;");
+                            // spiderjam('xiao.wei.xu__','foxmail.com');
+                            // -->
+                            </script><br/>
+                        <!--Lab: <a target="_blank" href="https://dmsl.cs.ucy.ac.cy/">http://dmsl.cs.ucy.ac.cy/</a><br> -->
+                        Directions: <a target="_blank" href="https://goo.gl/maps/MZY9tK9bf7991tnW8">https://goo.gl/maps/MZY9tK9bf7991tnW8</a>
+                    </h4>
+                    <h4><i>Expertise: Machine Learning；Medical Image Processing；Medical Image Segmentation; Embedded Computing </i> <a href="#intro" onclick="javascript:reset_menus();$('#tab-intro-content').show();" class="btn-primary btn-xs">&raquo;</a><br></h4>
+                    
+                </div>
+
+                <!-- <div align="left" class="col-md-4">
+                    
+                </div> -->
+                
+                <!-- <i class="twittertop" style="display:none;" id="t1">
+                    <div id="news" tyle="text-align: left"  class="col-md-5">&nbsp;
+                        <center><a class="twitter-timeline" href="https://twitter.com/dmslucy" data-chrome="nofooter" data-widget-id="346662554203992065" data-width="900"
+                            data-height="300">Tweets
+                            by @dmslucy</a>
+                        <script>!function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + "://platform.twitter.com/widgets.js";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, "script", "twitter-wjs");</script></center>
+                    </div>
+                </i> -->
+                
+                <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
+                <b class="expandshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+                </b>
+                <b class="collapseshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+                </b>
+                
+            </div>
+        </section>
+        
+        <!-- Home Section -->
+        <section name="intro" id="intro">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    <!--<h2>Welcome!</h2>-->
+                    
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-intro-content">
+                        <hr class="star-primary">
+                        
+                        <p class="lead">
+                            I am an associate professor at <a href="http://www.gdghospital.org.cn/ziwang/index.php"> Guangdong Cardiovascular institute</a>
+                            (<a href="http://www.fudanmed.com/institute/news2018-1.aspx">Top 3-4</a> in cardiovascular subject in China) of
+                             <a href="http://www.gdghospital.org.cn/"> Guangdong Provincial People's Hospital</a> (<a href="http://www.fudanmed.com/institute/news2018-2.aspx">Top 27</a> in China). 
+                            I work at the <a href="http://www.gdghospital.org.cn/office/OfficeHome.aspx?bid=193">Laboratory of Artificial 
+                            Intelligence and 3D Technologies for Cardiovascular Diseases </a> as a co-director. 
+                            The lab director is <a href=“http://www.gdghospital.org.cn/office/ExpertInfoID.aspx?sid=20&id=795”>Jian Zhuang</a>, 
+                            previous dean of Guangdong Provincial People's Hospital.
+                            <p>I was a post-doc researcher at the <a href="https://cse.nd.edu/">Department of Computer Science and Engineering</a> of University of Notre Dame with
+                            <a href="https://engineering.nd.edu/profiles/yshi">Prof. Yiyu Shi</a> from 2016 to 2019. 
+                            I received my Ph.D. degree and B.S. degree from the Department of Electronic Science and Technology at <a href="http://www.hust.edu.cn/">
+                                Huazhong University of Science and Technology</a> in 2016 and 2011 under supervision of Prof. Yu Hu and Prof. Xuecheng Zou, respectively. 
+                                I have been a visiting scholar to University of Alberta (Canada) for three months and to State University of New York at Buffalo for one year during my PhD studies. <br/></p>
+                    
+                            <p>My research interests <b>focus on AI for cardiovascular diseases</b> including deep learning, and medical image processing.
+                            I have several papers about hardware optimization and deep learning on top conferences including <b>CVPR, AAAI, MICCAI, MIDL, ISBI, DAC, ICCAD</b>,
+                            and top-journals including <b>TPAMI, MIA, TMI, TCAD, TBioCAS, Nature Electronics, and Nature Machine Intelligence</b>.<br/></p>
+                                
+                            <p>Our team focuses on applying deep learning to clinic applications of cardiovascular diseases. We are collecting a  <b>massive of medical data</b> from our hospital for research.
+                                Feel free to contact me if you are interested in this topic. 
+
+                            <p>Our team try our best to perform <b>open source</b> research, and published <b>more than 10+ datasets and codes in <a href="https://www.kaggle.com/xiaoweixumedicalai/datasets"> Kaggle</a>.
+
+                            <p><b>Our team is currently recruiting professors (assistant professor, associate professor and professor), post-doctoral fellows and research assistants for medical image analysis.
+                                Feel free to contact me if you are interested in working in a high-level hospital.
+                            </b>
+                            
+
+
+                            <!-- My wechat account is Tophust.<br/></p> -->
+                  
+                        </p>
+                        
+                        
+                        <!-- <p><a href="bio.html" class="btn-sm btn-primary">Biography &raquo;</a>
+                        <a href="cv.html" class="btn-sm btn-primary">CV (Web)&raquo;</a>
+                        <a href="zeinalipour.pdf" class="btn-sm btn-primary">CV (PDF)&raquo;</a> -->
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- News Section -->
+        <section name="news" id="news">
+            
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-7">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-news-content').toggle();">News  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-news-content">
+                         
+                        <hr class="star-primary">   
+                        <h2>News  <a href="news.html" class="btn btn-primary">More &raquo;</a></h2>
+                         
+                        <p>
+
+                        <ul>
+                            <li><span class="label label-success"><font color="white">Guangzhou'25</font></a></span> May, 2025:  one proposal (Guangzhou Science and Technology Project, 1M CNY) is approved</li> 
+                            <li><span class="label label-warning"><font color="white">Visiting Journey</font></a></span> March, 2025: Start visiting at Leibniz Institute for Analytical Sciences as Humboldt research fellow</li>
+                            <li><span class="label label-info"><font color="white">Editor'25</font></a></span> February, 2025:  Invited to be an accosiate editor in Pattern Recognition (If=7.5)</li> 
+                            <li><span class="label label-info"><font color="white">Editor'25</font></a></span> Jan, 2025:  Invited to be an accosiate editor in international journal of cardiovascular imaging</li> 
+                            <li><span class="label label-info"><font color="white">MIA'25</font></a></span> February, 2025:  one paper is accepted by Medical Image Analysis (IF=10.7)</li> 
+                            <li><span class="label label-info"><font color="white">ESWA'24</font></a></span> December, 2024:  one paper is accepted by Expert System With Applicatons (IF=7.5)</li> 
+                            <li><span class="label label-info"><font color="white">PR'24</font></a></span> December, 2024:  one paper is accepted by Pattern Recognition (IF=7.5)</li> 
+                            <li><span class="label label-info"><font color="white">Germany'25</font></a></span> November, 2024:  Arrived at Frankfurt and start my visiting researcher in ISAS</li> 
+                            <li><span class="label label-info"><font color="white">ECCV'24</font></a></span> July, 2024:  one paper is accepted by ECCV (Top CV conference)</li> 
+                            <li><span class="label label-info"><font color="white">MICCAI'24</font></a></span> June, 2024:  one paper is accepted by MICCAI (Top medical image conference)</li> 
+                            <li><span class="label label-info"><font color="white">TNNLS'24</font></a></span> Dec, 2023:  one paper is accepted by TNNLS (Top medical image journal, IF=10)</li> 
+                            <li><span class="label label-info"><font color="white">BMVC'23</font></a></span> August, 2023:  one paper is accepted by BMVC (Top medical image coference)</li> 
+                            <li><span class="label label-info"><font color="white">ICCV'23</font></a></span> July, 2023:  one paper is accepted by ICCV (Top CV coference)</li>
+                            <li><span class="label label-info"><font color="white">MICCAI'23</font></a></span> June, 2023:  four papers are accepted by MICCAI (Top medical image coference)</li> 
+                            <li><span class="label label-success"><font color="white">Nature Machine Intelligence'23</font></a></span> May, 2023:  Two papers are accepted by Nature Machine Intelligence (IF=25.9)</li> 
+                            <li><span class="label label-info"><font color="white">TMI'23</font></a></span> Jan, 2022:  one papers is accepted by TMI (IF=11)</li> 
+                            <li><span class="label label-info"><font color="white">BIBM'23</font></a></span> Dec, 2022:  one papers is accepted by BIBM (CCF B)</li> 
+                            <li><span class="label label-success"><font color="white">Nature Machine Intelligence'22</font></a></span> Oct, 2022:  one papers is accepted by Nature Machine Intelligence (IF=25.9)</li> 
+                            <li><span class="label label-success"><font color="white">Guangdong'22</font></a></span> Sept, 2022:  one proposal (Guangdong Special Support Plan for High-Level
+                                Talents of Guangdong Province, 广东省特支计划青年拔尖人才) is approved.</li> 
+                            <li><span class="label label-success"><font color="white">NSF'22</font></a></span> Sept, 2022:  one proposal (NO.62276071) is approved by NSF</li> 
+                            <li><span class="label label-info"><font color="white">ASPDAC'22</font></a></span> Sept, 2022:  one papers is accepted by ASPDAC (CCF B)</li> 
+                            <li><span class="label label-info"><font color="white">MICCAI'22</font></a></span> June, 2022:  two papers are accepted by MICCAI (Top medical image coference)</li> 
+                            <li><span class="label label-success"><font color="white">CACM'21</font></a></span> Dec, 2021:  one papers is accepted by Communication of The ACM (IF=14)</li> 
+                            <li><span class="label label-info"><font color="white">BIBM'21</font></a></span> Oct, 2021:  one papers is accepted by BIBM (CCF-B)</li> 
+                            <li><span class="label label-info"><font color="white">Frontiers'21</font></a></span> Oct, 2021:  Two papers are accepted by Frontiers (IF=5/6)</li> 
+                            <li><span class="label label-info"><font color="white">MICCAI'21</font></a></span> May, 2021:  three papers are accepted by MICCAI</li>  
+                            <li><span class="label label-info"><font color="white">IJCNN'21</font></a></span> April, 2021:  one paper is accepted by IJCNN (CCF C) </li>
+                            <li><span class="label label-info"><font color="white">DAC'21</font></a></span> March, 2021:  one paper is accepted by DAC (CCF A) </li>
+                            <li><span class="label label-info"><font color="white">ICASSP'21</font></a></span> Jan, 2021:  one paper is accepted by ICASSP (CCF B) </li>
+                            <li><span class="label label-info"><font color="white">ISBI'21</font></a></span> Jan, 2021:  one paper is accepted by ISBI (Top medical image coference) </li>
+                            <li><span class="label label-info"><font color="white">AAAI'20</font></a></span> Dec, 2020:  one paper is accepted by AAAI (CCF A) </li>
+                            <li><span class="label label-info"><font color="white">BIBM'20</font></a></span> Nov, 2020:  two papers are accepted by BIBM (CCF B) </li>
+                            <li><span class="label label-success"><font color="white">NSF'20</font></a></span> Sep, 2020:  two proposals (No. 620060650, NO.8207020125) are approved by NSF </li>
+                            <li><span class="label label-info"><font color="white">ICCAD'20</font></a></span> July, 2020: one paper is accepted by ICCAD'20 </li>
+                            <li><span class="label label-success"><font color="white">Nature Electronics'20</font></a></span> July, 2020: one paper is accepted by Nature Electronics (IF=33) </li>
+                            <li><span class="label label-info"><font color="white">MICCAI'20</font></a></span> June, 2020: four paper is accepted by MICCAI'20 </li>
+                            <li><span class="label label-info"><font color="white">MIDL'20</font></a></span> Mar, 2020: one paper is accepted by MIDL'20 </li>
+                            <li><span class="label label-warning"><font color="white">New Journey</font></a></span> Oct, 2019: Join Guangdong Provincial People's Hospital</li>
+                        </ul>
+ 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <div class="twitterlow" style="display:none;" id="t1">
+            <section  name="news"  id="news">
+                <div class="container lead">
+                    <div style="text-align: left; margin-top:10px" class="col-md-12">
+                        
+                        <b class="noshow" style="display:none;" id="tab-2">
+                            <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-news-content').toggle();">News  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                        </b>
+                        <b class="allshow" style="display:none;" id="tab-news-content">
+                            
+                            <hr class="star-primary">
+                            
+                            <h2>News</h2>
+                            <center><a class="twitter-timeline" href="https://twitter.com/dmslucy" data-chrome="nofooter" data-widget-id="346662554203992065">Tweets
+                                by @dmslcy</a>
+                            <script>!function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                                if (!d.getElementById(id)) {
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = p + "://platform.twitter.com/widgets.js";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }
+                            }(document, "script", "twitter-wjs");
+                            </script>
+                            </center>
+                        </b>
+                    </div>
+                </div>
+            </section>
+        </div> --> 
+        
+        <!-- Research Section -->
+        <section  name="publications" id="publications">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-3">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-publications-content">
+                        <hr class="star-primary">
+                        
+                        <h2>Selected Publications <a href="publications.html" class="btn btn-primary">All Publications&raquo;</a></h2>
+                        <h4>
+                            <span class="label label-warning">
+                                <a target="_blank" href="https://en.wikipedia.org/wiki/H-index"><font color=white>h-index</font></a>: 27
+                            </span>&nbsp;
+                            <span class="label label-warning">
+                                <a target="_blank" href="https://scholar.google.com/citations?user=1vVgUeQAAAAJ&hl=en"><font color=white>Citations</font></a>: 3000+
+                            </span>&nbsp;
+                            <!-- <span class="label label-warning">
+                                <a target="_blank" href="https://en.wikipedia.org/wiki/Erd&ouml;s_number"><font color="white">Erd&ouml;s #</font></a>: 3
+                            </span>&nbsp; -->
+                            <span class="label label-default">
+                                <a target="_blank" href="https://orcid.org/0000-0002-1046-6379"><font color="white">ORCID</font></a>
+                            </span>&nbsp;
+                            <span class="label label-default">
+                                <a target="_blank" href="https://www.scopus.com/authid/detail.uri?authorId=55621149400"><font color="white">Scopus</font></a>
+                            </span>&nbsp;
+                            <span class="label label-default">
+                                <a target="_blank" href="https://publons.com/researcher/3075906/xiaowei-xu/"><font color="white">ResearcherID</font></a>
+                            </span>
+                            
+                            
+                        </h4>
+                        <ul>
+                            <li><span class="label label-success">MICCAI</span> Yinheng Zhu, Xiaowei Xu”Decoupled Single-Mask Annotation Noise Detection via Cross-Sectional Patch Self-Consistency”, <b>MICCAI</b>, 2026. <font color="red" >Oral presentation!</font></li></li>
+                            <li><span class="label label-success">ECCV</span> Jie Qiao, Jianxu Chen, Xiaowei Xu, ”MiNQVIS: Mitigating Noisy Queries for Robust Online Video Instance Segmentation”, <b>ECCV</b>, 2026. <font color="red"></font></li></li>
+                            <li><span class="label label-success">MIA</span> Shanshan Song, Wen Xie, Hailong Qiu, Meiping Huang, Jian Zhuang, Qing Lu, Yiyu Shi, Xiaomeng Li, Guang Tong, Xiaowei Xu, ”Domain Knowledge based Comprehensive Segmentation of Type-A Aortic Dissection with Clinically-oriented Evaluation”, <b>Medical Image Analysis (MIA, IF=10.7)</b>, 2025. <font color="red"></font></li></li>
+                            <li><span class="label label-success">ESWA</span> Jiawei Zhang*, Xiaodong Wang*, Hailong Qiu*, Yanchun Zhang, Lanying Zhang, Wen Xie, Zeyang Yao, Tianchen Wang, Chu Han, Peijian Wei, Jian Liu, Yiyu Shi, Xiaomeng Li, Meiping Huang, Huiming Guo, Jian Zhuang, <b> Xiaowei Xu</b>, ”HCM-Net: Structure-aware Excised Myocardium Segmentation Network for the Surgical Planning of Hypertrophic Cardiomyopathy”, <b>Expert Systems With Applications  (ESWA, IF=7.5)</b> <font color="red"></font></li></li>
+                            <li><span class="label label-success">PR</span> Jiawei Zhang, Yanchun Zhang*, Hailong Qiu, Tianchen Wang, Xiaomeng Li, Shanfeng Zhu, Meiping Huang*, Jian Zhuang*, Yiyu Shi,  <b> Xiaowei Xu</b>, Constrained Multi-scale Dense Connections for Biomedical Image Segmentation, <b>Pattern Recognition (PR, IF=7.5)</b> <font color="red"></font></li></li>
+                            <li><span class="label label-success">ECCV</span> Dewen Zeng, Xinrong Hu, Yawen Wu, <b> Xiaowei Xu</b>,  Yiyu Shi, "Contrastive Learning with Synthetic Positives", <b>ECCV</b>, online, 2024. <font color="red"></font></li></li>
+                            <li><span class="label label-success">ECCV</span> Jiewen, Yang,<b> Xiaowei Xu*</b>,  Xiaomeng Li*, "CardiacNet: Learning to Reconstruct Abnormalities for Cardiac Disease Assessment from Echocardiogram Videos", <b>ECCV</b>, online, 2024. <font color="red"></font></li></li>
+                            <li><span class="label label-success">TNNLS</span> Shuhan Li, Xiaomeng Li*,<b> Xiaowei Xu*</b>,  Kwang-Ting Cheng, "Dynamic Subcluster-Aware Network for Few-Shot Skin Disease Classification", <b>IEEE Transactions on Neural Networks and Learning Systems (TNNLS, IF=10)</b>, online, 2023. <font color="red"></font></li></li>
+                            <li><span class="label label-success">MIA</span> <b> Xiaowei Xu</b>, Jia Q., Qiu H., Yuan H., Dong Y., Xie W., Yao Z., Zhang J., Nie Z., , Li X., Shi Y., Zou James*, Huang M.*, Zhuang J.*  "A Clinically Applicable AI System for Diagnosis of Congenital Heart Diseases based on Computed Tomography Images", <b>Medical Image Analysis (MIA, IF=14)</b>, 2023. <font color="red"></font></li></li>
+                            <li><span class="label label-success">CMIG</span> Zeng, A., Wu, C., Huang, M., Zhuang, J., Bi, S., Pan, D., ... & <b> Xiaowei Xu*</b>, "ImageCAS: A Large-Scale Dataset and Benchmark for Coronary Artery Segmentation based on Computed Tomography Angiography Images", <b>Computerized Medical Imaging and Graphics (CMIG, IF=7.4)</b>, 2023.
+                            <li><span class="label label-success">BMVC'23</span>  Kaikai Liu, Yiyu Shi, Jian Zhuang, Meiping Huang, Hongwen Fei, Boyang Li, Jin Hong, Qing Lu, Erlei Zhang, <b> Xiaowei Xu</b>, "Enhance Regional Wall Segmentation by Style Transfer for Regional Wall Motion Assessment", <b>Proc. of British Machine Vision Conference (BMVC)</b>, 2023.
+                            <li><span class="label label-success">ICCV'23</span>  Jiewen Yang, Xinpeng Ding, Ziyang Zheng, <b> Xiaowei Xu*</b>, Xiaomeng Li*, "GraphEcho: Graph-Driven Unsupervised Domain Adaptation for Echocardiogram Video Segmentation", <b>International Conference on Computer Vision (ICCV)</b>, 2023, Oral presentation. <font color="red"></font></li></li>
+                            <li><span class="label label-success">NMI'23</span> Jia Zhenge, Jingtong Hu, <b> Xiaowei Xu#</b>, Yiyu Shi#. "The Importance of Resource Awareness in Artificial Intelligence for Healthcare", <b>Nature Machine Intelligence (NMI, IF=25.9)</b>, 2023. <font color="red"></font></li></li>
+                            <li><span class="label label-success">NMI'23</span> Jia Zhenge, Dawei Li, <b> Xiaowei Xu#</b>, Jingtong Hu, Yiyu Shi#. "Life-Threatening Ventricular Arrhythmia Detection Challenge in Implantable Cardioverter Defibrillators", <b>Nature Machine Intelligence (NMI, IF=25.9)</b>, 2023. <font color="red"></font></li></li>
+                            <li><span class="label label-success">TMI'23</span> Xinpeng Ding#, Xinjian Yan#, Zixun Wang, Wei Zhao, Jian Zhuang*, <b> Xiaowei Xu*</b>, and Xiaomeng Li*, "Less is More: Surgical Phase Recognition from Timestamp Supervision", <b>IEEE Transactions on Medical Imaging</b> (<b>TMI, IF=11</b>), 2023, accapted.
+                            <li><span class="label label-success">BIBM'22</span> Zeng An, Chenxi Mi, Dan Pan, Qing Lu, <b> Xiaowei Xu*</b>. "ImageALCAPA: A 3D Computed Tomography Image Dataset for Automatic Segmentation of Anomalous Left Coronary Artery from Pulmonary Artery", <b>IEEE International Conference on Bioinformatics and Biomedicine</b> (<b>BIBM, CCF B</b>), pp. 1800-1803. IEEE, 2022
+                            <li><span class="label label-success">ASPDAC'22</span> Lu Qing, Jiang Weiwen,<b> Xiaowei Xu</b>, Hu Jingtong, & Shi Yiyu . "Quantization Through Search: A Novel Scheme to Quantize Convolutional Neural Networks in Finite Weight Space", <b>Asia and South Pacific Design Automation Conference</b> (<b>ASP-DAC'23, CCF B</b>), pp. 1800-1803. IEEE, 2022
+                            <li><span class="label label-success">NMI'22</span> Jia, Zhenge, <b> Xiaowei Xu</b>, Jingtong Hu, and Yiyu Shi. "Low-power object-detection challenge on unmanned aerial vehicles", <b>Nature Machine Intelligence (NMI, IF=25.9)</b>, 2022. <font color="red"></font></li></li>
+                            <li><span class="label label-success">TETCI‘22</span> Shuangchun Gui, Zhenkun Wang, Xinpeng Ding, Xiaowei Hu, <b> Xiaowei Xu*</b>, Xiaomeng Li*, "Spectrum and Style Transformation Framework for Omni-Domain COVID-19 Diagnosis", <b>IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI, IF=4.8)</b>, 2021.
+                            <li><span class="label label-success">TC'22</span> Tianchen Wang, Jiawei Zhang, Jinjun Xiong, Song Bian, Zheyu Yan, Meiping Huang, Jian Zhuang, Takashi Sato, <b> Xiaowei Xu*</b>, Yiyu Shi, <a target="_blank" href="papers/tianchen2022tc.pdf">"VisualNet: An End-to-End Human Visual System Inspired Framework to Reduce Inference Latency of Deep Neural Networks"</a>, <b>IEEE Transactions on Computers</b> (<b>TC, CCF-A</b>) 71, no. 11 (2022): 2717-2727.
+                            <li><span class="label label-success">JETC'22</span>Li, Dawei, Yang Zhou, Shaopin Chen, and Xiaowei Xu. <b> Xiaowei Xu*</b>, <a target="_blank" href="papers/dawei2022jetc.pdf"> "A Quasi-digital QPSK Modulator Design for Biomedical Devices."</a>, <b>ACM Journal on Emerging Technologies in Computing Systems</b> (<b>JETC, CCF C</b>) 18, no. 2 (2022): 1-16.
+                            <li><span class="label label-success">Neurocomputing'22</span>Zhou, Shanglin, <b> Xiaowei Xu*</b>, Jun Bai, and Mikhail Bragin. <a target="_blank" href="papers/shanglinNeurocomputing22.pdf"> "Combining multi-view ensemble and surrogate lagrangian relaxation for real-time 3D biomedical image segmentation on the edge."</a>, <b>Neurocomputing</b> (IF=5.8) 512 (2022): 466-481.
+                                            
+                            <li><span class="label label-success">MICCAI'22</span> Qing Lu, <b>Xiaowei Xu</b>, Shunjie Dong, Callie Hao, Lei Yang, Cheng Zhuo, and Yiyu Shi, <a target="_blank" href="publications/papers/xxxx.pdf">"RT-DNAS: Real-time Constrained Differentiable Neural Architecture Search for 3D Cardiac Cine MRI Segmentation"</a>, <b>24th International Conference on Medical Image Computing and Computer Assisted Interventions (<b>MICCAI'21, Top conference in medical imaging</b>)</b>, 2021. <font color="red"></font></li></li>
+                            <li><span class="label label-success">MICCAI'22</span> Yawen Wu*, Dewen Zeng* (equal contribution), <b>Xiaowei Xu</b>, Yiyu Shi and Jingtong Hu, <a target="_blank" href="publications/papers/xxxx.pdf">"FairPrune: Achieving Fairness Through Pruning for Dermatological Disease Diagnosis"</a>, <b>24th International Conference on Medical Image Computing and Computer Assisted Interventions (<b>MICCAI'21, Top conference in medical imaging</b>)</b>, 2021. <font color="red">early accept, acceptance rate 13%</font></li></li>
+                            <li><span class="label label-success">BIBM'21</span> Yu-Jen Chen, Yen-Jung Chang, Shao-Cheng Wen, Yiyu Shi, Xiaowei Xu, Tsung-Yi Ho, Meiping Huang, Haiyun Yuan, and Jian Zhuang, <a target="_blank" href="publications/papers/xxxx.pdf">"“One-Shot” Reduction of Additive Artifacts in Medical Images"</a>, <b>IEEE International Conference on Bioinformatics and Biomedicine (BIBM'21, CCF B)</b>, 2021.
+                            <li><span class="label label-success">MICCAI'21</span> Tianchen Wang, Zhihe Li, Meiping Huang, Jian Zhuang, Shanshan Bi, Jiawei Zhang, Yiyu Shi, Hongwen Fei, <b>Xiaowei Xu</b>, <a target="_blank" href="publications/papers/">"EchoCP: An Echocardiography Dataset in Contrast Transthoracic Echocardiography for Patent Foramen Ovale Diagnosis"</a>, <b>24th International Conference on Medical Image Computing and Computer Assisted Interventions (<b>MICCAI'21, Top conference in medical imaging</b>)</b>, 2021. <font color="red"></font></li></li>
+                            <li><span class="label label-success">MICCAI'21</span> Xinrong Hu, Dewen Zeng, <b>Xiaowei Xu</b>, Yiyu Shi, <a target="_blank" href="publications/papers/">"Semi-supervised Contrastive Learning for Label-efficient Medical Image Segmentation"</a>, <b>24th International Conference on Medical Image Computing and Computer Assisted Interventions (<b>MICCAI'21, Top conference in medical imaging</b>)</b>, 2021. <font color="red"></font></li></li>
+                            <li><span class="label label-success">MICCAI'21</span> Dewen Zeng, Yawen Wu, Xinrong Hu, <b>Xiaowei Xu</b>, Haiyun Yuan, Meiping Huang, Jian Zhuang, Jingtong Hu, Yiyu Shi , <a target="_blank" href="publications/papers/">"Positional Contrastive Learning for Volumetric Medical Image Segmentation"</a>, <b>24th International Conference on Medical Image Computing and Computer Assisted Interventions (<b>MICCAI'21, Top conference in medical imaging</b>)</b>, 2021. <font color="red"></font></li></li>
+                            <li><span class="label label-success">IJCNN'21</span> Zhang Jiawei, Yanchun Zhang, <b>Xiaowei Xu</b>, <a target="_blank" href="papers/xucacm2021.pdf">"Objectaug: object-level data augmentation for semantic image segmentation"</a>, 2021 International Joint Conference on Neural Networks (<b>IJCNN'21</b>). IEEE, 2021.
+                            <li><span class="label label-success">DAC'21</span> Dewen Zeng, Yukun Ding, <b>Xiaowei Xu</b>, Haiyun Yuan, Hongwen Fei, Meiping Huang, Jian Zhuang, Jingtong Hu, Yiyu Shi, <a target="_blank" href="publications/papers/zhang2020constraint.pdf">"Hardware-aware Real-time Myocardial Segmentation Quality Control in Contrast Echocardiography"</a>, <b>Proc. of IEEE/ACM Design Automation Conference (DAC'21, CCF-A)</b>, 2021. <font color="red"></font></li></li>
+                            <li><span class="label label-success">ICASSP'21</span> Jiawei Zhang, Yanchun Zhang, <b>Xiaowei Xu</b>, <a target="_blank" href="publications/papers/zhang2020constraint.pdf">"Pyramid U-Net for Retina Vessel Segmentation"</a>, <b>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP'21, CCF B)</b>, 2021. <font color="red"></font></li></li>
+                            <li><span class="label label-success">AAAI'21</span> Dongxu Wei, <b>Xiaowei Xu</b>, Haibin Shen, Kejie Huang, <a target="_blank" href="">"C2F-FWN: Coarse-to-Fine Flow Warping Network for Spatial-Temporal Consistent Motion Transfer"</a>, <b>35th AAAI Conference on Artificial Intelligence (AAAI'21, CCF A)</b>, 2021. <font color="red"></font></li></li>
+                            <li><span class="label label-success">BIBM'20</span> Shao-Cheng Wen, Yu-Jen Chen, Zihao Liu, Wujie Wen,  <b>Xiaowei Xu</b>, Yiyu Shi, Tsung-Yi Ho, Meiping Huang, Haiyun Yuan, and Jian Zhuang, <a target="_blank" href="publications/papers/wen2020bibm.pdf">"Do noises bother human and neural networks in the same way? A medical image analysis perspective"</a>, <b>IEEE International Conference on Bioinformatics and Biomedicine (BIBM'20, CCF B)</b>, 2020. <font color="red"></font></li></li>
+                            <li><span class="label label-success">BIBM'20</span> Jiawei Zhang, Yanchun Zhang, Shanfeng Zhu, <b>Xiaowei Xu</b>, <a target="_blank" href="publications/papers/zhang2020constraint.pdf">"Constrained Multi-scale Dense Connections for Accurate Biomedical Image Segmentation"</a>, <b>IEEE International Conference on Bioinformatics and Biomedicine (BIBM'20, CCF B)</b>, 2020. <font color="red"></font></li></li>
+                            <li><span class="label label-success">Nature Electronics'20</span> Yukun Ding, Jinglan Liu, Weiwen Jiang, Sharon Xiaobo Hu, Jingjun Xiong, <b>Xiaowei Xu</b>* and Yiyu Shi*, <a target="_blank" href="publications/papers/dingnature2020.pdf">"The Hardware Implication of Neural Networks Competency-Awareness"</a>, <b>Nature Electronics, Top Journal</b>, 2020. <font color="red">(online)</font></li></li>
+                            <li><span class="label label-success">MICCAI'20</span> <b>Xiaowei Xu</b>, Tianchen Wang, Jian Zhuang, Haiyun Yuan, Meiping Huang, Qianjun Jia, Jianzheng Cen, Yuhao Dong, Yiyu Shi, <a target="_blank" href="publications/papers/xuMICCAI2020.pdf">"ImageCHD: A 3D Computed Tomography Image Dataset for Classification of Congenital Heart Disease"</a>, 23rd International Conference on Medical Image Computing and Computer Assisted Interventions (<b>MICCAI'20, Top conference in medical imaging</b>), October 4-8, VIirtual Conference, 2020.</li></li>
+                            <li><span class="label label-success">MICCAI'20</span> Tianchen Wang*, <b>Xiaowei Xu</b>*, Jinjun Xiong, Qianjun Jia, Haiyun Yuan, Meiping Huang, Jian Zhuang, Yiyu Shi, <a target="_blank" href="publications/papers/tianchenMICCAI2020.pdf">"ICA-UNet: ICA Inspired Statistical UNet for Real-time 3D CardiacCine MRI Segmentation"</a>, 23rd International Conference on Medical Image Computing and Computer Assisted Interventions (<b>MICCAI'20, Top conference in medical imaging</b>), October 4-8, VIirtual Conference, 2020.</li></li>
+                            <li><span class="label label-success">MICCAI'20</span> Zihao Liu, Sicheng Li, Yen-Kuang Chen, Tao Liu, Qi Liu, <b>Xiaowei Xu</b>, Yiyu Shi, Wujie Wen, <a target="_blank" href="publications/papers/zihaoMICCAI2020.pdf">"Orchestrating Medical Image Compression and Remote Segmentation Networks"</a>, 23rd International Conference on Medical Image Computing and Computer Assisted Interventions (<b>MICCAI'20, Top conference in medical imaging</b>), October 4-8, VIirtual Conference, 2020.</li></li>
+                            <li><span class="label label-success">MICCAI'20</span> Song Bian, <b>Xiaowei Xu</b>, Weiwen Jiang, Yiyu Shi, Takashi Sato, <a target="_blank" href="publications/papers/biansongMICCAI2020.pdf">"BUNET: BlindMedical Image Segmentation Based on Secure UNET"</a>, 23rd International Conference on Medical Image Computing and Computer Assisted Interventions (<b>MICCAI'20, Top conference in medical imaging</b>), October 4-8, VIirtual Conference, 2020.</li></li>
+                            <li><span class="label label-success">ICCAD'20</span> Dewen Zeng, Weiwen Jiang, Tianchen Wang,<b>Xiaowei Xu</b>, Haiyun Yuan, Meiping Huang,Jian Zhuang, Jingtong Hu and Yiyu Shi, <a target="_blank" href="publications/papers/xxxx.pdf">"Towards Cardiac Intervention Assistance: Hardware-Aware Neural Architecture Exploration for Real-Time 3D Cardiac Cine MRI Segmentation"</a>, IEEE/ACM International Conference on Computer-Aided Design (<b>ICCAD'20, CCF-B</b>), November 2-5, VIirtual Conference, 2020.</li></li>
+                            <li><span class="label label-success">ISBI'20</span> Yu-Jen Chen, Yen-Jeng Chang, Shao-Cheng Wen, <b>Xiaowei Xu</b>, Tsung-Yi Ho, Qianjun Jia, Meiping Huang, Jian Zhuang, and Yiyu Shi, <a target="_blank" href="publications/papers/chenyujenISBI2020.pdf">"Zero-Shot Medical Image Artifact Reduction"</a>, IEEE International Symposium on Biomedical Imaging (<b>ISBI'20, Top conference in medical imaging</b>), April 3-7, VIirtual Conference, 2020.</li></li>
+                            <li><span class="label label-success">MIDL'20</span> Yukun Ding, Jinglan Liu, <b>Xiaowei Xu</b>, Meiping Huang, Jian Zhuang, Jinjun Xiong, Yiyu Shi, <a target="_blank" href="publications/papers/yukunMIDL2020.pdf">"Uncertainty-Aware Training of Neural Networks for Selective Medical Image Segmentation"</a>, International Conference on Medical Imaging with Deep Learning (<b>MIDL'20, Top conference in medical imaging</b>), July 6-9, VIirtual Conference, 2020.</li></li>
+                            <li><span class="label label-success">IEEE TMM'20</span> Dongxu Wei, <b>Xiaowei Xu</b>, Haibin Shen, and Kejie Huang, <a target="_blank" href="publications/papers/dongxuTMM2020.pdf">"GAC-GAN: A General Method for Appearance-Controllable Human Video Motion Transfer"</a>, IEEE Transactions on Multimedia (<b>TMM'20, CCF-B</b>), in print, 2020. </li></li>
+                            <li><span class="label label-success">IEEE TCAD'20</span> Jinglan Liu, Jiaxin Zhang, Yukun Ding, <b>Xiaowei Xu</b>, Meng Jiang, and Yiyu Shi, <a target="_blank" href="publications/papers/jinglanTCAD2020.pdf">"Binarizing Weights Wisely for Edge Intelligence: Guide for Partial Binarization of Deconvolution-Based Generators"</a>, IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (<b>TCAD'20, CCF-A</b>), in print, 2020. </li></li>
+                            <li><span class="label label-success">IEEE TPAMI'19</span> <b>Xiaowei Xu</b>*, Xinyi Zhang*, Bei Yu, Xiaobo Sharon Hu, Christopher Rowen, Jingtong Hu, and Yiyu Shi, <a target="_blank" href="publications/papers/xuTPAMI2019.pdf">"DAC-SDC Low Power Object Detection Challenge for UAV Applications"</a>, IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI'19, CCF-A</b>), Vol. 29, Iss. 1-2, pp. 1-14, 1939-3539, 2019. </li></li>
+                            <li><span class="label label-success">ICCAD'19</span> Qing Lu, Weiwen Jiang, <b>Xiaowei Xu</b>, Yiyu Shi, Jingtong Hu, <a target="_blank" href="publications/papers/qingICCAD2019.pdf">"On Neural Architecture Search for Resource-Constrained Hardware Platforms"</a>, IEEE/ACM International Conference on Computer-Aided Design (<b>ICCAD'19, CCF-B</b>), November 4-7, Westminster, Colorado, 2019.</li></li>
+                            <li><span class="label label-success">MICCAI'19</span> <b>Xiaowei Xu</b>, Tianchen Wang, Yiyu Shi, Qianjun Jia, Haiyun Yuan, Meiping Huang,Jian Zhuang, <a target="_blank" href="publications/papers/xuMICCAI2019.pdf">"Whole Heart and Great Vessel Segmentation in Congenital Heart Disease Using Deep Neural Networks and Graph Matching"</a>, 22nd International Conference on Medical Image Computing and Computer Assisted Interventions (<b>MICCAI'19, Top conference in medical imaging</b>), 13-17 Oct, Shenzhen, China, 2019.</li></li>
+                            <li><span class="label label-success">MICCAI'19</span> Tianchen Wang, <b>Xiaowei Xu</b>, jingjun, Xiong, Yiyu Shi, <a target="_blank" href="publications/papers/tianchenMICCAI2019.pdf">"MSU-Net: Multiscale Statistical U-Net for Real-Time 3D Cardiac MRI Video Segmentation"</a>, 22nd International Conference on Medical Image Computing and Computer Assisted Interventions (<b>MICCAI'19, Top conference in medical imaging</b>), 13-17 Oct, Shenzhen, China, 2019.</li></li>
+                            <li><span class="label label-success">CVPR'19</span> Zihao Liu, <b>Xiaowei Xu</b>, Tao Liu, Qi Liu, Yanzhi Wang, Meiping Huang, Haiyun Yuan,Jian Zhuang, Yiyu Shi, <a target="_blank" href="publications/papers/zihaoCVPR2019.pdf">"Machine Vision Guided 3D Medical Image Compression for Efficient Transmission and Accurate Segmentation in the Clouds"</a>, IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR'19, CCF-A</b>), 16-20 June, Long Beach, US, 2019.</li></li>
+                            <li><span class="label label-success">AAAI'19</span> Tianchen Wang, <b>Xiaowei Xu</b>, jingjun, Xiong, Yiyu Shi, <a target="_blank" href="publications/papers/tianchenAAAI2019.pdf">"SCNN: A General Distribution based Statistical Convolutional Neural Networkwith Application to Video Object Detection"</a>, The 33th AAAI Conference on Artificial Intelligence (<b>AAAI'19, CCF-A</b>), 27 Jan-1 Feb, Honolulu, US, 2019.</li></li>
+                            <li><span class="label label-success">IEEE TCAD'18</span> <b>Xiaowei Xu</b>, Feng Lin, Wenyao Xu, Xinwei Yao and Yiyu Shi, Dewen Zeng, Yu Hu, <a target="_blank" href="publications/papers/xuTCAD2018_2.pdf">"MDA: A Reconfigurable Memristor-Based Distance Accelerator for Time Series Mining on Data Centers"</a>, IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (<b>TCAD'18, CCF-A</b>), Vol. 38, Iss. 1-2, pp. 385-397, 2018.</li></li>
+                            <li><span class="label label-success">Nature Electronics'18</span> <b>Xiaowei Xu</b>, Yukun Ding, Sharon Xiaobo Hu, Michael Niemier, Jason Cong, Yu Hu, and Yiyu Shi, <a target="_blank" href="publications/papers/xuNatureelectronics2018.pdf">"Scaling for edge inference of deep neural networks"</a>,  <b>Nature Electronics, Top Journal</b>, Vol. 1, Iss. 4, pp. 216-222, 2018. </li></li>
+                            <li><span class="label label-success">IEEE TCAD'18</span> <b>Xiaowei Xu</b>, Feng Lin, Aosen Wang, Qing Lu, Wenyao Xu, Yiyu Shi and Yu Hu,  <a target="_blank" href="publications/papers/xuTCAD2018.pdf">"Accelerating Dynamic Time Warping With Memristor-Based Customized Fabrics"</a>, IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (<b>TCAD'18, CCF-A</b>), Vol. 37, Iss. 4, pp. 729-741, 2018.</li></li>
+                            <li><span class="label label-success">CVPR'18</span> <b>Xiaowei Xu</b>, Qing Lu, Lin Yang, Sharon Hu, Danny Chen, Yu Hu, Yiyu Shi, <a target="_blank" href="publications/papers/xuCVPR2018.pdf">"Quantization of Fully Convolutional Networks for Accurate Biomedical Image Segmentation"</a>, IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR'18, CCF-A</b>), 19-21 June, Salt Lake City, US, 2018.</li></li>
+                            <li><span class="label label-success">DAC'17</span> <b>Xiaowei Xu</b>, Dewen Zeng, Wenyao Xu, Yiyu Shi, Yu Hu, <a target="_blank" href="publications/papers/xuDAC2017.pdf">"An Efficient Memristor-Based Distance Accelerator for Time Series Data Mining on Data Centers"</a>, The 54th Design Automation Conference (<b>DAC'17, CCF-A</b>), June 18-22, Austin, TX, US, 2017.</li></li>
+                            <li><span class="label label-success">ICCAD'17</span> <b>Xiaowei Xu</b>, Qing Lu, Tianchen Wang, Jinglan Liu, Chen Zhuo, Sharon Hu, Yiyu Shi,  <a target="_blank" href="publications/papers/xuICCAD2017.pdf">"Empowering Mobile Telemedicine with Compressed Cellular Neural Networks"</a>, IEEE/ACM 2017 International Conference On Computer-Aided Design (<b>ICCAD'17, CCF-B</b>), Nov 13-16, Irvine, CA, US, 2017.</li></li>
+                            <li><span class="label label-success">IEEE TBioCAS'16</span> <b>Xiaowei Xu</b>, Feng Lin, Aosen Wang, Yu Hu, Ming-chun Huang, and Wenyao Xu, <a target="_blank" href="publications/papers/xuTBioCAS2016.pdf">"Body-Earth Mover's Distance: A Matching-Based Approach for Sleep Posture Recognition"</a>,  IEEE Transactions on Biomedical Circuits and Systems (<b>TBioCAS'16</b>), Vol. 10, Iss. 5, pp. 1932-4545, 2016.</li></li>
+                            <li><span class="label label-success">BioCAS'15</span> <b> Xiaowei Xu</b>, Feng Lin, Aosen Wang, Chen Song, Yu Hu, and Wenyao Xu,  <a target="_blank" href="publications/papers/xuBioCAS2015.pdf">"On-bed Sleep Posture Recognition Based on Body-Earth Movers Distance"</a>, IEEE Biomedical Circuits and Systems Conference (<b>BioCAS’15</b>), 22-24 Oct., Atlanta, Georgia, US, 2015.</li></li>
+                        </ul>
+                        <p><a href="publications/" class="btn btn-primary">All Publications &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    
+ 
+         <!-- Courses Section -->
+         <!-- <section  name="awards" id="awards">
+             <div class="container lead">
+                 <div style="text-align: left; margin-top:10px" class="col-md-12">
+                     
+                     <b class="noshow" style="display:none;" id="tab-6">
+                         <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-awards-content').toggle();">Awards  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                     </b>
+                     <div class="allshow" style="display:none;" id="tab-awards-content">
+                         
+                         <hr class="star-primary">
+                         <h2>Awards and Honors <a href="cv.html#SECTION00040000000000000000" class="btn btn-primary">More &raquo;</a></h2>
+                         <ul>
+                             <li>
+                                 <span class="label label-success">IEEE MDM'18</span> <a target="_blank" href="https://mdmconferences.org/mdm2018/">Best of MDM 2018</a>,  ``Decaying Telco Big Data with Data Postdiction'', 19th IEEE International Conference on Mobile Data Management (MDM'18), Aalborg, Denmark, June 26 - June 28, 2018 (Geinformatica - Springer - journal invitation).</span>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </section> -->
+
+
+        <!-- Courses Section -->
+        <!-- <section  name="courses" id="courses">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-5">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-courses-content').toggle();">Courses  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-courses-content">
+                        <hr class="star-primary">
+                        <h2>Courses <a href="cv.html#SECTION000110000000000000000" class="btn btn-primary">More &raquo;</a></h2>
+                        <ul>
+                            <li><span class="label label-success">EPL646</span> <a href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl646/">Advanced Topics in Databases</a> (Winter)</li>
+                            <li><span class="label label-default">EPL446</span> <a target="_blank" href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl446/">Advanced Database Systems</a></li>
+                            <li><span class="label label-success">EPL371</span> <a href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl371">Systems Programming</a> (Spring) </li>
+                            <li><span class="label label-default">EPL342</span> <a target="_blank" href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl342/">Databases</a></li>
+                            <li><span class="label label-success">EPL232</span> <a href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl232">Programming Techniques and Tools</a> (Winter) [formely EPL132]</li>
+                            <li><span class="label label-default">EPL111</span> <a target="_blank" href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl111">Discrete Structures in Computer Science and Computation</a></li>
+                            <li><span class="label label-default">EPL035</span> <a target="_blank" href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl035">Data Structures and Algorithms for ECE</a></li>
+                            <li><span class="label label-default">EPL032</span> <a target="_blank" href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl032">Introduction to Programming and Problem Solving</a></li>
+                            <li><span class="label label-default">EPL003</span> Computer Science and Information Systems</li>
+                            <li><span class="label label-default">EPL001</span> Introduction to Computer Science</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        
+        
+        <!-- Service Section -->
+        <section name="service" id="service">
+            
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-7">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-service-content').toggle();">Service  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-service-content">
+                        
+                        <hr class="star-primary">
+                        <h2>Professional Service <a href="cv.html#SECTION00070000000000000000" class="btn btn-primary">More &raquo;</a></h2>
+                        <!-- <p>
+                        <span class="label label-success">Editorial Boards</span>
+                        
+                        <ul>
+                            <li><b>Associate Editor</b>, <a target="_blank" href="https://link.springer.com/journal/10619"><b> Distributed and Parallel Databases</b></a> journal, Editors-in-Chief: <a target="_blank" href="http://www-users.cs.umn.edu/~mokbel/">Mohamed Mokbel</a> and <a target="_blank" href="hhttps://www.cs.ucsb.edu/~agrawal/">Divyakant Agrawal</a>, <b>Springer US Press</b>, NY, USA. (05/2017 - 04/2023)
+                                <br><img width="200" src="images/springer.png"/>
+                            </li>
+                            <li><b>Associate Editor</b>, <a target="_blank" href="http://www.journals.elsevier.com/big-data-research"><b>Big Data Research</b></a> journal, Editors-in-Chief: Z. Wu, <a target="_blank" href="http://www.mi.parisdescartes.fr/~themisp/">Themis Palpanas</a>, <b>Elsevier Press</b>, Amsterdam, Netherlands. (04/2016 - current)
+                                <br><img width="100" src="images/elsevier.png"/>
+                            </li>
+                        </ul>
+                        </span>
+                        </p> -->
+                        
+                        <p>
+
+                        <span class="label label-success">Journal editors</span>
+                        <ul>
+                            <li> <b>Pattern Recognition <a href="https://www.sciencedirect.com/journal/pattern-recognition" target="_blank">(PR, IF=7.5, 中科院一区)</b></a></li>
+                            <li> <b>International Journal of Cardiovascular Imaging <a href="https://link.springer.com/journal/10554" target="_blank">(Specific for cardiovascular diseases)</b></a> </li>
+                        </ul>
+                        <span class="label label-success">Conference Program Committee</span>
+                        <ul>
+                            <li>
+                                <b>IPCAI 2024:</b>
+                                <a href="https://sites.google.com/view/ipcai2024" target="_blank">2024</a>,
+                                <i>[The 15th International Conference on Information Processing in Computer-Assisted Interventions]</i>
+                            </li>
+
+                            <li>
+                                <b>CVPR 2024:</b>
+                                 <a href="https://cvpr.thecvf.com/" target="_blank">2024</a>,
+                                <i>[IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)]</i>
+                            </li>
+                            <li>
+                                <b>AAAI 2023, 2024:</b>
+                                 <a href="https://aaai-23.aaai.org/" target="_blank">2023</a>,
+                                <i>[AAAI Conference on Artificial Intelligence]</i>
+                            </li>
+                            <li>
+                                <b>ECAI 2023:</b>
+                                 <a href="https://ecai2023.eu/" target="_blank">2023</a>,
+                                <i>[European Conference on Artificial Intelligence ECAI]</i>
+                            </li>
+                            <li>
+                                <b>MICCAI 2021, 2022, 2023:</b>
+                                 <a href="https://conferences.miccai.org/2023/" target="_blank">2023</a>,
+                                <i>[International Conference on Medical Image Computing and Computer Assisted Intervention]</i>
+                            </li>
+                            <li>
+                                <b>IJCAI-PRICAI workshop, </b>
+                                <a href="http://www.qaas.zju.edu.cn/HBAI2020/" target="_blank">HBAI 2020: Joint Workshop on Human Brain and Artificial Intelligence, Held in Conjunction With IJCAI-PRICAI</a>
+                            </li>
+                            <li>
+                                <b>IEEE ISVLSI:</b>
+                                <a href="http://www.eng.ucy.ac.cy/theocharides/isvlsi19/location.html" target="_blank"> 2019</a>,
+                                <a href="http://www.eng.ucy.ac.cy/theocharides/isvlsi18/" target="_blank">2018</a>,
+                                <i>[IEEE Computer Society Annual Symposium on VLSI]</i>
+                            </li>
+                            <li>
+                                <b>IEEE ICCD:</b>
+                                 <a href="https://www.iccd-conf.com/tutorial_2019.html" target="_blank">2019</a>,
+                                <a href="https://www.iccd-conf.com/2018/Program_Committee.html" target="_blank">2018</a>,
+                                <i>[IEEE International Conference on Computer Design (ICCD)]</i>
+                            </li>
+                            <li>
+                                <b>IEEE ISQED:</b>
+                                <a href="https://www.isqed.org/" target="_blank">2019</a>,
+                                <i>[International Symposium on Quality Electronic Design]</i>
+                            </li>
+                        </ul>
+
+                        <span class="label label-success">Journal Reviewer</span>
+                        <ul>
+                            <li> <b>Nature Method <a href="https://www.nature.com/nmeth/" target="_blank">NM</b></a>(1), <i>[Nature Method]</i> </li>
+                            <li> <b>TMI <a href="https://www.embs.org/tmi/" target="_blank">NM</b></a>(1), <i>[IEEE Transections on Medical Imaging]</i> </li>
+                            <li> <b>Nature Computational Science <a href="https://www.nature.com/natcomputsci?gclid=CjwKCAiA-f78BRBbEiwATKRRBL2pZ8REQS_U8l7QZZcW0Uq7H1UQGrMK0M0-QTzTp2q8y986zbWH-RoC3ZUQAvD_BwE" target="_blank">NCS</b></a>(1), <i>[Nature Computational Science]</i> </li>
+                            <li> <b>IEEE <a href="https://cis.ieee.org/publications/t-neural-networks-and-learning-systems/tnnls-information-for-authors" target="_blank">TNNLS</b></a>(1), <i>[IEEE Transactions on Neural Networks and Learning Systems]</i> </li>
+                            <li> <b>IEEE <a href="https://ieee-ceda.org/publication/tcad-publication" target="_blank">TCAD</b></a>(8), <i>[IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems]</i> </li>
+                            <li> <b>IEEE <a href="http://tvlsi.egr.duke.edu/" target="_blank">TVLSI</b></a> (1), <i>[IEEE Transactions on Very Large Scale Integration]</i></li>
+                            <li> <b>IEEE <a href="https://www.computer.org/csdl/journal/tc" target="_blank">TC</b></a> (3), <i>[IEEE Transactions on Computer]</i></li>
+                            <li> <b>IEEE <a href="https://ieee-cas.org/pubs/tbiocas" target="_blank">TBioCAS</b></a> (3), <i>[IEEE Transactions on Biomedical Circuits and Systems]</i></li>
+                            <li> <b>Elsevier's <a href="https://www.journals.elsevier.com/integration" target="_blank">Integration</b></a> (9), <i>[Integration the VLSI journal]</i>  </li>  
+                            <li> <b>ACM <a href="https://dl.acm.org/journal/jetc" target="_blank">JETC</b></a> (7), <i>[ACM Journal on Emerging Technologies in Computing Systems]</i>  </li>  
+                            <li> <b>IEEE <a href="https://ieee-ceda.org/publication/ieee-embedded-systems-letters-esl" target="_blank">Embedded Systems Letters</b></a> (2), <i>[IEEE Embedded Systems Letters]</i></li>
+                            <li> <b>MICCAI <a href="https://www.miccai2020.org/en/" target="_blank">MICCAI</b></a> (3), <i>[ International Conference on Medical Image Computing and Computer Assisted Intervention]</i></li>
+                            <li> <b>MDPI <a href="https://www.mdpi.com/journal/sensors" target="_blank">Sensors</b></a> (2), <i>[MDPI Sensors]</i></li>
+                            
+                            
+                            <!-- <li>
+                                <b>Magazine Referee</b>:
+                                <a href="http://www.computer.org/internet" target="_blank">Internet Computing</a> (2),
+                                <a href="http://www.comsoc.org/netmag" target="_blank">IEEE Network</a> (1)
+                            </li> -->
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Courses Section -->
+        <!-- <section name="advising" id="advising">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-8">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-advising-content').toggle();">Advising  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-advising-content">
+                        
+                        <hr class="star-primary">
+                        <h2>Advising <a href="cv.html#SECTION000120000000000000000" class="btn btn-primary">More &raquo;</a></h2>
+                        <ul>
+                            <li>
+                                <span class="label label-success">Postdoc</span> <a target="_blank" href="https://www.cs.ucy.ac.cy/~gchatzim/">George Chatzimilioudis</a>, Researcher at MTN, Cyprus.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        
+        <!-- Home Section -->
+        <section name="resources" id="resources">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-9">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-links-content').toggle();">Links  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-links-content">
+                        
+                        <hr class="star-primary">
+                        <h2>Resources</h2>
+                        <ul>
+                            <li><span class="label label-success"><a target="_blank" href="https://www.lifehack.org/articles/technology/20-tips-use-google-search-efficiently.html"><font color="white">Google Search Skills</font></a></span> This is important in this infomation age speciall for researchers. <a href="resources/20_Google_Search_Tips_to_Use_Google_More_Efficiently.pdf" target="_blank"><i>Local link</i></a></li>
+                            <li><span class="label label-default"><a target="_blank" href="https://www.wur.nl/en/article/How-to-use-Google-Scholar.htm"><font color="white">Google Scholar Skills</font></a></span> Improve your searching with Google Scholar. <a href="resources/How_to_use_Google_Scholar.pdf" target="_blank"><i>Local link</i></a></li>
+                            <li><span class="label label-info"><a target="_blank" href="https://smartlib.cs.ucy.ac.cy/scripts/exportBooks.php?mykey=0a05bb77edad7395da818f361f8115a2"><font color="white">Review Skill</font></a></span> Useful tips to review a scientific paper.  <a href="resources/How_to_Review_a_Scientific_Paper.pdf" target="_blank"><i>Local link</i></a></li>
+                            <li><span class="label label-danger"><a target="_blank" href="https://media.springernature.com/full/springer-cms/rest/v1/content/15529630/data/v1"><font color="white">Publish High-quality Papers</font></a></span> Useful tips to publish high-quality papers. <a href="resources/How_to_get_published_in_Nature_and_its_sister_journals.pdf" target="_blank"><i>Local link</i></a></li>
+                            <li><span class="label label-primary"><a target="_blank" href="https://github.com/XiaoweiXu"><font color="white">Github</font></a></span> I support open-source code development.</a></li>
+                            <li><span class="label label-warning"><a target="_blank" href="https://www.mrc-cbu.cam.ac.uk/documents/equality/HHMI_WriteReference.pdf"><font color="white">Writing Recommendation Letter</font></a></span> Useful tips to prepare recommendation letters. <a href="resources/Write_recommendationLetter_Reference.pdf" target="_blank"><i>Local link</i></a></li>
+                            <li><span class="label label-success"><a target="_blank" href="https://www.aje.com/en/arc/writing-cover-letter/"><font color="white">Cover Letter</font></a></span> Cover letter template which I think is a good starting point. :-) <a href="resources/Journal_Cover_Letter_TEMPLATE-EN.pdf" target="_blank"><i>Local link</i></a></li>
+                            <li><span class="label label-success"><a target="_blank" href="ReadLiteratures.html"><font color="white">Literatures every day</font></a></span> Red papers. </li>
+                            <li><span class="label label-info"><a target="_blank" href="ReadOthers.html"><font color="white">Other reading</font></a></span> Record readings. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section name="datasets" id="datasets">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-9">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-links-content').toggle();">Links  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-links-content">
+                        
+                        <hr class="star-primary">
+                        <h2>Published datasets </h2>    
+                        <ul>
+                            <li><span class="label label-success"><a target="_blank" href="https://github.com/XiaoweiXu/Whole-heart-and-great-vessel-segmentation-of-chd_segmentation"><font color="white">The first CT datasets of whole heart and greats vessels segmentation in congenital heart disease. </font></a></span> A challenging task. </li>
+                            <li><span class="label label-info"><a target="_blank" href="https://github.com/XiaoweiXu/ImageCHD-A-3D-Computed-Tomography-Image-Dataset-for-Classification-of-Congenital-Heart-Disease"><font color="white">The first CT datasets of diagnosis in congenital heart disease.</font></a></span> Interesting task and needs domain knowledge. </li>
+                            <li><span class="label label-success"><a target="_blank" href="https://github.com/XiaoweiXu/EchoCP-An-Echocardiography-Dataset-in-Contrast-Transthoracic-Echocardiography-for-PFO-diagnosis"><font color="white">The first Echocardiography Dataset in Contrast Transthoracic Echocardiography for Patent Foramen Ovale Diagnosis</font></a></span> Interesting task. </li>
+                            <li><span class="label label-info"><a target="_blank" href="https://github.com/XiaoweiXu/Dataset_Type-B-Aortic-Dissection"><font color="white">A 3D CT image dataset, ImageTBAD, for segmentation of Type-B Aortic Dissection </font></a></span> Challenging. </li>
+                            <li><span class="label label-info"><a target="_blank" href="https://github.com/XiaoweiXu/ImageCAS-A-Large-Scale-Dataset-and-Benchmark-for-Coronary-Artery-Segmentation-based-on-CT"><font color="white">ImageCAS, containing 1000 3D CTA images for segmentation of coronary arteries</font></a></span> Challenging. </li>
+                            <li>More than 10+ datasets and codes in <a href="https://www.kaggle.com/xiaoweixumedicalai/datasets">Kaggle</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- <section name="myrecording" id="myrecording">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-9">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-links-content').toggle();">Links  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-links-content">
+                        
+                        <hr class="star-primary">
+                        <h2>My Recording</h2>
+                        <ul>
+                            
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        
+        <!-- Home Section -->
+        <section  name="contact" id="contact">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-10">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-contact-content').toggle();">Contact  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-contact-content">
+                        
+                        <hr class="star-primary">
+                        <h2>Contact</h2>
+                        <div class="container lead">
+                            <!-- <div align="left" class="col-md-5">
+                                <h4 class="myEN">
+                                    Postal address
+                                </h4>
+                                <p class="myEN">
+                                Xiaowei Xu<br>
+                                Guangdong provincial People's Hospital<br>
+                                106, Zhongshan 2nd RD 
+                                Guangzhou, China<br>
+                                </p>
+                                Email:
+                                <script language="JavaScript">
+                                     
+                                    document.write("&nbsp;");
+                                    spiderjam('xiao.wei.xu','foxmail.com');
+                                 </script><br>
+                                
+                            </div> -->
+                            
+                            
+                            <div align="left" class="col-md-5">
+                                <h4>Office address</h4>
+                                <p>Laboratory of Artificial Intelligence and 3D Technologies for Cardiovascular Diseases,<br/>
+                                Guangdong provincial People's Hospital<br>
+                                106, Zhongshan 2nd RD, Guangzhou, China<br/>
+                                <b>Official Email</b>: xuxiaowei [AT] gdph.org.cn<br/>
+                                <!-- <script language="JavaScript"> -->
+                                     <!--
+                                    // document.write("&nbsp;");
+                                    // spiderjam('xuxiaowei_','gdph.org.cn');
+                                    // -->
+                                <!-- </script><br> -->
+                                <b>Commonly used Email</b>: xiao.wei.xu [AT] foxmail.com<br/>
+                                <!-- <script language="JavaScript">
+                                    document.write("&nbsp;");
+                                    spiderjam('xiao.wei.xu_1','foxmail.com');
+                                    -->
+                                <!-- </script><br> --> 
+                                <br/>
+                                </p>
+                            </div>
+                            
+                            <div align="left" class="col-md-2">
+                                <h4>Wechat account</h4>
+                                <p><a><img src="images/wechat_account.jpg" border="0"
+                                    width="160"> <br></a>
+                                </p>
+                            </div>
+
+                            <div align="right" class="col-md-4">
+                                <script type='text/javascript' id='clustrmaps' 
+                                src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=400&t=tt&d=FYfGU1SOdcZHgqUV8vqr8o3Wy0aH0GbGOHzLL5CCWEY&ct=1f0909'></script>
+                            </div>
+                        </div>
+                        <hr class="star-primary">
+                    </div>
+                    
+                    </section>
+        
+        <hr class="star-primary">
+        <footer>
+            <small>
+                <center>
+                    © 2015 | D. Zeinalipour. Credits: AR template
+                    <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
+                    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
+                        <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
+                            https://github.com/dmsl/academic-responsive-template
+                        </a> ]
+                    </div>
+                </center>
+            </small>
+        </footer>
+        
+    </body>
+    
+</html>
